@@ -1,0 +1,14 @@
+{
+    "authors": [
+        {
+            "email": "hswong3i@pantarei-design.com",
+            "name": "Wong Hoi Sing Edison"
+        }
+    ],
+    "description": "The \"DruStack Standard Edition\" distribution",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "name": "drustack/framework-standard-edition",
+    "require": {},
+    "type": "project"
+}

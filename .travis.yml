@@ -19,6 +19,6 @@ install:
   - drush site-install testing --yes --db-url=sqlite://sites/default/files/.ht.sqlite
   - drush runserver http://127.0.0.1:8080 &
 
-scripts:
+script:
   - cd $TRAVIS_BUILD_DIR/web
   - phpunit -c core --testsuite unit --exclude-group Composer

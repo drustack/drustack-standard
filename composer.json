@@ -6,9 +6,18 @@
         }
     ],
     "description": "The \"DruStack Standard Edition\" distribution",
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "0.x-dev",
+            "dev-master": "0.0.x-dev"
+        }
+    },
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "name": "drustack/framework-standard-edition",
-    "require": {},
+    "require": {
+        "composer/installers": "^1.0.21",
+        "cweagans/composer-patches": "~1.0"
+    },
     "type": "project"
 }

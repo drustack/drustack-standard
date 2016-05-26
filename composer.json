@@ -39,12 +39,19 @@
     "minimum-stability": "dev",
     "name": "drustack/framework-standard-edition",
     "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packagist.drupal-composer.org"
+        }
+    ],
     "require": {
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/console": "~0.10",
         "drupal/core": "~8.0",
-        "drush/drush": "~8.0"
+        "drush/drush": "~8.0",
+        "drupal/drustack": "8.1.x-dev"
     },
     "require-dev": {
         "behat/mink": "~1.6",
@@ -56,8 +63,8 @@
         "symfony/css-selector": "~2.7"
     },
     "scripts": {
-        "post-package-install": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
-        "post-package-update": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
+        "post-install-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
+        "post-update-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
     },
     "type": "project"
 }

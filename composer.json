@@ -5,6 +5,12 @@
             "name": "Wong Hoi Sing Edison"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "DruStack\\Standard\\": "src/",
+            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer/"
+        }
+    },
     "description": "The \"DruStack Standard Edition\" distribution",
     "extra": {
         "branch-alias": {
@@ -40,15 +46,18 @@
         "drupal/core": "~8.0",
         "drush/drush": "~8.0"
     },
-    "scripts": {},
-    "type": "project",
     "require-dev": {
         "behat/mink": "~1.6",
-        "phpunit/phpunit": "~4.8",
         "behat/mink-goutte-driver": "~1.2",
         "jcalderonzumba/gastonjs": "~1.1",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
         "symfony/css-selector": "~2.7"
-    }
+    },
+    "scripts": {
+        "post-package-install": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
+        "post-package-update": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
+    },
+    "type": "project"
 }

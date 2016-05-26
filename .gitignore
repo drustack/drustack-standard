@@ -1,1 +1,7 @@
 /vendor/
+/web/core/
+/web/modules/
+/web/profiles/
+/web/themes/
+/web/sites/
+composer.lock

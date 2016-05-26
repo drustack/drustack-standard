@@ -1,0 +1,10 @@
+---
+
+sudo: false
+
+dist: trusty
+
+language: php
+
+before_install:
+  - composer self-update

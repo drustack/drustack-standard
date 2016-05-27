@@ -7,8 +7,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "DruStack\\": "profiles/contrib/drustack/src/",
-            "Drupal\\Core\\Composer\\": "core/lib/Drupal/Core/Composer/"
+            "DruStack\\Standard\\": "src/"
         }
     },
     "description": "The \"DruStack Standard Edition\" distribution",
@@ -74,12 +73,8 @@
         "symfony/css-selector": "~2.7"
     },
     "scripts": {
-        "post-autoload-dump": "Drupal\\Core\\Composer\\Composer::ensureHtaccess",
-        "post-install-cmd": "DruStack\\Composer\\ScriptHandler::installRequirementsFile",
-        "post-package-install": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-package-update": "Drupal\\Core\\Composer\\Composer::vendorTestCodeCleanup",
-        "post-update-cmd": "DruStack\\Composer\\ScriptHandler::installRequirementsFile",
-        "pre-autoload-dump": "Drupal\\Core\\Composer\\Composer::preAutoloadDump"
+        "post-install-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
+        "post-update-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
     },
     "type": "project"
 }

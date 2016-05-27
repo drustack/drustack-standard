@@ -18,19 +18,16 @@
             "dev-master": "0.0.x-dev"
         },
         "installer-paths": {
-            "drush/contrib/{$name}": [
-                "type:drupal-drush"
-            ],
-            "web/core": [
+            "core": [
                 "type:drupal-core"
             ],
-            "web/modules/contrib/{$name}": [
+            "modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{$name}": [
+            "themes/contrib/{$name}": [
                 "type:drupal-theme"
             ]
         },

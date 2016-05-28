@@ -1,0 +1,56 @@
+# This file contains default .gitignore rules. To use it, copy it to .gitignore,
+# and it will cause files like your settings.php and user-uploaded files to be
+# excluded from Git version control. This is a common strategy to avoid
+# accidentally including private information in public repositories and patch
+# files.
+#
+# Because .gitignore can be specific to your site, this file has a different
+# name; updating Drupal core will not override your custom .gitignore file.
+
+# Ignore core when managing all of a project's dependencies with Composer
+# including Drupal core.
+/web/.gitignore
+/web/.htaccess
+/web/CHANGELOG.txt
+/web/COPYRIGHT.txt
+/web/INSTALL.mysql.txt
+/web/INSTALL.pgsql.txt
+/web/INSTALL.sqlite.txt
+/web/INSTALL.txt
+/web/LICENSE.txt
+/web/MAINTAINERS.txt
+/web/README.txt
+/web/UPGRADE.txt
+/web/authorize.php
+/web/cron.php
+/web/includes
+/web/index.php
+/web/install.php
+/web/misc
+/web/modules
+/web/profiles/minimal
+/web/profiles/standard
+/web/profiles/testing
+/web/robots.txt
+/web/scripts
+/web/themes
+/web/update.php
+/web/web.config
+/web/xmlrpc.php
+
+# Core's dependencies are managed with Composer.
+/composer.lock
+/vendor/
+/web/profiles/contrib/
+/web/sites/all/modules/contrib/
+/web/sites/all/themes/contrib/
+
+# Ignore configuration files that may contain sensitive information.
+/web/sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+/web/sites/*/files
+/web/sites/*/private
+
+# Ignore SimpleTest multi-site environment.
+/web/sites/simpletest

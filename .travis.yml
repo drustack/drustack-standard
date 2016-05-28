@@ -1,0 +1,27 @@
+---
+
+sudo: false
+
+dist: trusty
+
+language: php
+
+before_install:
+  - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+  - phpenv config-rm xdebug.ini
+  - composer self-update
+  - composer global require --no-update drush/drush:@stable
+  - composer global require --no-update phpunit/phpunit:@stable
+  - composer global update
+  - export PATH="$PATH:$HOME/.composer/vendor/bin"
+
+install:
+  - composer update
+  - cd $TRAVIS_BUILD_DIR/web
+  - drush site-install testing --yes --db-url=sqlite://sites/default/files/.ht.sqlite
+  - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
+
+script:
+  - cd $TRAVIS_BUILD_DIR/web
+  - drush pm-enable simpletest --yes
+  - php ./scripts/run-tests.sh --php `which php` --all --url http://127.0.0.1:8080

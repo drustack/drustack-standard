@@ -29,9 +29,7 @@
 /web/install.php
 /web/misc
 /web/modules
-/web/profiles/minimal
-/web/profiles/standard
-/web/profiles/testing
+/web/profiles
 /web/robots.txt
 /web/scripts
 /web/themes
@@ -42,7 +40,6 @@
 # Core's dependencies are managed with Composer.
 /composer.lock
 /vendor/
-/web/profiles/contrib/
 /web/sites/all/modules/contrib/
 /web/sites/all/themes/contrib/
 

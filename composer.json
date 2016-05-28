@@ -20,7 +20,7 @@
             "web": [
                 "type:drupal-core"
             ],
-            "web/profiles/contrib/{$name}": [
+            "web/profiles/{$name}": [
                 "type:drupal-profile"
             ],
             "web/sites/all/modules/contrib/{$name}": [

@@ -23,7 +23,7 @@
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "web/profiles/{$name}": [
                 "type:drupal-profile"
             ],
             "web/themes/contrib/{$name}": [

@@ -18,10 +18,10 @@ before_install:
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
-  - drush site-install testing --yes --db-url=sqlite://sites/default/files/.ht.sqlite
+  - drush --yes site-install testing --db-url=sqlite://sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:
   - cd $TRAVIS_BUILD_DIR/web
-  - drush pm-enable simpletest --yes
-  - php ./scripts/run-tests.sh --php `which php` --all --url http://127.0.0.1:8080
+  - drush --yes pm-enable simpletest
+  - php ./scripts/run-tests.sh --php `which php` --url http://127.0.0.1:8080 SimpleTest

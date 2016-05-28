@@ -9,39 +9,22 @@
 
 # Ignore core when managing all of a project's dependencies with Composer
 # including Drupal core.
-/core/
+/web/core/
 
 # Core's dependencies are managed with Composer.
 /composer.lock
-/modules/contrib/
-/profiles/contrib/
-/themes/contrib/
 /vendor/
+/web/modules/contrib/
+/web/profiles/contrib/
+/web/themes/contrib/
 
 # Ignore configuration files that may contain sensitive information.
-/sites/*/settings*.php
-/sites/*/services*.yml
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
-/sites/*/files
-/sites/*/private
+/web/sites/*/files
+/web/sites/*/private
 
 # Ignore SimpleTest multi-site environment.
-/sites/simpletest
-
-# If you prefer to store your .gitignore file in the sites/ folder, comment
-# or delete the previous settings and uncomment the following ones, instead.
-
-# Ignore configuration files that may contain sensitive information.
-# */settings*.php
-
-# Ignore paths that contain user-generated content.
-# */files
-# */private
-
-# Ignore SimpleTest multi-site environment.
-# simpletest
-
-# Ignore core phpcs.xml and phpunit.xml.
-/core/phpcs.xml
-/core/phpunit.xml
+/web/sites/simpletest

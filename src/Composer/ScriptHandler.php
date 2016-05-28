@@ -10,7 +10,7 @@ class ScriptHandler
     public static function installRequirementsFile(Event $event)
     {
         $fs = new Filesystem();
-        $root = getcwd();
+        $root = getcwd().'/web';
 
         // Prepare the settings file for installation
         if (!$fs->exists($root.'/sites/default/settings.php')) {

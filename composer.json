@@ -17,16 +17,16 @@
             "dev-master": "8.1.x-dev"
         },
         "installer-paths": {
-            "core": [
+            "web/core": [
                 "type:drupal-core"
             ],
-            "modules/contrib/{$name}": [
+            "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "profiles/contrib/{$name}": [
+            "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "themes/contrib/{$name}": [
+            "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
             ]
         },

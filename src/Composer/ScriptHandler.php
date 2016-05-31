@@ -268,6 +268,7 @@ EOT;
 
 ; Information add by composer on {$date}
 core = "{$core}"
+project = "{$project}"
 version = "{$version}"
 datestamp = "{$datestamp}"
 METADATA;
@@ -277,6 +278,7 @@ METADATA;
 
 # Information add by composer on {$date}
 core: "{$core}"
+project: "{$project}"
 version: "{$version}"
 datestamp: "{$datestamp}"
 METADATA;

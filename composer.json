@@ -124,7 +124,7 @@
         "drupal/security_review": "8.1.x-dev",
         "drupal/simplenews": "8.1.x-dev",
         "drupal/simplenews_scheduler": "8.1.x-dev",
-        "drupal/sitemap": "~8.1.0",
+        "drupal/sitemap": "8.1.x-dev",
         "drupal/special_menu_items": "8.1.x-dev",
         "drupal/state_machine": "8.1.x-dev",
         "drupal/system_stream_wrapper": "8.1.x-dev",

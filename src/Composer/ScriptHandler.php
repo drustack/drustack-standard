@@ -247,24 +247,20 @@ EOT;
     public static function generateInfoMetadata(PackageEvent $event)
     {
         $op = $event->getOperation();
+        $installation_manager = $event->getComposer()->getInstallationManager();
+
         $package = $op->getJobType() == 'update' ? $op->getTargetPackage() : $op->getPackage();
-        $type = $package->getType();
-        if (!in_array($type, ['drupal-core', 'drupal-module', 'drupal-profile', 'drupal-theme'])) {
-            return;
-        }
+        if (in_array($package->getType(), ['drupal-profile', 'drupal-module', 'drupal-theme'])) {
+            $project = preg_replace('/^.*\//', '', $package->getName());
+            $version = preg_replace('/^dev-(.*)/', '$1-dev', $package->getPrettyVersion());
+            $core = preg_replace('/^([0-9]).*$/', '$1.x', $version);
+            $datestamp = preg_match('/-dev$/', $version) ? time() : $package->getReleaseDate()->getTimestamp();
+            $date = date('Y-m-d', $datestamp);
 
-        $installationManager = $event->getComposer()->getInstallationManager();
-        $install_path = $installationManager->getInstallPath($package);
-
-        $project = preg_replace("/^.*\//", '', $package->getName());
-        $version = preg_replace('/^dev-(.*)/', '$1-dev', $package->getVersion());
-        $core = preg_replace('/^([0-9]).*$/', '$1.x', $version);
-        $datestamp = time();
-        $date = date('Y-m-d', $datestamp);
-
-        $fs = new Filesystem();
-        if ($fs->exists($info_file = $install_path.'/'.$project.'.info')) {
-            $info = <<<METADATA
+            $fs = new Filesystem();
+            $install_path = $installation_manager->getInstallPath($package);
+            if ($fs->exists($info_file = $install_path.'/'.$project.'.info')) {
+                $info = <<<METADATA
 
 ; Information add by composer on {$date}
 core = "{$core}"
@@ -272,9 +268,9 @@ project = "{$project}"
 version = "{$version}"
 datestamp = "{$datestamp}"
 METADATA;
-            file_put_contents($info_file, $info, FILE_APPEND);
-        } elseif ($fs->exists($info_file = $install_path.'/'.$project.'.info.yml')) {
-            $info = <<<METADATA
+                file_put_contents($info_file, $info, FILE_APPEND);
+            } elseif ($fs->exists($info_file = $install_path.'/'.$project.'.info.yml')) {
+                $info = <<<METADATA
 
 # Information add by composer on {$date}
 core: "{$core}"
@@ -282,7 +278,8 @@ project: "{$project}"
 version: "{$version}"
 datestamp: "{$datestamp}"
 METADATA;
-            file_put_contents($info_file, $info, FILE_APPEND);
+                file_put_contents($info_file, $info, FILE_APPEND);
+            }
         }
     }
 }

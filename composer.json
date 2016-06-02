@@ -6,9 +6,12 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "DruStack\\Standard\\": "src/"
-        }
+        "classmap": [
+            "src/Composer/ScriptHandler.php"
+        ]
+    },
+    "config": {
+        "discard-changes": true
     },
     "description": "The \"DruStack Standard Edition\" distribution",
     "extra": {
@@ -244,8 +247,18 @@
         "symfony/css-selector": "~2.7"
     },
     "scripts": {
+        "post-autoload-dump": "DruStack\\Standard\\Composer\\ScriptHandler::ensureHtaccess",
         "post-install-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
-        "post-update-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
+        "post-package-install": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
+            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+        ],
+        "post-package-update": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
+            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+        ],
+        "post-update-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
+        "pre-autoload-dump": "DruStack\\Standard\\Composer\\ScriptHandler::preAutoloadDump"
     },
     "type": "project"
 }

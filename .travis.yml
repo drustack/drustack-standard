@@ -1,6 +1,6 @@
 ---
 
-sudo: false
+sudo: required
 
 dist: trusty
 
@@ -14,6 +14,8 @@ before_install:
   - composer global require --no-update phpunit/phpunit:@stable
   - composer global update
   - export PATH="$PATH:$HOME/.composer/vendor/bin"
+  - mkdir -p $TRAVIS_BUILD_DIR/web/sites/default/files
+  - sudo mount -t tmpfs -o size=2G tmpfs $TRAVIS_BUILD_DIR/web/sites/default/files
 
 install:
   - composer update
@@ -24,4 +26,4 @@ install:
 script:
   - cd $TRAVIS_BUILD_DIR/web
   - drush --yes pm-enable simpletest
-  - php ./scripts/run-tests.sh --php `which php` --url http://127.0.0.1:8080 SimpleTest
+  - php ./scripts/run-tests.sh --php `which php` --url http://127.0.0.1:8080 --concurrency 8 --all

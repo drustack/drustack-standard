@@ -14,12 +14,12 @@ before_install:
   - composer global require --no-update phpunit/phpunit:@stable
   - composer global update
   - export PATH="$PATH:$HOME/.composer/vendor/bin"
-  - mkdir -p $TRAVIS_BUILD_DIR/web/sites/default/files
-  - sudo mount -t tmpfs -o size=2G tmpfs $TRAVIS_BUILD_DIR/web/sites/default/files
 
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
+  - mkdir -p sites/default/files
+  - sudo mount -t tmpfs -o size=2G tmpfs sites/default/files
   - drush --yes site-install drustack --db-url=sqlite://sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 

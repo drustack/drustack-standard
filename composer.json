@@ -11,7 +11,8 @@
         ]
     },
     "config": {
-        "discard-changes": true
+        "discard-changes": true,
+        "secure-http": false
     },
     "description": "The \"DruStack Standard Edition\" distribution",
     "extra": {
@@ -22,6 +23,9 @@
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
+            ],
+            "web/libraries/{$name}": [
+                "type:drupal-library"
             ],
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
@@ -76,7 +80,6 @@
         "drupal/commerce": "8.2.x-dev",
         "drupal/commerce_migrate": "8.2.x-dev",
         "drupal/commerce_shipping": "8.2.x-dev",
-        "drupal/composer_manager": "8.1.x-dev",
         "drupal/config_update": "~8.1.1",
         "drupal/console": "~0.10",
         "drupal/core": "~8.1",
@@ -85,6 +88,7 @@
         "drupal/disqus": "8.1.x-dev",
         "drupal/drupalmoduleupgrader": "8.1.x-dev",
         "drupal/drustack": "8.1.x-dev",
+        "drupal/ds": "~8.2",
         "drupal/eform": "8.1.x-dev",
         "drupal/email_registration": "8.1.x-dev",
         "drupal/entity": "8.1.x-dev",
@@ -147,7 +151,9 @@
         "drupal/workbench_moderation": "8.1.x-dev",
         "drupal/xmlrpc": "8.1.x-dev",
         "drupal/xmlsitemap": "8.1.x-dev",
-        "drush/drush": "~8.0"
+        "drush/drush": "~8.0",
+        "symfony/filesystem": "~2.7",
+        "symfony/finder": "~2.7"
     },
     "require-dev": {
         "behat/mink": "~1.6",

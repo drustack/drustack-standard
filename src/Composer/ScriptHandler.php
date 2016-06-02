@@ -6,6 +6,7 @@ use Composer\Installer\PackageEvent;
 use Composer\Script\Event;
 use Composer\Semver\Constraint\Constraint;
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\Finder\Finder;
 
 /**
  * Provides static functions for composer script events.
@@ -275,6 +276,8 @@ EOT;
         $installation_manager = $event->getComposer()->getInstallationManager();
 
         $package = $op->getJobType() == 'update' ? $op->getTargetPackage() : $op->getPackage();
+        $install_path = $installation_manager->getInstallPath($package);
+
         if (in_array($package->getType(), ['drupal-profile', 'drupal-module', 'drupal-theme'])) {
             $project = preg_replace('/^.*\//', '', $package->getName());
             $version = preg_replace('/^dev-(.*)/', '$1-dev', $package->getPrettyVersion());
@@ -282,10 +285,11 @@ EOT;
             $datestamp = preg_match('/-dev$/', $version) ? time() : $package->getReleaseDate()->getTimestamp();
             $date = date('Y-m-d', $datestamp);
 
-            $fs = new Filesystem();
-            $install_path = $installation_manager->getInstallPath($package);
-            if ($fs->exists($info_file = $install_path.'/'.$project.'.info')) {
-                $info = <<<METADATA
+            $finder = new Finder();
+            $finder->files()->in($install_path)->name('*.info');
+            foreach ($finder as $file) {
+                if (!preg_match('/datestamp = /', file_get_contents($file))) {
+                    $info = <<<METADATA
 
 ; Information add by composer on {$date}
 core = "{$core}"
@@ -293,9 +297,15 @@ project = "{$project}"
 version = "{$version}"
 datestamp = "{$datestamp}"
 METADATA;
-                file_put_contents($info_file, $info, FILE_APPEND);
-            } elseif ($fs->exists($info_file = $install_path.'/'.$project.'.info.yml')) {
-                $info = <<<METADATA
+                    file_put_contents($file, $info, FILE_APPEND);
+                }
+            }
+
+            $finder = new Finder();
+            $finder->files()->in($install_path)->name('*.info.yml');
+            foreach ($finder as $file) {
+                if (!preg_match('/datestamp: /', file_get_contents($file))) {
+                    $info = <<<METADATA
 
 # Information add by composer on {$date}
 core: "{$core}"
@@ -303,7 +313,8 @@ project: "{$project}"
 version: "{$version}"
 datestamp: "{$datestamp}"
 METADATA;
-                file_put_contents($info_file, $info, FILE_APPEND);
+                    file_put_contents($file, $info, FILE_APPEND);
+                }
             }
         }
     }

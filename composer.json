@@ -10,6 +10,9 @@
             "src/Composer/ScriptHandler.php"
         ]
     },
+    "config": {
+        "discard-changes": true
+    },
     "description": "The \"DruStack Standard Edition\" distribution",
     "extra": {
         "branch-alias": {

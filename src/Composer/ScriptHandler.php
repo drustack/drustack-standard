@@ -5,7 +5,6 @@ namespace DruStack\Standard\Composer;
 use Composer\Installer\PackageEvent;
 use Composer\Script\Event;
 use Composer\Semver\Constraint\Constraint;
-use Drupal\Component\PhpStorage\FileStorage;
 use Symfony\Component\Filesystem\Filesystem;
 
 /**
@@ -151,7 +150,33 @@ class ScriptHandler
         // Prevent access to vendor directory on Apache servers.
         $htaccess_file = $vendor_dir.'/.htaccess';
         if (!file_exists($htaccess_file)) {
-            file_put_contents($htaccess_file, FileStorage::htaccessLines(true)."\n");
+            $lines = <<<EOT
+# Deny all requests from Apache 2.4+.
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>
+
+# Deny all requests from Apache 2.0-2.2.
+<IfModule !mod_authz_core.c>
+  Deny from all
+</IfModule>
+
+# Turn off all options we don't need.
+Options -Indexes -ExecCGI -Includes
+
+# Set the catch-all handler to prevent scripts from being executed.
+SetHandler Drupal_Security_Do_Not_Remove_See_SA_2006_006
+<Files *>
+  # Override the handler again if we're run later in the evaluation list.
+  SetHandler Drupal_Security_Do_Not_Remove_See_SA_2013_003
+</Files>
+
+# If we know how to do it safely, disable the PHP engine entirely.
+<IfModule mod_php5.c>
+  php_flag engine off
+</IfModule>
+EOT;
+            file_put_contents($htaccess_file, $lines."\n");
         }
 
         // Prevent access to vendor directory on IIS servers.
@@ -222,14 +247,14 @@ EOT;
         $root = getcwd().'/web';
 
         // Prepare the settings file for installation
-        if (!$fs->exists($root.'/sites/default/settings.php')) {
+        if ($fs->exists($root.'/sites/default/default.settings.php') && !$fs->exists($root.'/sites/default/settings.php')) {
             $fs->copy($root.'/sites/default/default.settings.php', $root.'/sites/default/settings.php');
             $fs->chmod($root.'/sites/default/settings.php', 0666);
             $event->getIO()->write('Create a sites/default/settings.php file with chmod 0666');
         }
 
         // Prepare the services file for installation
-        if (!$fs->exists($root.'/sites/default/services.yml')) {
+        if ($fs->exists($root.'/sites/default/default.services.yml') && !$fs->exists($root.'/sites/default/services.yml')) {
             $fs->copy($root.'/sites/default/default.services.yml', $root.'/sites/default/services.yml');
             $fs->chmod($root.'/sites/default/services.yml', 0666);
             $event->getIO()->write('Create a sites/default/services.yml file with chmod 0666');

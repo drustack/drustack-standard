@@ -35,6 +35,7 @@
         },
         "patches": {
             "drupal/core": {
+                "https://www.drupal.org/node/2619250": "https://www.drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-17.patch",
                 "https://www.drupal.org/node/2682373": "https://www.drupal.org/files/issues/event-dispatcher-2682373-16.patch"
             },
             "drupal/google_analytics": {

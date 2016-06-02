@@ -15,7 +15,7 @@
 /composer.lock
 /vendor/
 /web/modules/contrib/
-/web/profiles/contrib/
+/web/profiles
 /web/themes/contrib/
 
 # Ignore configuration files that may contain sensitive information.

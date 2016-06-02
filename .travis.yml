@@ -1,6 +1,6 @@
 ---
 
-sudo: false
+sudo: required
 
 dist: trusty
 
@@ -18,10 +18,11 @@ before_install:
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
+  - mkdir -p sites/default/files
+  - sudo mount -t tmpfs -o size=2G tmpfs sites/default/files
   - drush --yes site-install drustack --db-url=sqlite://sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:
   - cd $TRAVIS_BUILD_DIR/web
-  - drush --yes pm-enable simpletest
-  - php ./core/scripts/run-tests.sh --php `which php` --url http://127.0.0.1:8080 PHPUnit
+  - phpunit -c core --testsuite unit --exclude-group Composer

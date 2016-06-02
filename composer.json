@@ -6,9 +6,12 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "DruStack\\Standard\\": "src/"
-        }
+        "classmap": [
+            "src/Composer/ScriptHandler.php"
+        ]
+    },
+    "config": {
+        "discard-changes": true
     },
     "description": "The \"DruStack Standard Edition\" distribution",
     "extra": {
@@ -23,7 +26,7 @@
             "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/profiles/contrib/{$name}": [
+            "web/profiles/{$name}": [
                 "type:drupal-profile"
             ],
             "web/themes/contrib/{$name}": [
@@ -32,6 +35,7 @@
         },
         "patches": {
             "drupal/core": {
+                "https://www.drupal.org/node/2619250": "https://www.drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-17.patch",
                 "https://www.drupal.org/node/2682373": "https://www.drupal.org/files/issues/event-dispatcher-2682373-16.patch"
             },
             "drupal/google_analytics": {
@@ -64,7 +68,7 @@
         "drupal/block_class": "8.1.x-dev",
         "drupal/blog": "8.2.x-dev",
         "drupal/bootstrap": "8.3.x-dev",
-        "drupal/bootstrap_layouts": "8.3.x-dev",
+        "drupal/bootstrap_layouts": "~8.3.1",
         "drupal/calendar": "8.1.x-dev",
         "drupal/captcha": "8.1.x-dev",
         "drupal/cdn": "8.3.x-dev",
@@ -73,7 +77,7 @@
         "drupal/commerce_migrate": "8.2.x-dev",
         "drupal/commerce_shipping": "8.2.x-dev",
         "drupal/composer_manager": "8.1.x-dev",
-        "drupal/config_update": "8.1.x-dev",
+        "drupal/config_update": "~8.1.1",
         "drupal/console": "~0.10",
         "drupal/core": "~8.1",
         "drupal/ctools": "8.3.x-dev",
@@ -93,7 +97,7 @@
         "drupal/git_deploy": "8.2.x-dev",
         "drupal/google_analytics": "8.2.x-dev",
         "drupal/image_effects": "8.1.x-dev",
-        "drupal/imce": "8.1.x-dev",
+        "drupal/imce": "~8.1.1",
         "drupal/inline_entity_form": "8.1.x-dev",
         "drupal/l10n_client": "8.1.x-dev",
         "drupal/layout_plugin": "8.1.x-dev",
@@ -108,12 +112,13 @@
         "drupal/panels": "8.3.x-dev",
         "drupal/panels_bootstrap_layouts": "8.3.x-dev",
         "drupal/pathauto": "8.1.x-dev",
+        "drupal/pathologic": "8.1.x-dev",
         "drupal/php": "8.1.x-dev",
         "drupal/plupload": "8.1.x-dev",
         "drupal/profile": "8.1.x-dev",
         "drupal/recaptcha": "8.2.x-dev",
         "drupal/redirect": "8.1.x-dev",
-        "drupal/restui": "8.1.x-dev",
+        "drupal/restui": "~8.1.11",
         "drupal/rules": "8.3.x-dev",
         "drupal/search404": "8.1.x-dev",
         "drupal/search_api": "8.1.x-dev",
@@ -154,8 +159,18 @@
         "symfony/css-selector": "~2.7"
     },
     "scripts": {
+        "post-autoload-dump": "DruStack\\Standard\\Composer\\ScriptHandler::ensureHtaccess",
         "post-install-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
-        "post-update-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
+        "post-package-install": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
+            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+        ],
+        "post-package-update": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
+            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+        ],
+        "post-update-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
+        "pre-autoload-dump": "DruStack\\Standard\\Composer\\ScriptHandler::preAutoloadDump"
     },
     "type": "project"
 }

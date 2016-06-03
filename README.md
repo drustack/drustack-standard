@@ -50,7 +50,7 @@ When installing the given `composer.json` some tasks are taken care of:
 License
 -------
 
--   Code released under [MIT](https://github.com/drustack/drustack-standard/blob/master/LICENSE)
+-   Code released under [GPL-2.0+](https://github.com/drustack/drustack-standard/blob/master/LICENSE)
 -   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 Author Information

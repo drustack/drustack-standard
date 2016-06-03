@@ -282,14 +282,18 @@ EOT;
             $project = preg_replace('/^.*\//', '', $package->getName());
             $version = preg_replace('/^dev-(.*)/', '$1-dev', $package->getPrettyVersion());
             $core = preg_replace('/^([0-9]).*$/', '$1.x', $version);
-            $datestamp = preg_match('/-dev$/', $version) ? time() : $package->getReleaseDate()->getTimestamp();
+            $datestamp = preg_match('/-dev$/', $version)
+                ? time()
+                : $package->getReleaseDate()->getTimestamp();
             $date = date('Y-m-d', $datestamp);
 
             $finder = new Finder();
-            $finder->files()->in($install_path)->name('*.info');
+            $finder->in($install_path)
+                ->files()
+                ->name('*.info')
+                ->notContains('datestamp =');
             foreach ($finder as $file) {
-                if (!preg_match('/datestamp = /', file_get_contents($file))) {
-                    $info = <<<METADATA
+                $info = <<<METADATA
 
 ; Information add by composer on {$date}
 core = "{$core}"
@@ -297,15 +301,16 @@ project = "{$project}"
 version = "{$version}"
 datestamp = "{$datestamp}"
 METADATA;
-                    file_put_contents($file, $info, FILE_APPEND);
-                }
+                file_put_contents($file->getRealpath(), $info, FILE_APPEND);
             }
 
             $finder = new Finder();
-            $finder->files()->in($install_path)->name('*.info.yml');
+            $finder->in($install_path)
+                ->files()
+                ->name('*.info.yml')
+                ->notContains('datestamp :');
             foreach ($finder as $file) {
-                if (!preg_match('/datestamp: /', file_get_contents($file))) {
-                    $info = <<<METADATA
+                $info = <<<METADATA
 
 # Information add by composer on {$date}
 core: "{$core}"
@@ -313,8 +318,7 @@ project: "{$project}"
 version: "{$version}"
 datestamp: "{$datestamp}"
 METADATA;
-                    file_put_contents($file, $info, FILE_APPEND);
-                }
+                file_put_contents($file->getRealpath(), $info, FILE_APPEND);
             }
         }
     }

@@ -74,8 +74,14 @@
             "drupal/media": {
                 "https://drupal.org/node/2093435": "https://drupal.org/files/issues/media-dialog-removal-2093435-27.patch"
             },
+            "drupal/menu_block": {
+                "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch"
+            },
             "drupal/message": {
                 "https://drupal.org/node/2051751": "https://drupal.org/files/message-primary_nullable-2051751-7.patch"
+            },
+            "drupal/oauth2_server": {
+                "https://drupal.org/node/2167733": "https://drupal.org/files/issues/oauth2_server-drush_make_master-2167733-6.patch"
             },
             "drupal/panels": {
                 "https://drupal.org/node/1402860": "https://drupal.org/files/issues/panelizer_is-1402860-82-fix-ipe-end-js-alert.patch",
@@ -98,6 +104,12 @@
             "drupal/views": {
                 "https://drupal.org/node/1863358": "https://drupal.org/files/1863358-grid-format-striping-8.patch",
                 "https://drupal.org/node/2037469": "https://drupal.org/files/views-exposed-sorts-2037469-1.patch"
+            },
+            "drupal/workbench": {
+                "https://drupal.org/node/2075467": "https://drupal.org/files/issues/workbench_uuid-2075467-01.patch"
+            },
+            "drupal/workbench_moderation": {
+                "https://drupal.org/node/1836680": "https://drupal.org/files/workbench-moderation-solr-index-1836680-1.patch"
             },
             "moxiecode/plupload": {
                 "https://drupal.org/node/1903850": "https://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
@@ -283,6 +295,7 @@
         "drupal/mailsystem": "7.2.x-dev",
         "drupal/media": "7.2.x-dev",
         "drupal/memcache": "~7.1",
+        "drupal/menu_block": "7.2.x-dev",
         "drupal/message": "7.1.x-dev",
         "drupal/message_notify": "~7.2",
         "drupal/metatag": "~7.1",
@@ -349,6 +362,7 @@
         "drupal/workbench": "7.1.x-dev",
         "drupal/workbench_access": "7.1.x-dev",
         "drupal/workbench_moderation": "7.1.x-dev",
+        "drupal/xautoload": "~7.5",
         "drupal/xmlsitemap": "~7.2",
         "drupal/yellowed": "~7.1",
         "drupal/zeropoint": "~7.4",

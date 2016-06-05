@@ -71,6 +71,21 @@
         {
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip"
+                },
+                "name": "twbs/bootstrap",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "3.3.6"
+            },
+            "type": "package"
         }
     ],
     "require": {
@@ -83,6 +98,7 @@
         "drupal/blog": "8.2.x-dev",
         "drupal/bootstrap": "8.3.x-dev",
         "drupal/bootstrap_layouts": "~8.3",
+        "drupal/bootstrap_library": "8.1.x-dev",
         "drupal/calendar": "8.1.x-dev",
         "drupal/captcha": "8.1.x-dev",
         "drupal/cdn": "8.3.x-dev",
@@ -166,7 +182,8 @@
         "drupal/xmlsitemap": "8.1.x-dev",
         "drush/drush": "~8.0",
         "symfony/filesystem": "~2.7",
-        "symfony/finder": "~2.7"
+        "symfony/finder": "~2.7",
+        "twbs/bootstrap": "~3.3"
     },
     "require-dev": {
         "behat/mink": "~1.6",

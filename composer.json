@@ -89,6 +89,7 @@
         "drupal/console": "~0.10",
         "drupal/core": "~8.1",
         "drupal/ctools": "8.3.x-dev",
+        "drupal/default_content": "8.1.x-dev",
         "drupal/devel": "8.1.x-dev",
         "drupal/diff": "8.1.x-dev",
         "drupal/disqus": "8.1.x-dev",

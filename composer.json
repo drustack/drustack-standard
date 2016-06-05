@@ -53,7 +53,7 @@
             },
             "drupal/token": {
                 "https://drupal.org/node/2670120": "https://drupal.org/files/issues/2670120-menu-link-tokens.31_0.patch",
-                "https://drupal.org/node/2712091": "https://www.drupal.org/files/issues/taxonomy_parents_not_translated-2712091-2.patch",
+                "https://drupal.org/node/2712091": "https://drupal.org/files/issues/taxonomy_parents_not_translated-2712091-2.patch",
                 "https://drupal.org/node/2729727": "https://drupal.org/files/issues/token-translation_source_node_title-2729727-10.patch"
             }
         }

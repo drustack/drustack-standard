@@ -52,6 +52,7 @@
                 "https://drupal.org/node/2712797": "https://drupal.org/files/issues/sitemap-remove_version_from_info_yml-2712797-2.patch"
             },
             "drupal/token": {
+                "https://drupal.org/node/2670120": "https://drupal.org/files/issues/2670120-menu-link-tokens.31_0.patch",
                 "https://drupal.org/node/2729727": "https://drupal.org/files/issues/token-translation_source_node_title-2729727-10.patch"
             }
         }

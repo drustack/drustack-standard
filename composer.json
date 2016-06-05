@@ -148,6 +148,7 @@
         "drupal/pathologic": "8.1.x-dev",
         "drupal/php": "8.1.x-dev",
         "drupal/plupload": "8.1.x-dev",
+        "drupal/poll": "~8.1",
         "drupal/profile": "8.1.x-dev",
         "drupal/recaptcha": "8.2.x-dev",
         "drupal/redirect": "8.1.x-dev",

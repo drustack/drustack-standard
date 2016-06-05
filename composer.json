@@ -73,6 +73,10 @@
             "url": "https://packagist.drupal-composer.org"
         },
         {
+            "type": "vcs",
+            "url": "https://github.com/backupmigrate/backup_migrate_core"
+        },
+        {
             "package": {
                 "dist": {
                     "type": "zip",
@@ -110,6 +114,7 @@
         "drupal/acl": "8.1.x-dev",
         "drupal/address": "8.1.x-dev",
         "drupal/avatars": "8.1.x-dev",
+        "drupal/backup_migrate": "8.4.x-dev",
         "drupal/block_class": "8.1.x-dev",
         "drupal/blog": "8.2.x-dev",
         "drupal/bootstrap": "8.3.x-dev",

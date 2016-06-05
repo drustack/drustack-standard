@@ -86,9 +86,25 @@
                 "version": "3.3.6"
             },
             "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.9.zip"
+                },
+                "name": "ckeditor/codesnippet",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.5.9"
+            },
+            "type": "package"
         }
     ],
     "require": {
+        "ckeditor/codesnippet": "~4.5",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "8.1.x-dev",
@@ -103,6 +119,7 @@
         "drupal/captcha": "8.1.x-dev",
         "drupal/cdn": "8.3.x-dev",
         "drupal/checklistapi": "8.1.x-dev",
+        "drupal/codesnippet": "8.1.x-dev",
         "drupal/commerce": "8.2.x-dev",
         "drupal/commerce_migrate": "8.2.x-dev",
         "drupal/commerce_shipping": "8.2.x-dev",

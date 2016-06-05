@@ -172,6 +172,7 @@
         "drupal/recaptcha": "8.2.x-dev",
         "drupal/redirect": "8.1.x-dev",
         "drupal/restui": "~8.1",
+        "drupal/robotstxt": "8.1.x-dev",
         "drupal/rules": "8.3.x-dev",
         "drupal/search404": "8.1.x-dev",
         "drupal/search_api": "8.1.x-dev",

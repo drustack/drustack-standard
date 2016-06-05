@@ -14,6 +14,7 @@
 # Core's dependencies are managed with Composer.
 /composer.lock
 /vendor/
+/web/libraries
 /web/modules/contrib/
 /web/profiles
 /web/themes/contrib/
@@ -23,6 +24,9 @@
 /web/sites/*/services*.yml
 
 # Ignore paths that contain user-generated content.
+/files
+/private
+/tmp
 /web/sites/*/files
 /web/sites/*/private
 

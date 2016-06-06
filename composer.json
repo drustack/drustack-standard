@@ -281,6 +281,7 @@
         "drupal/ctools": "7.1.x-dev",
         "drupal/danland": "7.1.x-dev",
         "drupal/date": "~7.2",
+        "drupal/deploy": "7.2.x-dev",
         "drupal/devel": "7.1.x-dev",
         "drupal/devel_themer": "7.1.x-dev",
         "drupal/diff": "~7.3",

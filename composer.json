@@ -355,6 +355,7 @@
         "drupal/redirect": "7.1.x-dev",
         "drupal/responsive_bartik": "~7.1",
         "drupal/responsive_green": "~7.1",
+        "drupal/robotstxt": "7.1.x-dev",
         "drupal/rules": "~7.2",
         "drupal/schema": "~7.1",
         "drupal/search404": "~7.1",

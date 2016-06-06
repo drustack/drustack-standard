@@ -273,6 +273,7 @@
         "drupal/commerce_migrate": "7.1.x-dev",
         "drupal/commerce_shipping": "7.2.x-dev",
         "drupal/console": "~0.10",
+        "drupal/content_access": "7.1.x-dev",
         "drupal/context": "~7.3",
         "drupal/context_uuid": "7.1.x-dev",
         "drupal/corporate": "~7.1",

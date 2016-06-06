@@ -40,7 +40,8 @@
 # Core's dependencies are managed with Composer.
 /composer.lock
 /vendor/
-/web/sites/all/libraries
+/web/profiles/*/
+/web/sites/all/libraries/*/
 /web/sites/all/modules/contrib/
 /web/sites/all/themes/contrib/
 
@@ -48,6 +49,9 @@
 /web/sites/*/settings*.php
 
 # Ignore paths that contain user-generated content.
+/files
+/private
+/tmp
 /web/sites/*/files
 /web/sites/*/private
 

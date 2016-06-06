@@ -219,6 +219,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip"
+                },
+                "name": "twbs/bootstrap",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "3.3.6"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.9.zip"
                 },
                 "name": "ckeditor/codesnippet",
@@ -244,6 +259,7 @@
         "drupal/bean": "~7.1",
         "drupal/block_class": "7.2.x-dev",
         "drupal/bootstrap": "7.3.x-dev",
+        "drupal/bootstrap_library": "7.1.x-dev",
         "drupal/breakpoints": "~7.1",
         "drupal/business": "~7.1",
         "drupal/business_responsive_theme": "~7.2",
@@ -390,7 +406,8 @@
         "modernizr/modernizr": "~2.8",
         "moxiecode/plupload": "~1.5",
         "symfony/filesystem": "~2.7",
-        "symfony/finder": "~2.7"
+        "symfony/finder": "~2.7",
+        "twbs/bootstrap": "~3.3"
     },
     "require-dev": {
         "behat/mink": "~1.6",

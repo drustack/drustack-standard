@@ -141,6 +141,7 @@
         "drupal/drupalmoduleupgrader": "8.1.x-dev",
         "drupal/drustack": "8.1.x-dev",
         "drupal/ds": "~8.2",
+        "drupal/easy_breadcrumb": "8.1.x-dev",
         "drupal/eform": "8.1.x-dev",
         "drupal/email_registration": "8.1.x-dev",
         "drupal/entity": "8.1.x-dev",

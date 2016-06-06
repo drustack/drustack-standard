@@ -14,9 +14,9 @@
 # Core's dependencies are managed with Composer.
 /composer.lock
 /vendor/
-/web/libraries
+/web/libraries/*/
 /web/modules/contrib/
-/web/profiles
+/web/profiles/*/
 /web/themes/contrib/
 
 # Ignore configuration files that may contain sensitive information.

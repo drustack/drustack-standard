@@ -214,10 +214,26 @@
                 "version": "2.8.3"
             },
             "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.9.zip"
+                },
+                "name": "ckeditor/codesnippet",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.5.9"
+            },
+            "type": "package"
         }
     ],
     "require": {
         "ckeditor/ckeditor": "~4.5",
+        "ckeditor/codesnippet": "~4.5",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "7.1.x-dev",
@@ -362,6 +378,7 @@
         "drupal/workbench": "7.1.x-dev",
         "drupal/workbench_access": "7.1.x-dev",
         "drupal/workbench_moderation": "7.1.x-dev",
+        "drupal/wysiwyg_codesnippet": "7.1.x-dev",
         "drupal/xautoload": "~7.5",
         "drupal/xmlsitemap": "~7.2",
         "drupal/yellowed": "~7.1",

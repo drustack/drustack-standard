@@ -287,6 +287,7 @@
         "drupal/drustack": "7.43.x-dev",
         "drupal/ds": "~7.2",
         "drupal/ds_bootstrap_layouts": "~7.3",
+        "drupal/easy_breadcrumb": "~7.2",
         "drupal/elements": "~7.1",
         "drupal/email": "~7.1",
         "drupal/email_registration": "7.1.x-dev",

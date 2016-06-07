@@ -145,6 +145,7 @@
         "drupal/eform": "8.1.x-dev",
         "drupal/email_registration": "8.1.x-dev",
         "drupal/entity": "8.1.x-dev",
+        "drupal/entity_clone": "8.1.x-dev",
         "drupal/entityqueue": "8.1.x-dev",
         "drupal/examples": "8.1.x-dev",
         "drupal/features": "8.3.x-dev",

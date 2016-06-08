@@ -176,6 +176,7 @@
         "drupal/plupload": "8.1.x-dev",
         "drupal/poll": "~8.1",
         "drupal/profile": "8.1.x-dev",
+        "drupal/rdfui": "8.1.x-dev",
         "drupal/recaptcha": "8.2.x-dev",
         "drupal/redirect": "8.1.x-dev",
         "drupal/restui": "~8.1",

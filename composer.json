@@ -116,7 +116,6 @@
         "drupal/avatars": "8.1.x-dev",
         "drupal/backup_migrate": "8.4.x-dev",
         "drupal/block_class": "8.1.x-dev",
-        "drupal/blog": "8.2.x-dev",
         "drupal/bootstrap": "8.3.x-dev",
         "drupal/bootstrap_layouts": "~8.3",
         "drupal/bootstrap_library": "8.1.x-dev",

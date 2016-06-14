@@ -113,6 +113,7 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "8.1.x-dev",
         "drupal/address": "8.1.x-dev",
+        "drupal/authorization": "8.1.x-dev",
         "drupal/avatars": "8.1.x-dev",
         "drupal/backup_migrate": "8.4.x-dev",
         "drupal/block_class": "8.1.x-dev",

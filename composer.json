@@ -147,6 +147,7 @@
         "drupal/entity_clone": "8.1.x-dev",
         "drupal/entityqueue": "8.1.x-dev",
         "drupal/examples": "8.1.x-dev",
+        "drupal/externalauth": "8.1.x-dev",
         "drupal/features": "8.3.x-dev",
         "drupal/field_collection": "8.2.x-dev",
         "drupal/field_group": "8.1.x-dev",

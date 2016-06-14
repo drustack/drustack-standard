@@ -150,6 +150,7 @@
         "drupal/examples": "8.1.x-dev",
         "drupal/externalauth": "8.1.x-dev",
         "drupal/features": "8.3.x-dev",
+        "drupal/feeds": "8.3.x-dev",
         "drupal/field_collection": "8.2.x-dev",
         "drupal/field_group": "8.1.x-dev",
         "drupal/file_entity": "8.2.x-dev",

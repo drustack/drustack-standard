@@ -78,6 +78,9 @@
             "drupal/robotstxt": {
                 "https://drupal.org/node/2749737": "https://drupal.org/files/issues/robotstxt-remove_version_from_info_yml-2749737-2.patch"
             },
+            "drupal/search404": {
+                "https://drupal.org/node/2749741": "https://drupal.org/files/issues/search404-remove_version_from_info_yml-2749741-2.patch"
+            },
             "drupal/sitemap": {
                 "https://drupal.org/node/2712797": "https://drupal.org/files/issues/sitemap-remove_version_from_info_yml-2712797-2.patch"
             },

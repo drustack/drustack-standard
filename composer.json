@@ -102,6 +102,9 @@
             },
             "drupal/workbench": {
                 "https://drupal.org/node/2749755": "https://drupal.org/files/issues/workbench-remove_version_from_info_yml-2749755-2.patch"
+            },
+            "drupal/xmlrpc": {
+                "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"
             }
         }
     },

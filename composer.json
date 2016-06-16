@@ -90,6 +90,9 @@
             "drupal/sitemap": {
                 "https://drupal.org/node/2712797": "https://drupal.org/files/issues/sitemap-remove_version_from_info_yml-2712797-2.patch"
             },
+            "drupal/special_menu_items": {
+                "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
+            },
             "drupal/token": {
                 "https://drupal.org/node/2670120": "https://drupal.org/files/issues/2670120-menu-link-tokens.31_0.patch",
                 "https://drupal.org/node/2712091": "https://drupal.org/files/issues/taxonomy_parents_not_translated-2712091-2.patch",

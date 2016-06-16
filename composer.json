@@ -48,6 +48,9 @@
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch",
                 "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch"
             },
+            "drupal/disqus": {
+                "https://drupal.org/node/2749719": "https://drupal.org/files/issues/disqus-remove_version_from_info_yml-2749719-2.patch"
+            },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },

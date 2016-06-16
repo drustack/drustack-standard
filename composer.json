@@ -54,6 +54,9 @@
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
+            "drupal/feeds": {
+                "https://drupal.org/node/2749723": "https://drupal.org/files/issues/feeds-remove_version_from_info_yml-2749723-2.patch"
+            },
             "drupal/google_analytics": {
                 "https://drupal.org/node/2712793": "https://drupal.org/files/issues/google_analytics-remove_version_from_info_yml-2712793-1.patch"
             },

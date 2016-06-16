@@ -96,6 +96,9 @@
                 "https://drupal.org/node/2462305": "https://drupal.org/files/issues/2462305-17-port-grid-plugin-to-d8.patch",
                 "https://drupal.org/node/2720791": "https://drupal.org/files/issues/port_carousel_plugin_to-2720791-5.patch",
                 "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
+            },
+            "drupal/views_templates": {
+                "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
             }
         }
     },

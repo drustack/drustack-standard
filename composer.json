@@ -38,6 +38,9 @@
             ]
         },
         "patches": {
+            "drupal/bootstrap_library": {
+                "https://drupal.org/node/2749785": "https://www.drupal.org/files/issues/bootstrap_library_scss-remove_composer_manager-2749785-2.patch"
+            },
             "drupal/calendar": {
                 "https://drupal.org/node/2749711": "https://drupal.org/files/issues/calendar-remove_version_from_info_yml-2749711-2.patch"
             },

@@ -66,6 +66,9 @@
             "drupal/key_value": {
                 "https://drupal.org/node/2749729": "https://drupal.org/files/issues/key_value-remove_version_from_info_yml-2749729-2.patch"
             },
+            "drupal/panels": {
+                "https://drupal.org/node/2749875": "https://www.drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
+            },
             "drupal/profile": {
                 "https://drupal.org/node/2749735": "https://drupal.org/files/issues/profile-remove_version_from_info_yml-2749735-2.patch"
             },

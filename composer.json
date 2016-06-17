@@ -69,7 +69,7 @@
                 "https://drupal.org/node/1511112": "https://drupal.org/files/git_deploy-1511112_5.patch"
             },
             "drupal/linkchecker": {
-                "https://drupal.org/node/2060243": "https://drupal.org/files/issues/linkchecker-scan_node-2060243-32.patch"
+                "https://drupal.org/node/2060243": "https://www.drupal.org/files/issues/2060243-node-type-scanning.43.patch"
             },
             "drupal/media": {
                 "https://drupal.org/node/2093435": "https://drupal.org/files/issues/media-dialog-removal-2093435-27.patch"

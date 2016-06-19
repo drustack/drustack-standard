@@ -38,18 +38,54 @@
             ]
         },
         "patches": {
+            "drupal/bootstrap_library": {
+                "https://drupal.org/node/2749785": "https://www.drupal.org/files/issues/bootstrap_library_scss-remove_composer_manager-2749785-2.patch"
+            },
+            "drupal/calendar": {
+                "https://drupal.org/node/2749711": "https://drupal.org/files/issues/calendar-remove_version_from_info_yml-2749711-2.patch"
+            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch",
                 "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch"
             },
+            "drupal/eform": {
+                "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
+            },
+            "drupal/feeds": {
+                "https://drupal.org/node/2749723": "https://drupal.org/files/issues/feeds-remove_version_from_info_yml-2749723-2.patch"
+            },
+            "drupal/field_collection": {
+                "https://drupal.org/node/2749727": "https://drupal.org/files/issues/field_collection-remove_version_from_info_yml-2749727-2.patch"
+            },
             "drupal/google_analytics": {
                 "https://drupal.org/node/2712793": "https://drupal.org/files/issues/google_analytics-remove_version_from_info_yml-2712793-1.patch"
+            },
+            "drupal/key_value": {
+                "https://drupal.org/node/2749729": "https://drupal.org/files/issues/key_value-remove_version_from_info_yml-2749729-2.patch"
+            },
+            "drupal/panels": {
+                "https://drupal.org/node/2749875": "https://www.drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
+            },
+            "drupal/profile": {
+                "https://drupal.org/node/2749735": "https://drupal.org/files/issues/profile-remove_version_from_info_yml-2749735-2.patch"
+            },
+            "drupal/rdfui": {
+                "https://drupal.org/node/2749675": "https://drupal.org/files/issues/rdfui-remove_version_from_info_yml-2749675-2.patch"
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2712795": "https://drupal.org/files/issues/recaptcha-remove_version_from_info_yml-2712795-2.patch"
             },
+            "drupal/robotstxt": {
+                "https://drupal.org/node/2749737": "https://drupal.org/files/issues/robotstxt-remove_version_from_info_yml-2749737-2.patch"
+            },
+            "drupal/securelogin": {
+                "https://drupal.org/node/2749743": "https://drupal.org/files/issues/securelogin-remove_version_from_info_yml-2749743-2.patch"
+            },
             "drupal/sitemap": {
                 "https://drupal.org/node/2712797": "https://drupal.org/files/issues/sitemap-remove_version_from_info_yml-2712797-2.patch"
+            },
+            "drupal/special_menu_items": {
+                "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
             },
             "drupal/token": {
                 "https://drupal.org/node/2670120": "https://drupal.org/files/issues/2670120-menu-link-tokens.31_0.patch",
@@ -60,6 +96,15 @@
                 "https://drupal.org/node/2462305": "https://drupal.org/files/issues/2462305-17-port-grid-plugin-to-d8.patch",
                 "https://drupal.org/node/2720791": "https://drupal.org/files/issues/port_carousel_plugin_to-2720791-5.patch",
                 "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
+            },
+            "drupal/views_templates": {
+                "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
+            },
+            "drupal/workbench": {
+                "https://drupal.org/node/2749755": "https://drupal.org/files/issues/workbench-remove_version_from_info_yml-2749755-2.patch"
+            },
+            "drupal/xmlrpc": {
+                "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"
             }
         }
     },
@@ -152,7 +197,7 @@
         "drupal/externalauth": "8.1.x-dev",
         "drupal/features": "8.3.x-dev",
         "drupal/feeds": "8.3.x-dev",
-        "drupal/field_collection": "8.2.x-dev",
+        "drupal/field_collection": "8.1.x-dev",
         "drupal/field_group": "8.1.x-dev",
         "drupal/file_entity": "8.2.x-dev",
         "drupal/fontyourface": "8.3.x-dev",
@@ -214,6 +259,7 @@
         "drupal/xmlrpc": "8.1.x-dev",
         "drupal/xmlsitemap": "8.1.x-dev",
         "drush/drush": "~8.0",
+        "leafo/scssphp": "~0.6",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
         "twbs/bootstrap": "~3.3"

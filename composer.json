@@ -51,9 +51,6 @@
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
-            "drupal/feeds": {
-                "https://drupal.org/node/2749723": "https://drupal.org/files/issues/feeds-remove_version_from_info_yml-2749723-2.patch"
-            },
             "drupal/field_collection": {
                 "https://drupal.org/node/2749727": "https://drupal.org/files/issues/field_collection-remove_version_from_info_yml-2749727-2.patch"
             },

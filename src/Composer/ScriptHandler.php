@@ -7,6 +7,7 @@ use Composer\Script\Event;
 use Composer\Semver\Constraint\Constraint;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
+use Symfony\Component\Process\Process;
 
 /**
  * Provides static functions for composer script events.
@@ -290,12 +291,34 @@ EOT;
 
         if (in_array($package->getType(), ['drupal-profile', 'drupal-module', 'drupal-theme'])) {
             $project = preg_replace('/^.*\//', '', $package->getName());
-            $version = preg_replace('/^dev-(.*)/', '$1-dev', $package->getPrettyVersion());
+            $version = preg_replace(
+                ['/^dev-(.*)/', '/^([0-9]*)\.([0-9]*\.[0-9]*)/'],
+                ['$1-dev', '$1.x-$2'],
+                $package->getPrettyVersion()
+            );
             $core = preg_replace('/^([0-9]).*$/', '$1.x', $version);
             $datestamp = preg_match('/-dev$/', $version)
                 ? time()
                 : $package->getReleaseDate()->getTimestamp();
             $date = date('Y-m-d', $datestamp);
+
+            if ($package->isDev()) {
+                $branch = preg_replace('/^([0-9]*\.x-[0-9]*).*$/', '$1', $version);
+                $branch_preg = preg_quote($branch);
+
+                $process = new Process("cd $install_path; git describe --tags");
+                $process->run();
+                if ($process->isSuccessful()) {
+                    $last_tag = strtok($process->getOutput(), "\n");
+                    if (preg_match('/^(?<drupalversion>'.$branch_preg.'\.\d+(?:-[^-]+)?)(?<gitextra>-(?<numberofcommits>\d+-)g[0-9a-f]{7})?$/', $last_tag, $matches)) {
+                        if (isset($matches['gitextra'])) {
+                            $version = $matches['drupalversion'].'+'.$matches['numberofcommits'].'dev';
+                        } else {
+                            $version = $last_tag.'+0-dev';
+                        }
+                    }
+                }
+            }
 
             $finder = new Finder();
             $finder->in($install_path)

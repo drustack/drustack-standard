@@ -67,48 +67,11 @@ class ScriptHandler
         'symfony/yaml' => ['Tests'],
         'symfony-cmf/routing' => ['Test', 'Tests'],
         'twig/twig' => ['doc', 'ext', 'test'],
-        ];
+    ];
 
-    protected static function findPackageKey($package_name)
-    {
-        $package_key = null;
-        // In most cases the package name is already used as the array key.
-        if (isset(static::$packageToCleanup[$package_name])) {
-            $package_key = $package_name;
-        } else {
-            // Handle any mismatch in case between the package name and array key.
-            // For example, the array key 'mikey179/vfsStream' needs to be found
-            // when composer returns a package name of 'mikey179/vfsstream'.
-            foreach (static::$packageToCleanup as $key => $dirs) {
-                if (strtolower($key) === $package_name) {
-                    $package_key = $key;
-                    break;
-                }
-            }
-        }
-
-        return $package_key;
-    }
-
-    protected static function deleteRecursive($path)
-    {
-        if (is_file($path) || is_link($path)) {
-            return unlink($path);
-        }
-        $success = true;
-        $dir = dir($path);
-        while (($entry = $dir->read()) !== false) {
-            if ($entry == '.' || $entry == '..') {
-                continue;
-            }
-            $entry_path = $path.'/'.$entry;
-            $success = static::deleteRecursive($entry_path) && $success;
-        }
-        $dir->close();
-
-        return rmdir($path) && $success;
-    }
-
+    /**
+     * Add vendor classes to Composer's static classmap.
+     */
     public static function preAutoloadDump(Event $event)
     {
         // We need the root package so we can add our classmaps to its loader.
@@ -128,7 +91,7 @@ class ScriptHandler
                 'vendor/symfony/http-foundation/FileBag.php',
                 'vendor/symfony/http-foundation/ServerBag.php',
                 'vendor/symfony/http-foundation/HeaderBag.php',
-                ]);
+            ]);
             $package->setAutoload($autoload);
         }
         if ($repository->findPackage('symfony/http-kernel', $constraint)) {
@@ -137,11 +100,16 @@ class ScriptHandler
                 'vendor/symfony/http-kernel/HttpKernel.php',
                 'vendor/symfony/http-kernel/HttpKernelInterface.php',
                 'vendor/symfony/http-kernel/TerminableInterface.php',
-                ]);
+            ]);
             $package->setAutoload($autoload);
         }
     }
 
+    /**
+     * Ensures that .htaccess and web.config files are present in Composer root.
+     *
+     * @param \Composer\Script\Event $event
+     */
     public static function ensureHtaccess(Event $event)
     {
 
@@ -197,6 +165,11 @@ EOT;
         }
     }
 
+    /**
+     * Remove possibly problematic test files from vendored projects.
+     *
+     * @param \Composer\Installer\PackageEvent $event A PackageEvent object to get the configured composer vendor directories from.
+     */
     public static function vendorTestCodeCleanup(PackageEvent $event)
     {
         $vendor_dir = $event->getComposer()->getConfig()->get('vendor-dir');
@@ -243,6 +216,9 @@ EOT;
         }
     }
 
+    /**
+     * Install requirement files.
+     */
     public static function installRequirementsFile(Event $event)
     {
         $fs = new Filesystem();
@@ -279,6 +255,11 @@ EOT;
         }
     }
 
+    /**
+     * Inject metadata into all .info files for a given project.
+     *
+     * @see drush_pm_inject_info_file_metadata()
+     */
     public static function generateInfoMetadata(PackageEvent $event)
     {
         $op = $event->getOperation();
@@ -296,37 +277,153 @@ EOT;
                 ['$1-dev', '$1.x-$2'],
                 $package->getPrettyVersion()
             );
-            $core = preg_replace('/^([0-9]).*$/', '$1.x', $version);
+            $branch = preg_replace('/^([0-9]*\.x-[0-9]*).*$/', '$1', $version);
             $datestamp = preg_match('/-dev$/', $version)
                 ? time()
                 : $package->getReleaseDate()->getTimestamp();
-            $date = date('Y-m-d', $datestamp);
 
-            if ($package->isDev()) {
-                $branch = preg_replace('/^([0-9]*\.x-[0-9]*).*$/', '$1', $version);
-                $branch_preg = preg_quote($branch);
+            // Compute the rebuild version string for a project.
+            $version = static::computeRebuildVersion($install_path, $branch) ?: $version;
 
-                $process = new Process("cd $install_path; git describe --tags");
-                $process->run();
-                if ($process->isSuccessful()) {
-                    $last_tag = strtok($process->getOutput(), "\n");
-                    if (preg_match('/^(?<drupalversion>'.$branch_preg.'\.\d+(?:-[^-]+)?)(?<gitextra>-(?<numberofcommits>\d+-)g[0-9a-f]{7})?$/', $last_tag, $matches)) {
-                        if (isset($matches['gitextra'])) {
-                            $version = $matches['drupalversion'].'+'.$matches['numberofcommits'].'dev';
-                        } else {
-                            $version = $last_tag.'+0-dev';
-                        }
-                    }
-                }
-            }
-
+            // Generate version information for `.info` files in ini format.
             $finder = new Finder();
             $finder->in($install_path)
                 ->files()
                 ->name('*.info')
                 ->notContains('datestamp =');
             foreach ($finder as $file) {
-                $info = <<<METADATA
+                file_put_contents(
+                    $file->getRealpath(),
+                    static::generateInfoIniMetadata($version, $project, $datestamp),
+                    FILE_APPEND
+                );
+            }
+
+            // Generate version information for `.info.yml` files in YAML format.
+            $finder = new Finder();
+            $finder->in($install_path)
+                ->files()
+                ->name('*.info.yml')
+                ->notContains('datestamp :');
+            foreach ($finder as $file) {
+                file_put_contents(
+                    $file->getRealpath(),
+                    static::generateInfoYamlMetadata($version, $project, $datestamp),
+                    FILE_APPEND
+                );
+            }
+        }
+    }
+
+    /**
+     * Find the array key for a given package name with a case-insensitive search.
+     *
+     * @param string $package_name The package name from composer. This is always already lower case.
+     *
+     * @return null|string The string key, or NULL if none was found.
+     */
+    protected static function findPackageKey($package_name)
+    {
+        $package_key = null;
+        // In most cases the package name is already used as the array key.
+        if (isset(static::$packageToCleanup[$package_name])) {
+            $package_key = $package_name;
+        } else {
+            // Handle any mismatch in case between the package name and array key.
+            // For example, the array key 'mikey179/vfsStream' needs to be found
+            // when composer returns a package name of 'mikey179/vfsstream'.
+            foreach (static::$packageToCleanup as $key => $dirs) {
+                if (strtolower($key) === $package_name) {
+                    $package_key = $key;
+                    break;
+                }
+            }
+        }
+
+        return $package_key;
+    }
+
+    /**
+     * Helper method to remove directories and the files they contain.
+     *
+     * @param string $path The directory or file to remove. It must exist.
+     *
+     * @return bool TRUE on success or FALSE on failure.
+     */
+    protected static function deleteRecursive($path)
+    {
+        if (is_file($path) || is_link($path)) {
+            return unlink($path);
+        }
+        $success = true;
+        $dir = dir($path);
+        while (($entry = $dir->read()) !== false) {
+            if ($entry == '.' || $entry == '..') {
+                continue;
+            }
+            $entry_path = $path.'/'.$entry;
+            $success = static::deleteRecursive($entry_path) && $success;
+        }
+        $dir->close();
+
+        return rmdir($path) && $success;
+    }
+
+    /**
+     * Helper function to compute the rebulid version string for a project.
+     *
+     * This does some magic in Git to find the latest release tag along
+     * the branch we're packaging from, count the number of commits since
+     * then, and use that to construct this fancy alternate version string
+     * which is useful for the version-specific dependency support in Drupal
+     * 7 and higher.
+     *
+     * NOTE: A similar function lives in git_deploy and in the drupal.org
+     * packaging script (see DrupalorgProjectPackageRelease.class.php inside
+     * drupalorg/drupalorg_project/plugins/release_packager). Any changes to the
+     * actual logic in here should probably be reflected in the other places.
+     *
+     * @see drush_pm_git_drupalorg_compute_rebuild_version()
+     */
+    protected static function computeRebuildVersion($install_path, $branch)
+    {
+        $version = '';
+        $branch_preg = preg_quote($branch);
+
+        $process = new Process("cd $install_path; git describe --tags");
+        $process->run();
+        if ($process->isSuccessful()) {
+            $last_tag = strtok($process->getOutput(), "\n");
+            // Make sure the tag starts as Drupal formatted (for eg.
+            // 7.x-1.0-alpha1) and if we are on a proper branch (ie. not master)
+            // then it's on that branch.
+            if (preg_match('/^(?<drupalversion>'.$branch_preg.'\.\d+(?:-[^-]+)?)(?<gitextra>-(?<numberofcommits>\d+-)g[0-9a-f]{7})?$/', $last_tag, $matches)) {
+                if (isset($matches['gitextra'])) {
+                    // If we found additional git metadata (in particular, number of commits)
+                    // then use that info to build the version string.
+                    $version = $matches['drupalversion'].'+'.$matches['numberofcommits'].'dev';
+                } else {
+                    // Otherwise, the branch tip is pointing to the same commit as the
+                    // last tag on the branch, in which case we use the prior tag and
+                    // add '+0-dev' to indicate we're still on a -dev branch.
+                    $version = $last_tag.'+0-dev';
+                }
+            }
+        }
+
+        return $version;
+    }
+
+    /**
+     * Generate version information for `.info` files in ini format.
+     *
+     * @see _drush_pm_generate_info_ini_metadata()
+     */
+    protected static function generateInfoIniMetadata($version, $project, $datestamp)
+    {
+        $core = preg_replace('/^([0-9]).*$/', '$1.x', $version);
+        $date = date('Y-m-d', $datestamp);
+        $info = <<<METADATA
 
 ; Information add by composer on {$date}
 core = "{$core}"
@@ -334,16 +431,20 @@ project = "{$project}"
 version = "{$version}"
 datestamp = "{$datestamp}"
 METADATA;
-                file_put_contents($file->getRealpath(), $info, FILE_APPEND);
-            }
 
-            $finder = new Finder();
-            $finder->in($install_path)
-                ->files()
-                ->name('*.info.yml')
-                ->notContains('datestamp :');
-            foreach ($finder as $file) {
-                $info = <<<METADATA
+        return $info;
+    }
+
+    /**
+     * Generate version information for `.info.yml` files in YAML format.
+     *
+     * @see _drush_pm_generate_info_yaml_metadata()
+     */
+    protected static function generateInfoYamlMetadata($version, $project, $datestamp)
+    {
+        $core = preg_replace('/^([0-9]).*$/', '$1.x', $version);
+        $date = date('Y-m-d', $datestamp);
+        $info = <<<METADATA
 
 # Information add by composer on {$date}
 core: "{$core}"
@@ -351,8 +452,7 @@ project: "{$project}"
 version: "{$version}"
 datestamp: "{$datestamp}"
 METADATA;
-                file_put_contents($file->getRealpath(), $info, FILE_APPEND);
-            }
-        }
+
+        return $info;
     }
 }

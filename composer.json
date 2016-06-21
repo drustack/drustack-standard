@@ -82,7 +82,6 @@
                 "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
             },
             "drupal/token": {
-                "https://drupal.org/node/2670120": "https://drupal.org/files/issues/2670120-menu-link-tokens.31_0.patch",
                 "https://drupal.org/node/2712091": "https://drupal.org/files/issues/taxonomy_parents_not_translated-2712091-2.patch",
                 "https://drupal.org/node/2729727": "https://drupal.org/files/issues/token-translation_source_node_title-2729727-10.patch"
             },
@@ -93,9 +92,6 @@
             },
             "drupal/views_templates": {
                 "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
-            },
-            "drupal/workbench": {
-                "https://drupal.org/node/2749755": "https://drupal.org/files/issues/workbench-remove_version_from_info_yml-2749755-2.patch"
             },
             "drupal/xmlrpc": {
                 "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"

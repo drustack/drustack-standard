@@ -63,9 +63,6 @@
             "drupal/panels": {
                 "https://drupal.org/node/2749875": "https://www.drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
             },
-            "drupal/rdfui": {
-                "https://drupal.org/node/2749675": "https://drupal.org/files/issues/rdfui-remove_version_from_info_yml-2749675-2.patch"
-            },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2712795": "https://drupal.org/files/issues/recaptcha-remove_version_from_info_yml-2712795-2.patch"
             },

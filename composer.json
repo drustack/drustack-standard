@@ -41,9 +41,6 @@
             "drupal/bootstrap_library": {
                 "https://drupal.org/node/2749785": "https://www.drupal.org/files/issues/bootstrap_library_scss-remove_composer_manager-2749785-2.patch"
             },
-            "drupal/calendar": {
-                "https://drupal.org/node/2749711": "https://drupal.org/files/issues/calendar-remove_version_from_info_yml-2749711-2.patch"
-            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch",
                 "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch"

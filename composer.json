@@ -60,12 +60,6 @@
             "drupal/panels": {
                 "https://drupal.org/node/2749875": "https://www.drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
             },
-            "drupal/pathauto": {
-                "https://drupal.org/node/2754083": "https://www.drupal.org/files/issues/pathauto-move_pathauto_settings_yml_to_optional-2754083-2.patch"
-            },
-            "drupal/php": {
-                "https://drupal.org/node/2754085": "https://www.drupal.org/files/issues/php-move_filter_format_php_code_yml_to_optional-2754085-2.patch"
-            },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2712795": "https://drupal.org/files/issues/recaptcha-remove_version_from_info_yml-2712795-2.patch"
             },

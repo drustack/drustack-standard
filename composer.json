@@ -77,9 +77,6 @@
             "drupal/menu_block": {
                 "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch"
             },
-            "drupal/message": {
-                "https://drupal.org/node/2051751": "https://drupal.org/files/message-primary_nullable-2051751-7.patch"
-            },
             "drupal/oauth2_server": {
                 "https://drupal.org/node/2167733": "https://drupal.org/files/issues/oauth2_server-drush_make_master-2167733-6.patch"
             },

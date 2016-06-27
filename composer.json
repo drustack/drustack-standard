@@ -96,7 +96,6 @@
             },
             "drupal/uuid": {
                 "https://drupal.org/node/2074621": "https://drupal.org/files/uuid_services_field_collection_revisions.patch",
-                "https://drupal.org/node/2121031": "https://drupal.org/files/issues/uuid-empty_file-2121031-1.patch",
                 "https://drupal.org/node/2145567": "https://drupal.org/files/issues/uuid_ctools_context-2145567-10.patch",
                 "https://drupal.org/node/2279081": "https://drupal.org/files/issues/term_access_uuid-2279081-03.patch",
                 "https://drupal.org/node/2391701": "https://drupal.org/files/issues/typeo_in_uuid_services_menu_description-2391701-02.patch"

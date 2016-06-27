@@ -39,14 +39,14 @@
         },
         "patches": {
             "drupal/bootstrap_library": {
-                "https://drupal.org/node/2749785": "https://www.drupal.org/files/issues/bootstrap_library_scss-remove_composer_manager-2749785-2.patch"
+                "https://drupal.org/node/2749785": "https://drupal.org/files/issues/bootstrap_library_scss-remove_composer_manager-2749785-2.patch"
             },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch",
                 "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch",
-                "https://drupal.org/node/2755739": "https://www.drupal.org/files/issues/drupal-8.2.x-composer_php_simplify_ensure_htaccess-2755739-3.patch",
-                "https://drupal.org/node/2755741": "https://www.drupal.org/files/issues/composer_php_tidy_by_coder-2755741-6.patch",
-                "https://drupal.org/node/2755745": "https://www.drupal.org/files/issues/drupal-8.2.x-composer_php_package_meta_data-2755745-12.patch"
+                "https://drupal.org/node/2755739": "https://drupal.org/files/issues/drupal-8.2.x-composer_php_simplify_ensure_htaccess-2755739-3.patch",
+                "https://drupal.org/node/2755741": "https://drupal.org/files/issues/composer_php_tidy_by_coder-2755741-6.patch",
+                "https://drupal.org/node/2755745": "https://drupal.org/files/issues/drupal-8.2.x-composer_php_package_meta_data-2755745-14.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
@@ -55,7 +55,7 @@
                 "https://drupal.org/node/2712793": "https://drupal.org/files/issues/google_analytics-remove_version_from_info_yml-2712793-1.patch"
             },
             "drupal/panels": {
-                "https://drupal.org/node/2749875": "https://www.drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
+                "https://drupal.org/node/2749875": "https://drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2712795": "https://drupal.org/files/issues/recaptcha-remove_version_from_info_yml-2712795-2.patch"

@@ -38,18 +38,51 @@
             ]
         },
         "patches": {
+            "drupal/bootstrap_library": {
+                "https://drupal.org/node/2749785": "https://drupal.org/files/issues/bootstrap_library_scss-remove_composer_manager-2749785-2.patch"
+            },
             "drupal/core": {
-                "https://www.drupal.org/node/2619250": "https://www.drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-17.patch",
-                "https://www.drupal.org/node/2682373": "https://www.drupal.org/files/issues/event-dispatcher-2682373-16.patch"
+                "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch",
+                "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch",
+                "https://drupal.org/node/2755739": "https://drupal.org/files/issues/drupal-8.2.x-composer_php_simplify_ensure_htaccess-2755739-3.patch",
+                "https://drupal.org/node/2755741": "https://drupal.org/files/issues/composer_php_tidy_by_coder-2755741-6.patch",
+                "https://drupal.org/node/2755745": "https://drupal.org/files/issues/drupal-composer_php_package_meta_data-2755745-25-template-do-not-test.patch"
+            },
+            "drupal/eform": {
+                "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
             "drupal/google_analytics": {
-                "https://www.drupal.org/node/2712793": "https://drupal.org/files/issues/google_analytics-remove_version_from_info_yml-2712793-1.patch"
+                "https://drupal.org/node/2712793": "https://drupal.org/files/issues/google_analytics-remove_version_from_info_yml-2712793-1.patch"
+            },
+            "drupal/panels": {
+                "https://drupal.org/node/2749875": "https://drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
             },
             "drupal/recaptcha": {
-                "https://www.drupal.org/node/2712795": "https://drupal.org/files/issues/recaptcha-remove_version_from_info_yml-2712795-2.patch"
+                "https://drupal.org/node/2712795": "https://drupal.org/files/issues/recaptcha-remove_version_from_info_yml-2712795-2.patch"
+            },
+            "drupal/robotstxt": {
+                "https://drupal.org/node/2749737": "https://drupal.org/files/issues/robotstxt-remove_version_from_info_yml-2749737-2.patch"
             },
             "drupal/sitemap": {
-                "https://www.drupal.org/node/2712797": "https://drupal.org/files/issues/sitemap-remove_version_from_info_yml-2712797-2.patch"
+                "https://drupal.org/node/2712797": "https://drupal.org/files/issues/sitemap-remove_version_from_info_yml-2712797-2.patch"
+            },
+            "drupal/special_menu_items": {
+                "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
+            },
+            "drupal/token": {
+                "https://drupal.org/node/2712091": "https://drupal.org/files/issues/taxonomy_parents_not_translated-2712091-2.patch",
+                "https://drupal.org/node/2729727": "https://drupal.org/files/issues/token-translation_source_node_title-2729727-10.patch"
+            },
+            "drupal/views_bootstrap": {
+                "https://drupal.org/node/2462305": "https://drupal.org/files/issues/2462305-17-port-grid-plugin-to-d8.patch",
+                "https://drupal.org/node/2720791": "https://drupal.org/files/issues/port_carousel_plugin_to-2720791-5.patch",
+                "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
+            },
+            "drupal/views_templates": {
+                "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
+            },
+            "drupal/xmlrpc": {
+                "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"
             }
         }
     },
@@ -61,49 +94,97 @@
         {
             "type": "composer",
             "url": "https://packagist.drupal-composer.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/backupmigrate/backup_migrate_core"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip"
+                },
+                "name": "twbs/bootstrap",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "3.3.6"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.9.zip"
+                },
+                "name": "ckeditor/codesnippet",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.5.9"
+            },
+            "type": "package"
         }
     ],
     "require": {
+        "ckeditor/codesnippet": "~4.5",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "8.1.x-dev",
         "drupal/address": "8.1.x-dev",
+        "drupal/authorization": "8.1.x-dev",
         "drupal/avatars": "8.1.x-dev",
+        "drupal/backup_migrate": "8.4.x-dev",
         "drupal/block_class": "8.1.x-dev",
-        "drupal/blog": "8.2.x-dev",
         "drupal/bootstrap": "8.3.x-dev",
         "drupal/bootstrap_layouts": "~8.3",
+        "drupal/bootstrap_library": "8.1.x-dev",
         "drupal/calendar": "8.1.x-dev",
         "drupal/captcha": "8.1.x-dev",
         "drupal/cdn": "8.3.x-dev",
         "drupal/checklistapi": "8.1.x-dev",
+        "drupal/codesnippet": "8.1.x-dev",
         "drupal/commerce": "8.2.x-dev",
         "drupal/commerce_migrate": "8.2.x-dev",
         "drupal/commerce_shipping": "8.2.x-dev",
         "drupal/config_update": "~8.1",
         "drupal/console": "~0.10",
+        "drupal/content_access": "8.1.x-dev",
         "drupal/core": "~8.1",
+        "drupal/csv_serialization": "8.1.x-dev",
         "drupal/ctools": "8.3.x-dev",
+        "drupal/default_content": "8.1.x-dev",
+        "drupal/deploy": "8.1.x-dev",
         "drupal/devel": "8.1.x-dev",
         "drupal/diff": "8.1.x-dev",
         "drupal/disqus": "8.1.x-dev",
         "drupal/drupalmoduleupgrader": "8.1.x-dev",
         "drupal/drustack": "8.1.x-dev",
         "drupal/ds": "~8.2",
+        "drupal/easy_breadcrumb": "8.1.x-dev",
         "drupal/eform": "8.1.x-dev",
         "drupal/email_registration": "8.1.x-dev",
         "drupal/entity": "8.1.x-dev",
+        "drupal/entity_clone": "8.1.x-dev",
         "drupal/entityqueue": "8.1.x-dev",
         "drupal/examples": "8.1.x-dev",
+        "drupal/externalauth": "8.1.x-dev",
         "drupal/features": "8.3.x-dev",
-        "drupal/field_collection": "8.2.x-dev",
+        "drupal/feeds": "8.3.x-dev",
+        "drupal/field_collection": "8.1.x-dev",
         "drupal/field_group": "8.1.x-dev",
+        "drupal/file_entity": "8.2.x-dev",
         "drupal/fontyourface": "8.3.x-dev",
         "drupal/git_deploy": "8.2.x-dev",
         "drupal/google_analytics": "8.2.x-dev",
         "drupal/image_effects": "8.1.x-dev",
         "drupal/imce": "~8.1",
         "drupal/inline_entity_form": "8.1.x-dev",
+        "drupal/key_value": "8.1.x-dev",
         "drupal/l10n_client": "8.1.x-dev",
         "drupal/layout_plugin": "8.1.x-dev",
         "drupal/ldap": "8.3.x-dev",
@@ -120,10 +201,13 @@
         "drupal/pathologic": "8.1.x-dev",
         "drupal/php": "8.1.x-dev",
         "drupal/plupload": "8.1.x-dev",
+        "drupal/poll": "~8.1",
         "drupal/profile": "8.1.x-dev",
+        "drupal/rdfui": "8.1.x-dev",
         "drupal/recaptcha": "8.2.x-dev",
         "drupal/redirect": "8.1.x-dev",
         "drupal/restui": "~8.1",
+        "drupal/robotstxt": "8.1.x-dev",
         "drupal/rules": "8.3.x-dev",
         "drupal/search404": "8.1.x-dev",
         "drupal/search_api": "8.1.x-dev",
@@ -153,8 +237,10 @@
         "drupal/xmlrpc": "8.1.x-dev",
         "drupal/xmlsitemap": "8.1.x-dev",
         "drush/drush": "~8.0",
+        "leafo/scssphp": "~0.6",
         "symfony/filesystem": "~2.7",
-        "symfony/finder": "~2.7"
+        "symfony/finder": "~2.7",
+        "twbs/bootstrap": "~3.3"
     },
     "require-dev": {
         "behat/mink": "~1.6",

@@ -55,7 +55,7 @@
                 "https://drupal.org/node/2712793": "https://drupal.org/files/issues/google_analytics-remove_version_from_info_yml-2712793-1.patch"
             },
             "drupal/panels": {
-                "https://drupal.org/node/2749875": "https://drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-2.patch"
+                "https://drupal.org/node/2749875": "https://drupal.org/files/issues/panels-move_version_depedency_to_composer_json-2749875-3.patch"
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2712795": "https://drupal.org/files/issues/recaptcha-remove_version_from_info_yml-2712795-2.patch"

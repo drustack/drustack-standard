@@ -16,6 +16,15 @@ use Symfony\Component\Process\Process;
  */
 class ScriptHandler
 {
+    protected static $packageToCleanup = [
+        'behat/mink' => '/(tests|driver-testsuite)/',
+        'egulias/email-validator' => '/(tests|documentation)/',
+        // @see \Drupal\Tests\Component\EventDispatcher\ContainerAwareEventDispatcherTest
+        'symfony/event-dispatcher' => '/(?!.*)/',
+        'symfony/validator' => '/(Tests|Resources)/',
+        'twig/twig' => '/(test|doc|ext)/',
+    ];
+
     /**
      * Add vendor classes to Composer's static classmap.
      */
@@ -135,14 +144,17 @@ EOT;
 
         $paths = [];
         if (!preg_match('/^drupal-(core|profile|module|theme)$/', $package->getType())) {
-            foreach (['/test[s]?$/i', '/doc[s]?$/i', '/example[s]?$/i'] as $path) {
-                $finder = new Finder();
-                $finder->in($install_path)
-                    ->directories()
-                    ->path($path);
-                foreach ($finder as $file) {
-                    $paths[] = $file->getRealpath();
-                }
+            $path = isset(static::$packageToCleanup[$package->getName()])
+                ? static::$packageToCleanup[$package->getName()]
+                : '/(test|doc|example)[s]?$/i';
+
+            $finder = new Finder();
+            $finder->in($install_path)
+                ->directories()
+                ->path($path);
+
+            foreach ($finder as $file) {
+                $paths[] = $file->getRealpath();
             }
         }
 

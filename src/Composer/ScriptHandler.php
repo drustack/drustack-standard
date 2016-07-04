@@ -17,12 +17,12 @@ use Symfony\Component\Process\Process;
 class ScriptHandler
 {
     protected static $packageToCleanup = [
-        'behat/mink' => '/(tests|driver-testsuite)/',
-        'egulias/email-validator' => '/(tests|documentation)/',
+        'behat/mink' => '/(driver-testsuite|tests)$/',
+        'egulias/email-validator' => '/(documentation|tests)$/',
         // @see \Drupal\Tests\Component\EventDispatcher\ContainerAwareEventDispatcherTest
         'symfony/event-dispatcher' => '/(?!.*)/',
-        'symfony/validator' => '/(Tests|Resources)/',
-        'twig/twig' => '/(test|doc|ext)/',
+        'symfony/validator' => '/(Tests|Resources)$/',
+        'twig/twig' => '/(doc|ext|test)$/',
     ];
 
     /**
@@ -68,7 +68,6 @@ class ScriptHandler
      */
     public static function ensureHtaccess(Event $event)
     {
-
         // The current working directory for composer scripts is where you run
         // composer from.
         $vendor_dir = $event->getComposer()->getConfig()->get('vendor-dir');
@@ -184,7 +183,7 @@ EOT;
         $fs = new Filesystem();
         $root = getcwd().'/web';
 
-        // Prepare the settings file for installation
+        // Prepare the settings file for installation.
         if ($fs->exists($root.'/sites/default/default.settings.php')
             && !$fs->exists($root.'/sites/default/settings.php')) {
             $fs->copy(
@@ -195,7 +194,7 @@ EOT;
             $event->getIO()->write('Create a sites/default/settings.php file with chmod 0666');
         }
 
-        // Prepare the services file for installation
+        // Prepare the services file for installation.
         if ($fs->exists($root.'/sites/default/default.services.yml')
             && !$fs->exists($root.'/sites/default/services.yml')) {
             $fs->copy(
@@ -206,7 +205,7 @@ EOT;
             $event->getIO()->write('Create a sites/default/services.yml file with chmod 0666');
         }
 
-        // Create the files directory with chmod 0777
+        // Create the files directory with chmod 0777.
         if (!$fs->exists($root.'/sites/default/files')) {
             $oldmask = umask(0);
             $fs->mkdir($root.'/sites/default/files', 0777);

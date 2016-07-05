@@ -229,7 +229,7 @@ EOT;
             : $op->getPackage();
         $install_path = $installation_manager->getInstallPath($package);
 
-        if (preg_match('/^drupal-(core|profile|module|theme)$/', $package->getType())) {
+        if (preg_match('/^drupal-(profile|module|theme)$/', $package->getType())) {
             $project = preg_replace('/^.*\//', '', $package->getName());
             $version = preg_replace(
                 ['/^dev-(.*)/', '/^([0-9]*)\.([0-9]*\.[0-9]*)/'],

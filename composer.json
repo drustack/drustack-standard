@@ -152,7 +152,7 @@
         "drupal/commerce_migrate": "8.2.x-dev",
         "drupal/commerce_shipping": "8.2.x-dev",
         "drupal/config_update": "~8.1",
-        "drupal/console": "~0.10",
+        "drupal/console": "~1.0",
         "drupal/content_access": "8.1.x-dev",
         "drupal/core": "~8.1",
         "drupal/csv_serialization": "8.1.x-dev",
@@ -271,6 +271,12 @@
         ],
         "pre-autoload-dump": [
             "DruStack\\Standard\\Composer\\ScriptHandler::preAutoloadDump"
+        ],
+        "pre-install-cmd": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::checkComposerVersion"
         ]
     },
     "type": "project"

@@ -267,7 +267,7 @@
         "drupal/commerce": "7.1.x-dev",
         "drupal/commerce_migrate": "7.1.x-dev",
         "drupal/commerce_shipping": "7.2.x-dev",
-        "drupal/console": "~0.10",
+        "drupal/console": "~1.0",
         "drupal/content_access": "7.1.x-dev",
         "drupal/context": "~7.3",
         "drupal/context_uuid": "7.1.x-dev",
@@ -409,17 +409,21 @@
         "twbs/bootstrap": "~3.3"
     },
     "require-dev": {
-        "behat/mink": "~1.6",
+        "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
         "jcalderonzumba/gastonjs": "~1.1",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
         "phpunit/phpunit": "~4.8",
-        "symfony/css-selector": "~2.7"
+        "symfony/css-selector": "~2.8"
     },
     "scripts": {
-        "post-autoload-dump": "DruStack\\Standard\\Composer\\ScriptHandler::ensureHtaccess",
-        "post-install-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
+        "post-autoload-dump": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::ensureHtaccess"
+        ],
+        "post-install-cmd": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
         "post-package-install": [
             "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
             "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
@@ -428,8 +432,18 @@
             "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
             "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
         ],
-        "post-update-cmd": "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile",
-        "pre-autoload-dump": "DruStack\\Standard\\Composer\\ScriptHandler::preAutoloadDump"
+        "post-update-cmd": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
+        ],
+        "pre-autoload-dump": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::preAutoloadDump"
+        ],
+        "pre-install-cmd": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DruStack\\Standard\\Composer\\ScriptHandler::checkComposerVersion"
+        ]
     },
     "type": "project"
 }

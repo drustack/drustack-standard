@@ -77,7 +77,7 @@
                 "https://drupal.org/node/2729727": "https://drupal.org/files/issues/token-translation_source_node_title-2729727-10.patch"
             },
             "drupal/views_bootstrap": {
-                "https://drupal.org/node/2462305": "https://drupal.org/files/issues/2462305-17-port-grid-plugin-to-d8.patch",
+                "https://drupal.org/node/2462305": "https://drupal.org/files/issues/views_bootstrap-port_grid_plugin_to_d8-2462305-20.patch",
                 "https://drupal.org/node/2720791": "https://drupal.org/files/issues/port_carousel_plugin_to-2720791-5.patch",
                 "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
             },

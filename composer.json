@@ -48,9 +48,6 @@
                 "https://drupal.org/node/2755741": "https://drupal.org/files/issues/composer_php_tidy_by_coder-2755741-6.patch",
                 "https://drupal.org/node/2755745": "https://drupal.org/files/issues/drupal-composer_php_package_meta_data-2755745-25-template-do-not-test.patch"
             },
-            "drupal/easy_breadcrumb": {
-                "https://drupal.org/node/2763397": "https://drupal.org/files/issues/easy_breadcrumb-remove_version_from_info_yml-2763397-2.patch"
-            },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },

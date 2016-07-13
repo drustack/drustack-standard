@@ -39,7 +39,7 @@
         },
         "patches": {
             "drupal/bootstrap": {
-                "https://drupal.org/node/2723847": "https://drupal.org/files/issues/bootstrap-input_group_issues-2723847-2-8.patch"
+                "https://drupal.org/node/2723847": "https://drupal.org/files/issues/bootstrap-input_group_issues-2723847-12.patch"
             },
             "drupal/bootstrap_library": {
                 "https://drupal.org/node/2749785": "https://drupal.org/files/issues/bootstrap_library_scss-remove_composer_manager-2749785-2.patch"

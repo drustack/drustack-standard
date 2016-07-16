@@ -1,9 +1,15 @@
 <?php
 
+/**
+ * @file
+ * Contains \DruStack\Standard\Composer\ScriptHandler.
+ */
+
 namespace DruStack\Standard\Composer;
 
 use Composer\Installer\PackageEvent;
 use Composer\Script\Event;
+use Composer\Semver\Comparator;
 use Composer\Semver\Constraint\Constraint;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
@@ -17,57 +23,57 @@ use Symfony\Component\Process\Process;
 class ScriptHandler
 {
     protected static $packageToCleanup = [
-        'behat/mink' => ['tests', 'driver-testsuite'],
-        'behat/mink-browserkit-driver' => ['tests'],
-        'behat/mink-goutte-driver' => ['tests'],
-        'doctrine/cache' => ['tests'],
-        'doctrine/collections' => ['tests'],
-        'doctrine/common' => ['tests'],
-        'doctrine/inflector' => ['tests'],
-        'doctrine/instantiator' => ['tests'],
-        'egulias/email-validator' => ['documentation', 'tests'],
-        'fabpot/goutte' => ['Goutte/Tests'],
-        'guzzlehttp/promises' => ['tests'],
-        'guzzlehttp/psr7' => ['tests'],
-        'jcalderonzumba/gastonjs' => ['docs', 'examples', 'tests'],
-        'jcalderonzumba/mink-phantomjs-driver' => ['tests'],
-        'masterminds/html5' => ['test'],
-        'mikey179/vfsStream' => ['src/test'],
-        'paragonie/random_compat' => ['tests'],
-        'phpdocumentor/reflection-docblock' => ['tests'],
-        'phpunit/php-code-coverage' => ['tests'],
-        'phpunit/php-timer' => ['tests'],
-        'phpunit/php-token-stream' => ['tests'],
-        'phpunit/phpunit' => ['tests'],
-        'phpunit/php-mock-objects' => ['tests'],
-        'sebastian/comparator' => ['tests'],
-        'sebastian/diff' => ['tests'],
-        'sebastian/environment' => ['tests'],
-        'sebastian/exporter' => ['tests'],
-        'sebastian/global-state' => ['tests'],
-        'sebastian/recursion-context' => ['tests'],
-        'stack/builder' => ['tests'],
-        'symfony/browser-kit' => ['Tests'],
-        'symfony/class-loader' => ['Tests'],
-        'symfony/console' => ['Tests'],
-        'symfony/css-selector' => ['Tests'],
-        'symfony/debug' => ['Tests'],
-        'symfony/dependency-injection' => ['Tests'],
-        'symfony/dom-crawler' => ['Tests'],
+        'behat/mink' => '/(tests|driver-testsuite)$/',
+        'behat/mink-browserkit-driver' => '/(tests)$/',
+        'behat/mink-goutte-driver' => '/(tests)$/',
+        'doctrine/cache' => '/(tests)$/',
+        'doctrine/collections' => '/(tests)$/',
+        'doctrine/common' => '/(tests)$/',
+        'doctrine/inflector' => '/(tests)$/',
+        'doctrine/instantiator' => '/(tests)$/',
+        'egulias/email-validator' => '/(documentation|tests)$/',
+        'fabpot/goutte' => '/(Goutte\/Tests)$/',
+        'guzzlehttp/promises' => '/(tests)$/',
+        'guzzlehttp/psr7' => '/(tests)$/',
+        'jcalderonzumba/gastonjs' => '/(docs|examples|tests)$/',
+        'jcalderonzumba/mink-phantomjs-driver' => '/(tests)$/',
+        'masterminds/html5' => '/(test)$/',
+        'mikey179/vfsStream' => '/(src\/test)$/',
+        'paragonie/random_compat' => '/(tests)$/',
+        'phpdocumentor/reflection-docblock' => '/(tests)$/',
+        'phpunit/php-code-coverage' => '/(tests)$/',
+        'phpunit/php-mock-objects' => '/(tests)$/',
+        'phpunit/php-timer' => '/(tests)$/',
+        'phpunit/php-token-stream' => '/(tests)$/',
+        'phpunit/phpunit' => '/(tests)$/',
+        'sebastian/comparator' => '/(tests)$/',
+        'sebastian/diff' => '/(tests)$/',
+        'sebastian/environment' => '/(tests)$/',
+        'sebastian/exporter' => '/(tests)$/',
+        'sebastian/global-state' => '/(tests)$/',
+        'sebastian/recursion-context' => '/(tests)$/',
+        'stack/builder' => '/(tests)$/',
+        'symfony-cmf/routing' => '/(Test|Tests)$/',
+        'symfony/browser-kit' => '/(Tests)$/',
+        'symfony/class-loader' => '/(Tests)$/',
+        'symfony/console' => '/(Tests)$/',
+        'symfony/css-selector' => '/(Tests)$/',
+        'symfony/debug' => '/(Tests)$/',
+        'symfony/dependency-injection' => '/(Tests)$/',
+        'symfony/dom-crawler' => '/(Tests)$/',
         // @see \Drupal\Tests\Component\EventDispatcher\ContainerAwareEventDispatcherTest
-        // 'symfony/event-dispatcher' => ['Tests'],
-        'symfony/http-foundation' => ['Tests'],
-        'symfony/http-kernel' => ['Tests'],
-        'symfony/process' => ['Tests'],
-        'symfony/psr-http-message-bridge' => ['Tests'],
-        'symfony/routing' => ['Tests'],
-        'symfony/serializer' => ['Tests'],
-        'symfony/translation' => ['Tests'],
-        'symfony/validator' => ['Tests', 'Resources'],
-        'symfony/yaml' => ['Tests'],
-        'symfony-cmf/routing' => ['Test', 'Tests'],
-        'twig/twig' => ['doc', 'ext', 'test'],
-        ];
+        // 'symfony/event-dispatcher' => '/(Tests)$/',
+        'symfony/http-foundation' => '/(Tests)$/',
+        'symfony/http-kernel' => '/(Tests)$/',
+        'symfony/process' => '/(Tests)$/',
+        'symfony/psr-http-message-bridge' => '/(Tests)$/',
+        'symfony/routing' => '/(Tests)$/',
+        'symfony/serializer' => '/(Tests)$/',
+        'symfony/translation' => '/(Tests)$/',
+        'symfony/validator' => '/(Tests|Resources)$/',
+        'symfony/yaml' => '/(Tests)$/',
+        'twig/twig' => '/(doc|ext|test)$/',
+    ];
 
     /**
      * Add vendor classes to Composer's static classmap.
@@ -91,7 +97,7 @@ class ScriptHandler
                 'vendor/symfony/http-foundation/FileBag.php',
                 'vendor/symfony/http-foundation/ServerBag.php',
                 'vendor/symfony/http-foundation/HeaderBag.php',
-                ]);
+            ]);
             $package->setAutoload($autoload);
         }
         if ($repository->findPackage('symfony/http-kernel', $constraint)) {
@@ -100,7 +106,7 @@ class ScriptHandler
                 'vendor/symfony/http-kernel/HttpKernel.php',
                 'vendor/symfony/http-kernel/HttpKernelInterface.php',
                 'vendor/symfony/http-kernel/TerminableInterface.php',
-                ]);
+            ]);
             $package->setAutoload($autoload);
         }
     }
@@ -112,7 +118,6 @@ class ScriptHandler
      */
     public static function ensureHtaccess(Event $event)
     {
-
         // The current working directory for composer scripts is where you run
         // composer from.
         $vendor_dir = $event->getComposer()->getConfig()->get('vendor-dir');
@@ -172,47 +177,50 @@ EOT;
      */
     public static function vendorTestCodeCleanup(PackageEvent $event)
     {
-        $vendor_dir = $event->getComposer()->getConfig()->get('vendor-dir');
         $io = $event->getIO();
         $op = $event->getOperation();
-        if ($op->getJobType() == 'update') {
-            $package = $op->getTargetPackage();
-        } else {
-            $package = $op->getPackage();
-        }
-        $package_key = static::findPackageKey($package->getName());
+        $installation_manager = $event->getComposer()->getInstallationManager();
+
+        $package = $op->getJobType() == 'update'
+            ? $op->getTargetPackage()
+            : $op->getPackage();
+        $install_path = $installation_manager->getInstallPath($package);
+
         $message = sprintf('    Processing <comment>%s</comment>', $package->getPrettyName());
         if ($io->isVeryVerbose()) {
             $io->write($message);
         }
-        if ($package_key) {
-            foreach (static::$packageToCleanup[$package_key] as $path) {
-                $dir_to_remove = $vendor_dir.'/'.$package_key.'/'.$path;
-                $print_message = $io->isVeryVerbose();
-                if (is_dir($dir_to_remove)) {
-                    if (static::deleteRecursive($dir_to_remove)) {
-                        $message = sprintf("      <info>Removing directory '%s'</info>", $path);
-                    } else {
-                        // Always display a message if this fails as it means something has
-                        // gone wrong. Therefore the message has to include the package name
-                        // as the first informational message might not exist.
-                        $print_message = true;
-                        $message = sprintf("      <error>Failure removing directory '%s'</error> in package <comment>%s</comment>.", $path, $package->getPrettyName());
-                    }
-                } else {
-                    // If the package has changed or the --prefer-dist version does not
-                    // include the directory this is not an error.
-                    $message = sprintf("      Directory '%s' does not exist", $path);
+
+        $paths = [];
+        if (!preg_match('/^drupal-(core|profile|module|theme)$/', $package->getType())) {
+            if (isset(static::$packageToCleanup[$package->getName()])) {
+                $finder = new Finder();
+                $finder
+                    ->directories()
+                    ->in($install_path)
+                    ->path(static::$packageToCleanup[$package->getName()]);
+
+                foreach ($finder as $file) {
+                    $paths[] = $file->getRealpath();
                 }
-                if ($print_message) {
+            }
+        }
+
+        foreach ($paths as $path) {
+            $fs = new Filesystem();
+            if ($fs->exists($path)) {
+                $fs->remove($path);
+
+                $message = sprintf("      <info>Removing directory '%s'</info>", $path);
+                if ($io->isVeryVerbose()) {
                     $io->write($message);
                 }
             }
+        }
 
-            if ($io->isVeryVerbose()) {
-                // Add a new line to separate this output from the next package.
-                $io->write('');
-            }
+        if ($io->isVeryVerbose()) {
+            // Add a new line to separate this output from the next package.
+            $io->write('');
         }
     }
 
@@ -224,29 +232,29 @@ EOT;
         $fs = new Filesystem();
         $root = getcwd().'/web';
 
-        // Prepare the settings file for installation
+        // Prepare the settings file for installation.
         if ($fs->exists($root.'/sites/default/default.settings.php')
             && !$fs->exists($root.'/sites/default/settings.php')) {
             $fs->copy(
-                    $root.'/sites/default/default.settings.php',
-                    $root.'/sites/default/settings.php'
-                );
+                $root.'/sites/default/default.settings.php',
+                $root.'/sites/default/settings.php'
+            );
             $fs->chmod($root.'/sites/default/settings.php', 0666);
             $event->getIO()->write('Create a sites/default/settings.php file with chmod 0666');
         }
 
-        // Prepare the services file for installation
+        // Prepare the services file for installation.
         if ($fs->exists($root.'/sites/default/default.services.yml')
             && !$fs->exists($root.'/sites/default/services.yml')) {
             $fs->copy(
-                    $root.'/sites/default/default.services.yml',
-                    $root.'/sites/default/services.yml'
-                );
+                $root.'/sites/default/default.services.yml',
+                $root.'/sites/default/services.yml'
+            );
             $fs->chmod($root.'/sites/default/services.yml', 0666);
             $event->getIO()->write('Create a sites/default/services.yml file with chmod 0666');
         }
 
-        // Create the files directory with chmod 0777
+        // Create the files directory with chmod 0777.
         if (!$fs->exists($root.'/sites/default/files')) {
             $oldmask = umask(0);
             $fs->mkdir($root.'/sites/default/files', 0777);
@@ -270,52 +278,81 @@ EOT;
             : $op->getPackage();
         $install_path = $installation_manager->getInstallPath($package);
 
-        if (in_array($package->getType(), [
-            'drupal-profile',
-            'drupal-module',
-            'drupal-theme',
-            ])) {
+        if (preg_match('/^drupal-(profile|module|theme)$/', $package->getType())) {
             $project = preg_replace('/^.*\//', '', $package->getName());
             $version = preg_replace(
-                    ['/^dev-(.*)/', '/^([0-9]*)\.([0-9]*\.[0-9]*)/'],
-                    ['$1-dev', '$1.x-$2'],
-                    $package->getPrettyVersion()
-                );
+                ['/^dev-(.*)/', '/^([0-9]*)\.([0-9]*\.[0-9]*)/'],
+                ['$1-dev', '$1.x-$2'],
+                $package->getPrettyVersion()
+            );
             $branch = preg_replace('/^([0-9]*\.x-[0-9]*).*$/', '$1', $version);
             $datestamp = preg_match('/-dev$/', $version)
-                    ? time()
-                    : $package->getReleaseDate()->getTimestamp();
+                ? time()
+                : $package->getReleaseDate()->getTimestamp();
 
-                // Compute the rebuild version string for a project.
-                $version = static::computeRebuildVersion($install_path, $branch) ?: $version;
+            // Compute the rebuild version string for a project.
+            $version = static::computeRebuildVersion($install_path, $branch) ?: $version;
 
-                // Generate version information for `.info` files in ini format.
-                $finder = new Finder();
-            $finder->in($install_path)
-                    ->files()
-                    ->name('*.info')
-                    ->notContains('datestamp =');
+            // Generate version information for `.info` files in ini format.
+            $finder = new Finder();
+            $finder
+                ->files()
+                ->in($install_path)
+                ->name('*.info')
+                ->notContains('datestamp =');
             foreach ($finder as $file) {
                 file_put_contents(
-                        $file->getRealpath(),
-                        static::generateInfoIniMetadata($version, $project, $datestamp),
-                        FILE_APPEND
-                    );
+                    $file->getRealpath(),
+                    static::generateInfoIniMetadata($version, $project, $datestamp),
+                    FILE_APPEND
+                );
             }
 
-                // Generate version information for `.info.yml` files in YAML format.
-                $finder = new Finder();
-            $finder->in($install_path)
-                    ->files()
-                    ->name('*.info.yml')
-                    ->notContains('datestamp :');
+            // Generate version information for `.info.yml` files in YAML format.
+            $finder = new Finder();
+            $finder
+                ->files()
+                ->in($install_path)
+                ->name('*.info.yml')
+                ->notContains('datestamp :');
             foreach ($finder as $file) {
                 file_put_contents(
-                        $file->getRealpath(),
-                        static::generateInfoYamlMetadata($version, $project, $datestamp),
-                        FILE_APPEND
-                    );
+                    $file->getRealpath(),
+                    static::generateInfoYamlMetadata($version, $project, $datestamp),
+                    FILE_APPEND
+                );
             }
+        }
+    }
+
+    /**
+     * Checks if the installed version of Composer is compatible.
+     *
+     * Composer 1.0.0 and higher consider a `composer install` without having a
+     * lock file present as equal to `composer update`. We do not ship with a lock
+     * file to avoid merge conflicts downstream, meaning that if a project is
+     * installed with an older version of Composer the scaffolding of Drupal will
+     * not be triggered. We check this here instead of in drupal-scaffold to be
+     * able to give immediate feedback to the end user, rather than failing the
+     * installation after going through the lengthy process of compiling and
+     * downloading the Composer dependencies.
+     *
+     * @see https://github.com/composer/composer/pull/5035
+     */
+    public static function checkComposerVersion(Event $event)
+    {
+        $composer = $event->getComposer();
+        $io = $event->getIO();
+
+        $version = $composer::VERSION;
+
+        // If Composer is installed through git we have no easy way to determine if
+        // it is new enough, just display a warning.
+        if ($version === '@package_version@') {
+            $io->writeError('<warning>You are running a development version of Composer. If you experience problems, please update Composer to the latest stable version.</warning>');
+        } elseif (Comparator::lessThan($version, '1.0.0')) {
+            $io->writeError('<error>Drupal-project requires Composer version 1.0.0 or higher. Please update your Composer before continuing</error>.');
+            exit(1);
         }
     }
 
@@ -404,62 +441,5 @@ datestamp: "{$datestamp}"
 METADATA;
 
         return $info;
-    }
-
-    /**
-     * Find the array key for a given package name with a case-insensitive search.
-     *
-     * @param string $package_name The package name from composer. This is always already lower case.
-     *
-     * @return null|string The string key, or NULL if none was found.
-     */
-    protected static function findPackageKey($package_name)
-    {
-        $package_key = null;
-        // In most cases the package name is already used as the array key.
-        if (isset(static::$packageToCleanup[$package_name])) {
-            $package_key = $package_name;
-        } else {
-            // Handle any mismatch in case between the package name and array key.
-            // For example, the array key 'mikey179/vfsStream' needs to be found
-            // when composer returns a package name of 'mikey179/vfsstream'.
-            foreach (static::$packageToCleanup as $key => $dirs) {
-                if (strtolower($key) === $package_name) {
-                    $package_key = $key;
-                    break;
-                }
-            }
-        }
-
-        return $package_key;
-    }
-
-    /**
-     * Helper method to remove directories and the files they contain.
-     *
-     * @param string $path The directory or file to remove. It must exist.
-     *
-     * @return bool TRUE on success or FALSE on failure.
-     */
-    protected static function deleteRecursive($path)
-    {
-        if (is_file($path) || is_link($path)) {
-            return unlink($path);
-        }
-        $success = true;
-        // Avoid warnings when opendir does not have the permissions to open a
-        // directory.
-        if ($handle = @opendir($path)) {
-            while (false !== ($entry = readdir($handle))) {
-                if ($entry == '.' || $entry == '..') {
-                    continue;
-                }
-                $entry_path = $path.'/'.$entry;
-                $success = static::deleteRecursive($entry_path) && $success;
-            }
-            closedir($handle);
-
-            return rmdir($path) && $success;
-        }
     }
 }

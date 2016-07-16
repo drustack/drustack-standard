@@ -11,6 +11,7 @@ before_install:
   - phpenv config-rm xdebug.ini
   - composer self-update
   - composer global require --no-update drush/drush:@stable
+  - composer global require --no-update hirak/prestissimo:@stable
   - composer global require --no-update phpunit/phpunit:@stable
   - composer global update
   - export PATH="$PATH:$HOME/.composer/vendor/bin"
@@ -25,4 +26,4 @@ install:
 
 script:
   - cd $TRAVIS_BUILD_DIR/web
-  - phpunit -c core --testsuite unit --exclude-group Composer
+  - ../vendor/bin/phpunit -c core --testsuite unit --group Drupal

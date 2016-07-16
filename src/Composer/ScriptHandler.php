@@ -295,8 +295,9 @@ EOT;
 
             // Generate version information for `.info` files in ini format.
             $finder = new Finder();
-            $finder->in($install_path)
+            $finder
                 ->files()
+                ->in($install_path)
                 ->name('*.info')
                 ->notContains('datestamp =');
             foreach ($finder as $file) {
@@ -309,8 +310,9 @@ EOT;
 
             // Generate version information for `.info.yml` files in YAML format.
             $finder = new Finder();
-            $finder->in($install_path)
+            $finder
                 ->files()
+                ->in($install_path)
                 ->name('*.info.yml')
                 ->notContains('datestamp :');
             foreach ($finder as $file) {

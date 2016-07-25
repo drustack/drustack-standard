@@ -64,7 +64,7 @@
                 "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
             },
             "drupal/token": {
-                "https://drupal.org/node/2712091": "https://drupal.org/files/issues/taxonomy_parents_not_translated-2712091-2.patch",
+                "https://drupal.org/node/2712091": "https://drupal.org/files/issues/taxonomy_parents_not_translated-2712091-2.patch"
             },
             "drupal/views_bootstrap": {
                 "https://drupal.org/node/2462305": "https://drupal.org/files/issues/views_bootstrap-port_grid_plugin_to_d8-2462305-22.patch",

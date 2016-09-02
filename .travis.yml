@@ -16,23 +16,11 @@ before_install:
   - composer global require --no-update drupal/console:@stable
   - composer global update
   - export PATH="$PATH:/home/travis/.config/composer/vendor/bin"
-  - drupal init
-  - source "$HOME/.console/console.rc" 2>/dev/null
-  - drupal list
-  - drupal help
-  - ls -la /home/travis/.config/composer/vendor/bin
 
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
-#  - mkdir -p sites/default/files
-#  - sudo mount -t tmpfs -o size=2G tmpfs sites/default/files
-  - pwd
-  - ls -la
-  - drupal list
-  - drupal help
-  - drush --yes site-install drustack --db-url=sqlite://sites/default/files/.ht.sqlite
-#  - drupal site:install --yes --quite --db-type sqlite --db-file sites/default/files/.ht.sqlite drustack
+  - drupal site:install --yes --quite --db-type sqlite --db-file sites/default/files/.ht.sqlite drustack
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:

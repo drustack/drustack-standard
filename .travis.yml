@@ -20,7 +20,7 @@ before_install:
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
-  - drupal site:install --yes --quite --db-type sqlite --db-file sites/default/files/.ht.sqlite drustack
+  - drush --yes site-install drustack --db-url=sqlite://sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:

@@ -16,6 +16,10 @@ before_install:
   - composer global require --no-update drupal/console:@stable
   - composer global update
   - export PATH="$PATH:/home/travis/.config/composer/vendor/bin"
+  - drupal init
+  - drupal list
+  - drupal help
+  - ls -la /home/travis/.config/composer/vendor/bin
 
 install:
   - composer update

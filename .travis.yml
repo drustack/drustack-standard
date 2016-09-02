@@ -10,18 +10,19 @@ before_install:
   - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
   - phpenv config-rm xdebug.ini
   - composer self-update
-  - composer global require --no-update drush/drush:@stable
   - composer global require --no-update hirak/prestissimo:@stable
   - composer global require --no-update phpunit/phpunit:@stable
+  - composer global require --no-update drush/drush:@stable
+  - composer global require --no-update drupal/console:@stable
   - composer global update
-  - export PATH="$PATH:$HOME/.composer/vendor/bin"
+  - export PATH="$PATH:/home/travis/.config/composer/vendor/bin"
 
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
   - mkdir -p sites/default/files
   - sudo mount -t tmpfs -o size=2G tmpfs sites/default/files
-  - drush --yes site-install drustack --db-url=sqlite://sites/default/files/.ht.sqlite
+  - drupal --yes site:install drustack --db-type sqlite --db-file sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:

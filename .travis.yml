@@ -25,13 +25,14 @@ before_install:
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
-  - mkdir -p sites/default/files
-  - sudo mount -t tmpfs -o size=2G tmpfs sites/default/files
+#  - mkdir -p sites/default/files
+#  - sudo mount -t tmpfs -o size=2G tmpfs sites/default/files
   - pwd
   - ls -la
   - drupal list
   - drupal help
-  - drupal site:install --yes --quite --db-type sqlite --db-file sites/default/files/.ht.sqlite drustack
+  - drush --yes site-install drustack --db-url=sqlite://sites/default/files/.ht.sqlite
+#  - drupal site:install --yes --quite --db-type sqlite --db-file sites/default/files/.ht.sqlite drustack
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:

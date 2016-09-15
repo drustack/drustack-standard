@@ -132,7 +132,7 @@
         "drupal/cdn": "8.3.x-dev",
         "drupal/checklistapi": "8.1.x-dev",
         "drupal/codesnippet": "8.1.x-dev",
-        "drupal/commerce": "8.2.x-dev",
+        "drupal/commerce": "~8.2",
         "drupal/commerce_migrate": "8.2.x-dev",
         "drupal/commerce_shipping": "8.2.x-dev",
         "drupal/config_update": "~8.1",

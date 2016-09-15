@@ -48,9 +48,6 @@
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
-            "drupal/robotstxt": {
-                "https://drupal.org/node/2749737": "https://drupal.org/files/issues/robotstxt-remove_version_from_info_yml-2749737-2.patch"
-            },
             "drupal/special_menu_items": {
                 "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
             },

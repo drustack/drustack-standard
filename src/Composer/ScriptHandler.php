@@ -279,48 +279,44 @@ EOT;
         $install_path = $installation_manager->getInstallPath($package);
 
         if (preg_match('/^drupal-(profile|module|theme)$/', $package->getType())) {
-            $project = preg_replace('/^.*\//', '', $package->getName());
-            $version = preg_replace(
-                ['/^dev-(.*)/', '/^([0-9]*)\.([0-9]*\.[0-9]*)/'],
-                ['$1-dev', '$1.x-$2'],
-                $package->getPrettyVersion()
-            );
-            $branch = preg_replace('/^([0-9]*\.x-[0-9]*).*$/', '$1', $version);
-            $datestamp = preg_match('/-dev$/', $version)
-                ? time()
-                : $package->getReleaseDate()->getTimestamp();
+            if (preg_match('/^dev-/', $package->getPrettyVersion())) {
+                $project = preg_replace('/^.*\//', '', $package->getName());
+                $version = preg_replace('/^dev-(.*)/', '7.x-$1-dev', $package->getPrettyVersion());
+                $branch = preg_replace('/^([0-9]*\.x-[0-9]*).*$/', '$1', $version);
+                $datestamp = time();
 
-            // Compute the rebuild version string for a project.
-            $version = static::computeRebuildVersion($install_path, $branch) ?: $version;
+                // Compute the rebuild version string for a project.
+                $version = static::computeRebuildVersion($install_path, $branch) ?: $version;
+                
+                // Generate version information for `.info` files in ini format.
+                $finder = new Finder();
+                $finder
+                    ->files()
+                    ->in($install_path)
+                    ->name('*.info')
+                    ->notContains('datestamp =');
+                foreach ($finder as $file) {
+                    file_put_contents(
+                        $file->getRealpath(),
+                        static::generateInfoIniMetadata($version, $project, $datestamp),
+                        FILE_APPEND
+                    );
+                }
 
-            // Generate version information for `.info` files in ini format.
-            $finder = new Finder();
-            $finder
-                ->files()
-                ->in($install_path)
-                ->name('*.info')
-                ->notContains('datestamp =');
-            foreach ($finder as $file) {
-                file_put_contents(
-                    $file->getRealpath(),
-                    static::generateInfoIniMetadata($version, $project, $datestamp),
-                    FILE_APPEND
-                );
-            }
-
-            // Generate version information for `.info.yml` files in YAML format.
-            $finder = new Finder();
-            $finder
-                ->files()
-                ->in($install_path)
-                ->name('*.info.yml')
-                ->notContains('datestamp :');
-            foreach ($finder as $file) {
-                file_put_contents(
-                    $file->getRealpath(),
-                    static::generateInfoYamlMetadata($version, $project, $datestamp),
-                    FILE_APPEND
-                );
+                // Generate version information for `.info.yml` files in YAML format.
+                $finder = new Finder();
+                $finder
+                    ->files()
+                    ->in($install_path)
+                    ->name('*.info.yml')
+                    ->notContains('datestamp:');
+                foreach ($finder as $file) {
+                    file_put_contents(
+                        $file->getRealpath(),
+                        static::generateInfoYamlMetadata($version, $project, $datestamp),
+                        FILE_APPEND
+                    );
+                }
             }
         }
     }

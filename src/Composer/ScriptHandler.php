@@ -22,8 +22,6 @@ use Symfony\Component\Process\Process;
  */
 class ScriptHandler
 {
-    protected static $branch = '8';
-
     protected static $packageToCleanup = [
         'behat/mink' => '/(tests|driver-testsuite)$/',
         'behat/mink-browserkit-driver' => '/(tests)$/',
@@ -281,20 +279,15 @@ EOT;
         $install_path = $installation_manager->getInstallPath($package);
 
         if (preg_match('/^drupal-(profile|module|theme)$/', $package->getType())) {
-            $branch = static::$branch;
-            $project = preg_replace('/^.*\//', '', $package->getName());
-            $version = $branch . '.x-' . preg_replace(
-                ['/^dev-(.*)/', '/^([0-9]*)\.([0-9]*)\.([0-9]*)/'],
-                ['$1-dev', '$1.$2'],
-                $package->getPrettyVersion()
-            );
-
-            if (preg_match('/-dev$/', $version)) {
+            if (preg_match('/^dev-/', $package->getPrettyVersion())) {
+                $project = preg_replace('/^.*\//', '', $package->getName());
+                $version = preg_replace('/^dev-(.*)/', '8.x-$1-dev', $package->getPrettyVersion());
+                $branch = preg_replace('/^([0-9]*\.x-[0-9]*).*$/', '$1', $version);
                 $datestamp = time();
 
                 // Compute the rebuild version string for a project.
                 $version = static::computeRebuildVersion($install_path, $branch) ?: $version;
-
+                
                 // Generate version information for `.info` files in ini format.
                 $finder = new Finder();
                 $finder
@@ -316,7 +309,7 @@ EOT;
                     ->files()
                     ->in($install_path)
                     ->name('*.info.yml')
-                    ->notContains('datestamp :');
+                    ->notContains('datestamp:');
                 foreach ($finder as $file) {
                     file_put_contents(
                         $file->getRealpath(),

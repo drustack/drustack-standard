@@ -11,16 +11,12 @@ before_install:
   - phpenv config-rm xdebug.ini
   - composer self-update
   - composer global require --no-update hirak/prestissimo:@stable
-  - composer global require --no-update phpunit/phpunit:@stable
-  - composer global require --no-update drush/drush:@stable
-  - composer global require --no-update drupal/console:@stable
   - composer global update
-  - export PATH="$PATH:/home/travis/.config/composer/vendor/bin"
 
 install:
   - composer update
   - cd $TRAVIS_BUILD_DIR/web
-  - drupal site:install --yes --quite --db-type sqlite --db-file sites/default/files/.ht.sqlite drustack
+  - ../vendor/bin/drush --yes site-install drustack --db-url=sqlite://sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &
 
 script:

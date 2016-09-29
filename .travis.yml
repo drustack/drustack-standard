@@ -11,11 +11,7 @@ before_install:
   - phpenv config-rm xdebug.ini
   - composer self-update
   - composer global require --no-update hirak/prestissimo:@stable
-  - composer global require --no-update phpunit/phpunit:@stable
-  - composer global require --no-update drush/drush:@stable
-  - composer global require --no-update drupal/console:@stable
   - composer global update
-  - export PATH="$PATH:/home/travis/.config/composer/vendor/bin"
 
 install:
   - composer update

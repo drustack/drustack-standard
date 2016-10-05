@@ -46,7 +46,7 @@
                 "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch"
             },
             "drupal/diff": {
-                "https://drupal.org/node/2810301": "https://drupal.org/files/issues/diff-fix_composer_json-2810301-2.patch"
+                "https://drupal.org/node/2810301": "https://drupal.org/files/issues/diff-fix_composer_json-2810301-6.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"

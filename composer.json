@@ -154,7 +154,7 @@
         "drupal/feeds": "3.x-dev",
         "drupal/field_collection": "~1.0",
         "drupal/field_group": "1.x-dev",
-        "drupal/file_entity": "2.x-dev",
+        "drupal/file_entity": "~2.0",
         "drupal/fontyourface": "3.x-dev",
         "drupal/git_deploy": "2.x-dev",
         "drupal/google_analytics": "2.x-dev",

@@ -45,7 +45,8 @@
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch"
             },
             "drupal/diff": {
-                "https://drupal.org/node/2810301": "https://drupal.org/files/issues/diff-fix_composer_json-2810301-6.patch"
+                "https://drupal.org/node/2810301": "https://drupal.org/files/issues/diff-fix_composer_json-2810301-6.patch",
+                "https://drupal.org/node/2811763": "https://drupal.org/files/issues/diff-diff_requirements_always_return_array-2811763-2.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"

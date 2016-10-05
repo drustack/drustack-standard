@@ -18,7 +18,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.1.x-dev"
+            "dev-master": "8.2.x-dev"
         },
         "installer-paths": {
             "web/core": [
@@ -42,8 +42,7 @@
                 "https://drupal.org/node/2765505": "https://drupal.org/files/issues/bootstrap-anonymous_search_form_submit_fail-2765505-3.patch"
             },
             "drupal/core": {
-                "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch",
-                "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch"
+                "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch"
             },
             "drupal/diff": {
                 "https://drupal.org/node/2810301": "https://drupal.org/files/issues/diff-fix_composer_json-2810301-6.patch"
@@ -134,7 +133,7 @@
         "drupal/config_update": "~1.0",
         "drupal/console": "~1.0",
         "drupal/content_access": "1.x-dev",
-        "drupal/core": "~8.1.0",
+        "drupal/core": "~8.2.0",
         "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",

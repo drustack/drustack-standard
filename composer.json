@@ -97,14 +97,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.10.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.11.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.5.10"
+                "version": "4.5.11"
             },
             "type": "package"
         }

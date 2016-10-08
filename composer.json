@@ -44,9 +44,6 @@
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch"
             },
-            "drupal/diff": {
-                "https://drupal.org/node/2810301": "https://drupal.org/files/issues/diff-fix_composer_json-2810301-13.patch"
-            },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
@@ -216,7 +213,6 @@
         "drupal/xmlsitemap": "1.x-dev",
         "drush/drush": "~8.0",
         "leafo/scssphp": "~0.6",
-        "mkalkbrenner/php-htmldiff-advanced": "~0.0.8",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
         "twbs/bootstrap": "~3.3"

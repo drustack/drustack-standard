@@ -166,14 +166,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.5.9_edit.zip"
+                    "url": "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.5.11_edit.zip"
                 },
                 "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.5.9"
+                "version": "4.5.11"
             },
             "type": "package"
         },

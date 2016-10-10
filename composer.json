@@ -211,14 +211,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/twbs/bootstrap/releases/download/v3.3.6/bootstrap-3.3.6-dist.zip"
+                    "url": "https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip"
                 },
                 "name": "twbs/bootstrap",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "3.3.6"
+                "version": "3.3.7"
             },
             "type": "package"
         },

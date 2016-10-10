@@ -342,7 +342,6 @@
         "drupal/picture": "~2.0",
         "drupal/plupload": "1.x-dev",
         "drupal/professional_theme": "~2.0",
-        "drupal/quickedit": "~1.0",
         "drupal/recaptcha": "~2.0",
         "drupal/redirect": "1.x-dev",
         "drupal/responsive_bartik": "~1.0",

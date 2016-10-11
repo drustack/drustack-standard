@@ -50,6 +50,9 @@
             "drupal/special_menu_items": {
                 "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
             },
+            "drupal/token": {
+                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
+            },
             "drupal/views_bootstrap": {
                 "https://drupal.org/node/2462305": "https://drupal.org/files/issues/views_bootstrap-port_grid_plugin_to_d8-2462305-25.patch",
                 "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"

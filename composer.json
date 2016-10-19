@@ -18,7 +18,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.1.x-dev"
+            "dev-master": "8.2.x-dev"
         },
         "installer-paths": {
             "web": [
@@ -72,7 +72,8 @@
                 "https://drupal.org/node/2093435": "https://drupal.org/files/issues/media-dialog-removal-2093435-27.patch"
             },
             "drupal/menu_block": {
-                "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch"
+                "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch",
+                "https://drupal.org/node/2820279": "https://drupal.org/files/issues/menu_block-fix_display_empty-2820279-2.patch"
             },
             "drupal/oauth2_server": {
                 "https://drupal.org/node/2167733": "https://drupal.org/files/issues/oauth2_server-drush_make_master-2167733-6.patch"

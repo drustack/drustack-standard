@@ -232,7 +232,40 @@ EOT;
         $fs = new Filesystem();
         $root = getcwd().'/web';
 
-        // Prepare the settings file for installation.
+        // Prepare .htaccess for installation.
+        if ($fs->exists($root.'/.htaccess.example')
+            && !$fs->exists($root.'/.htaccess')) {
+            $fs->copy(
+                $root.'/.htaccess.example',
+                $root.'/.htaccess'
+            );
+            $fs->chmod($root.'/.htaccess', 0644);
+            $event->getIO()->write('Create a .htaccess file with chmod 0644');
+        }
+
+        // Prepare web.config for installation.
+        if ($fs->exists($root.'/web.config.example')
+            && !$fs->exists($root.'/web.config')) {
+            $fs->copy(
+                $root.'/web.config.example',
+                $root.'/web.config'
+            );
+            $fs->chmod($root.'/web.config', 0644);
+            $event->getIO()->write('Create a web.config file with chmod 0644');
+        }
+
+        // Prepare robots.txt for installation.
+        if ($fs->exists($root.'/robots.txt.example')
+            && !$fs->exists($root.'/robots.txt')) {
+            $fs->copy(
+                $root.'/robots.txt.example',
+                $root.'/robots.txt'
+            );
+            $fs->chmod($root.'/robots.txt', 0644);
+            $event->getIO()->write('Create a robots.txt file with chmod 0644');
+        }
+
+        // Prepare sites/default/settings.php for installation.
         if ($fs->exists($root.'/sites/default/default.settings.php')
             && !$fs->exists($root.'/sites/default/settings.php')) {
             $fs->copy(
@@ -243,7 +276,7 @@ EOT;
             $event->getIO()->write('Create a sites/default/settings.php file with chmod 0666');
         }
 
-        // Prepare the services file for installation.
+        // Prepare sites/default/services.yml for installation.
         if ($fs->exists($root.'/sites/default/default.services.yml')
             && !$fs->exists($root.'/sites/default/services.yml')) {
             $fs->copy(

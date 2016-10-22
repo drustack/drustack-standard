@@ -18,7 +18,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.1.x-dev"
+            "dev-master": "8.2.x-dev"
         },
         "installer-paths": {
             "web/core": [
@@ -45,14 +45,14 @@
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-22.patch",
                 "https://drupal.org/node/2682373": "https://drupal.org/files/issues/event-dispatcher-2682373-16.patch"
             },
-            "drupal/diff": {
-                "https://drupal.org/node/2810301": "https://drupal.org/files/issues/diff-fix_composer_json-2810301-6.patch"
-            },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
             "drupal/special_menu_items": {
                 "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
+            },
+            "drupal/token": {
+                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
             },
             "drupal/views_bootstrap": {
                 "https://drupal.org/node/2462305": "https://drupal.org/files/issues/views_bootstrap-port_grid_plugin_to_d8-2462305-25.patch",
@@ -98,14 +98,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.10.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.11.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.5.10"
+                "version": "4.5.11"
             },
             "type": "package"
         }
@@ -161,7 +161,7 @@
         "drupal/fontyourface": "3.x-dev",
         "drupal/git_deploy": "2.x-dev",
         "drupal/google_analytics": "2.x-dev",
-        "drupal/image_effects": "1.x-dev",
+        "drupal/image_effects": "~1.0",
         "drupal/imce": "~1.0",
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/key_value": "1.x-dev",
@@ -217,7 +217,6 @@
         "drupal/xmlsitemap": "1.x-dev",
         "drush/drush": "~8.0",
         "leafo/scssphp": "~0.6",
-        "mkalkbrenner/php-htmldiff-advanced": "~0.0.8",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
         "twbs/bootstrap": "~3.3"

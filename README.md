@@ -1,7 +1,7 @@
 DruStack Standard Edition
 =========================
 
-[![Build Status](https://travis-ci.org/drustack/drustack-standard.svg?branch=master)](https://travis-ci.org/drustack/drustack-standard)
+[![Build Status](https://travis-ci.org/drustack/drustack-standard.svg?branch=8.1.x-dev)](https://travis-ci.org/drustack/drustack-standard)
 [![Latest Stable Version](https://poser.pugx.org/drustack/framework-standard-edition/v/stable.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
 [![Total Downloads](https://poser.pugx.org/drustack/framework-standard-edition/downloads.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
 [![License](https://poser.pugx.org/drustack/framework-standard-edition/license.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
@@ -9,7 +9,7 @@ DruStack Standard Edition
 Welcome to the DruStack Standard Edition - a fully-functional Drupal application that you can use as the skeleton for your new applications.
 
 This project template will managing your site dependencies with [Composer](https://getcomposer.org/). If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.md) visit
+[Drush Make](https://github.com/drush-ops/drush/blob/8.1.x-dev/docs/make.md) visit
 the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
 
 Usage
@@ -50,7 +50,7 @@ When installing the given `composer.json` some tasks are taken care of:
 License
 -------
 
--   Code released under [GPL-2.0+](https://github.com/drustack/drustack-standard/blob/master/LICENSE)
+-   Code released under [GPL-2.0+](https://github.com/drustack/drustack-standard/blob/8.1.x-dev/LICENSE)
 -   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 Author Information

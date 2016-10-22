@@ -254,17 +254,6 @@ EOT;
             $event->getIO()->write('Create a web.config file with chmod 0644');
         }
 
-        // Prepare robots.txt for installation.
-        if ($fs->exists($root.'/robots.txt.example')
-            && !$fs->exists($root.'/robots.txt')) {
-            $fs->copy(
-                $root.'/robots.txt.example',
-                $root.'/robots.txt'
-            );
-            $fs->chmod($root.'/robots.txt', 0644);
-            $event->getIO()->write('Create a robots.txt file with chmod 0644');
-        }
-
         // Prepare sites/default/settings.php for installation.
         if ($fs->exists($root.'/sites/default/default.settings.php')
             && !$fs->exists($root.'/sites/default/settings.php')) {

@@ -389,7 +389,7 @@
         "drupal/webform_uuid": "~1.0",
         "drupal/workbench": "1.x-dev",
         "drupal/workbench_access": "1.x-dev",
-        "drupal/workbench_moderation": "1.x-dev",
+        "drupal/workbench_moderation": "3.x-dev",
         "drupal/wysiwyg_codesnippet": "1.x-dev",
         "drupal/xautoload": "~5.0",
         "drupal/xmlsitemap": "~2.0",

@@ -38,9 +38,6 @@
             ]
         },
         "patches": {
-            "drupal/bootstrap": {
-                "https://drupal.org/node/2765505": "https://drupal.org/files/issues/bootstrap-anonymous_search_form_submit_fail-2765505-3.patch"
-            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2716019": "https://www.drupal.org/files/issues/core_views-implements_title_callback-2716019-23-D8.patch"

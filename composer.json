@@ -95,6 +95,156 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/codemirror/CodeMirror/archive/5.17.0.zip"
+                },
+                "name": "codemirror/codemirror",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "5.17.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.3.5.zip"
+                },
+                "name": "qwertypants/word-and-character-counter",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "2.3.5"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.10.0.zip"
+                },
+                "name": "jonthornton/jquery.timepicker",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.10.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/select2/select2/archive/4.0.3.zip"
+                },
+                "name": "select2/select2",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.0.3"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/gjunge/rateit.js/archive/1.0.24.zip"
+                },
+                "name": "gjunge/rateit",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.0.24"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/szimek/signature_pad/archive/v1.5.3.zip"
+                },
+                "name": "szimek/signature_pad",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.5.3"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
+                },
+                "name": "ubilabs/geocomplete",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.7.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/simontabor/jquery-toggles/archive/v4.0.0.zip"
+                },
+                "name": "simontabor/jquery.toggles",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.0.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.1.zip"
+                },
+                "name": "robinherbots/jquery.inputmask",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "3.3.1"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.11/ckeditor_4.5.11_standard.zip"
+                },
+                "name": "ckeditor/ckeditor",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.5.11"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.11.zip"
                 },
                 "name": "ckeditor/codesnippet",
@@ -108,7 +258,9 @@
         }
     ],
     "require": {
+        "ckeditor/ckeditor": "~4.5",
         "ckeditor/codesnippet": "~4.5",
+        "codemirror/codemirror": "~5.17",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
@@ -206,17 +358,25 @@
         "drupal/views_bootstrap": "3.x-dev",
         "drupal/views_php": "1.x-dev",
         "drupal/views_templates": "1.x-dev",
-        "drupal/webform": "4.x-dev",
         "drupal/workbench": "1.x-dev",
         "drupal/workbench_access": "1.x-dev",
         "drupal/workbench_moderation": "1.x-dev",
         "drupal/xmlrpc": "1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
+        "drupal/yamlform": "1.x-dev",
         "drush/drush": "~8.0",
+        "gjunge/rateit": "~1.0",
+        "jonthornton/jquery.timepicker": "~1.10",
         "leafo/scssphp": "~0.6",
+        "qwertypants/word-and-character-counter": "~2.3",
+        "robinherbots/jquery.inputmask": "~3.3",
+        "select2/select2": "~4.0",
+        "simontabor/jquery.toggles": "~4.0",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
-        "twbs/bootstrap": "~3.3"
+        "szimek/signature_pad": "~1.5",
+        "twbs/bootstrap": "~3.3",
+        "ubilabs/geocomplete": "~1.7"
     },
     "require-dev": {
         "behat/mink": "~1.7",

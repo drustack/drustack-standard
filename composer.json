@@ -275,7 +275,7 @@
         "drupal/devel": "1.x-dev",
         "drupal/devel_themer": "1.x-dev",
         "drupal/diff": "~3.0",
-        "drupal/drupal": "~7.51.0",
+        "drupal/drupal": "~7.0",
         "drupal/drustack": "51.x-dev",
         "drupal/ds": "~2.0",
         "drupal/ds_bootstrap_layouts": "~3.0",

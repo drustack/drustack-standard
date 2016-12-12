@@ -273,7 +273,7 @@
         "drupal/backup_migrate": "4.x-dev",
         "drupal/block_class": "1.x-dev",
         "drupal/bootstrap": "3.x-dev",
-        "drupal/bootstrap_layouts": "~3.0",
+        "drupal/bootstrap_layouts": "~4.0",
         "drupal/bootstrap_library": "1.x-dev",
         "drupal/calendar": "1.x-dev",
         "drupal/captcha": "1.x-dev",

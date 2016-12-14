@@ -23,3 +23,15 @@ script:
   - cd $TRAVIS_BUILD_DIR/web
   - ../vendor/bin/drush --yes pm-enable simpletest
   - php ./scripts/run-tests.sh --php `which php` --url http://127.0.0.1:8080 --concurrency 8 --class InfoFileParserTestCase
+
+matrix:
+  include:
+    - php: 5.5
+    - php: 5.6
+    - php: 7.0
+    - php: 7.1
+    - php: hhvm
+  allow_failures:
+    - php: 7.0
+    - php: 7.1
+    - php: hhvm

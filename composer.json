@@ -94,9 +94,9 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/codemirror/CodeMirror/archive/5.21.0.zip"
+                    "url": "https://github.com/components/codemirror/archive/5.21.0.zip"
                 },
-                "name": "codemirror/codemirror",
+                "name": "components/codemirror",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -259,7 +259,7 @@
     "require": {
         "ckeditor/ckeditor": "~4.5",
         "ckeditor/codesnippet": "~4.5",
-        "codemirror/codemirror": "~5.21",
+        "components/codemirror": "~5.21",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",

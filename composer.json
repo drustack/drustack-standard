@@ -76,10 +76,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/backupmigrate/backup_migrate_core"
-        },
-        {
             "package": {
                 "dist": {
                     "type": "zip",
@@ -270,7 +266,6 @@
         "drupal/address": "1.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "1.x-dev",
-        "drupal/backup_migrate": "4.x-dev",
         "drupal/block_class": "1.x-dev",
         "drupal/bootstrap": "3.x-dev",
         "drupal/bootstrap_layouts": "~4.0",

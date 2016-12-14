@@ -94,14 +94,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/codemirror/CodeMirror/archive/5.17.0.zip"
+                    "url": "https://github.com/codemirror/CodeMirror/archive/5.21.0.zip"
                 },
                 "name": "codemirror/codemirror",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "5.17.0"
+                "version": "5.21.0"
             },
             "type": "package"
         },
@@ -124,14 +124,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.10.0.zip"
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.8.zip"
                 },
                 "name": "jonthornton/jquery.timepicker",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.10.0"
+                "version": "1.11.8"
             },
             "type": "package"
         },
@@ -154,14 +154,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/gjunge/rateit.js/archive/1.0.24.zip"
+                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip"
                 },
                 "name": "gjunge/rateit",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.0.24"
+                "version": "1.1.1"
             },
             "type": "package"
         },
@@ -214,14 +214,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.1.zip"
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.3.zip"
                 },
                 "name": "robinherbots/jquery.inputmask",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "3.3.1"
+                "version": "3.3.3"
             },
             "type": "package"
         },
@@ -259,7 +259,7 @@
     "require": {
         "ckeditor/ckeditor": "~4.5",
         "ckeditor/codesnippet": "~4.5",
-        "codemirror/codemirror": "~5.17",
+        "codemirror/codemirror": "~5.21",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
@@ -363,8 +363,8 @@
         "drupal/xmlrpc": "1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
         "drush/drush": "~8.0",
-        "gjunge/rateit": "~1.0",
-        "jonthornton/jquery.timepicker": "~1.10",
+        "gjunge/rateit": "~1.1",
+        "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
         "qwertypants/word-and-character-counter": "~2.3",
         "robinherbots/jquery.inputmask": "~3.3",

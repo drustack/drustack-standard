@@ -48,9 +48,6 @@
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
-            "drupal/special_menu_items": {
-                "https://drupal.org/node/2749911": "https://drupal.org/files/issues/special_menu_items-remove_version_from_info_yml-2749911-2.patch"
-            },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
             },
@@ -344,7 +341,6 @@
         "drupal/simplenews": "1.x-dev",
         "drupal/simplenews_scheduler": "1.x-dev",
         "drupal/sitemap": "1.x-dev",
-        "drupal/special_menu_items": "1.x-dev",
         "drupal/state_machine": "1.x-dev",
         "drupal/system_stream_wrapper": "1.x-dev",
         "drupal/tmgmt": "1.x-dev",

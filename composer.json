@@ -60,9 +60,6 @@
             "drupal/entity": {
                 "https://drupal.org/node/2020325": "https://drupal.org/files/issues/entity-ctools-content-type-from-context-2020325-31.patch"
             },
-            "drupal/entityreference": {
-                "https://drupal.org/node/1580348": "https://drupal.org/files/issues/entityreference-universal-formatters-1580348-29.patch"
-            },
             "drupal/features": {
                 "https://drupal.org/node/2353585": "https://drupal.org/files/issues/features-menu_links_uuid-2353585-21-D7.patch"
             },

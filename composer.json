@@ -12,6 +12,7 @@
     },
     "config": {
         "discard-changes": true,
+        "process-timeout": 3600,
         "secure-http": false
     },
     "description": "The \"DruStack Standard Edition\" distribution",

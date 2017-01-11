@@ -259,6 +259,7 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
+        "drupal/advagg": "2.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "1.x-dev",
         "drupal/block_class": "1.x-dev",

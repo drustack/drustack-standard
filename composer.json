@@ -241,6 +241,7 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
         "drupal/addressfield": "~1.0",
+        "drupal/advagg": "2.x-dev",
         "drupal/advanced_help": "~1.0",
         "drupal/backup_migrate": "3.x-dev",
         "drupal/bamboo": "~1.0",

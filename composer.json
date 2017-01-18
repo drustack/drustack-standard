@@ -325,6 +325,7 @@
         "drupal/pathauto": "1.x-dev",
         "drupal/pathologic": "1.x-dev",
         "drupal/php": "1.x-dev",
+        "drupal/piwik": "1.x-dev",
         "drupal/plupload": "1.x-dev",
         "drupal/poll": "~1.0",
         "drupal/profile": "1.x-dev",

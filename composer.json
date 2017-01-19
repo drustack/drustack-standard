@@ -308,6 +308,7 @@
         "drupal/git_deploy": "2.x-dev",
         "drupal/google_analytics": "2.x-dev",
         "drupal/image_effects": "1.x-dev",
+        "drupal/imageapi_optimize": "2.x-dev",
         "drupal/imce": "~1.0",
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/key_value": "1.x-dev",

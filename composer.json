@@ -301,6 +301,7 @@
         "drupal/htmlpurifier": "2.x-dev",
         "drupal/i18n": "~1.0",
         "drupal/image_resize_filter": "~1.0",
+        "drupal/imageapi_optimize": "1.x-dev",
         "drupal/imagecache_token": "1.x-dev",
         "drupal/imce": "~1.0",
         "drupal/imce_crop": "~1.0",

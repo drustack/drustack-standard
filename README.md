@@ -21,7 +21,7 @@ After that you can create the project:
 
 With `composer require ...` you can download new dependencies to your installation.
 
-    composer require drupal/devel:~8.0
+    composer require drupal/devel:~1.0
 
 The `composer create-project` command passes ownership of all files to the project that is created. You should create a new git repository, and commit all files not excluded by the .gitignore file.
 

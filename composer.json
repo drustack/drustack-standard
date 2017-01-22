@@ -39,6 +39,9 @@
             ]
         },
         "patches": {
+            "drupal/advagg": {
+                "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch"
+            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-implements_title_callback-2716019-23-D8.patch"
@@ -259,6 +262,7 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
+        "drupal/advagg": "2.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "1.x-dev",
         "drupal/block_class": "1.x-dev",
@@ -304,6 +308,7 @@
         "drupal/git_deploy": "2.x-dev",
         "drupal/google_analytics": "2.x-dev",
         "drupal/image_effects": "1.x-dev",
+        "drupal/imageapi_optimize": "2.x-dev",
         "drupal/imce": "~1.0",
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/key_value": "1.x-dev",
@@ -321,6 +326,7 @@
         "drupal/pathauto": "1.x-dev",
         "drupal/pathologic": "1.x-dev",
         "drupal/php": "1.x-dev",
+        "drupal/piwik": "1.x-dev",
         "drupal/plupload": "1.x-dev",
         "drupal/poll": "~1.0",
         "drupal/profile": "1.x-dev",
@@ -348,6 +354,7 @@
         "drupal/unlimited_number": "1.x-dev",
         "drupal/varnish": "1.x-dev",
         "drupal/views_bootstrap": "3.x-dev",
+        "drupal/views_data_export": "1.x-dev",
         "drupal/views_php": "1.x-dev",
         "drupal/views_templates": "1.x-dev",
         "drupal/webform": "5.x-dev",

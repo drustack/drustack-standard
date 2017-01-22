@@ -1,16 +1,14 @@
 DruStack Standard Edition
 =========================
 
-[![Build Status](https://travis-ci.org/drustack/drustack-standard.svg?branch=7.51.x)](https://travis-ci.org/drustack/drustack-standard)
+[![Build Status](https://travis-ci.org/drustack/drustack-standard.svg?branch=7.x)](https://travis-ci.org/drustack/drustack-standard)
 [![Latest Stable Version](https://poser.pugx.org/drustack/framework-standard-edition/v/stable.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
 [![Total Downloads](https://poser.pugx.org/drustack/framework-standard-edition/downloads.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
 [![License](https://poser.pugx.org/drustack/framework-standard-edition/license.svg)](https://packagist.org/packages/drustack/framework-standard-edition)
 
 Welcome to the DruStack Standard Edition - a fully-functional Drupal application that you can use as the skeleton for your new applications.
 
-This project template will managing your site dependencies with [Composer](https://getcomposer.org/). If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/7.51.x/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+This project template will managing your site dependencies with [Composer](https://getcomposer.org/). If you want to know how to use it as replacement for [Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.md) visit the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
 
 Usage
 -----
@@ -19,17 +17,13 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 
 After that you can create the project:
 
-    composer create-project --stability dev --no-interaction drustack/framework-standard-edition:7.51.x-dev drustack
+    composer create-project drustack/framework-standard-edition:^7.53.0 MYPROJECT --no-interaction
 
-With `composer require ...` you can download new dependencies to your
-installation.
+With `composer require ...` you can download new dependencies to your installation.
 
-    cd drustack
-    composer require drupal/devel:~7.0
+    composer require drupal/devel:~1.0
 
-The `composer create-project` command passes ownership of all files to the
-project that is created. You should create a new git repository, and commit
-all files not excluded by the .gitignore file.
+The `composer create-project` command passes ownership of all files to the project that is created. You should create a new git repository, and commit all files not excluded by the .gitignore file.
 
 What does the template do?
 --------------------------
@@ -50,13 +44,13 @@ When installing the given `composer.json` some tasks are taken care of:
 License
 -------
 
--   Code released under [GPL-2.0+](https://github.com/drustack/drustack-standard/blob/7.51.x/LICENSE)
+-   Code released under [GPL-2.0+](https://github.com/drustack/drustack-standard/blob/7.x/LICENSE)
 -   Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 Author Information
 ------------------
 
 -   Wong Hoi Sing Edison
-    -   <a href="https://twitter.com/hswong3i" class="uri" class="uri">https://twitter.com/hswong3i</a>
-    -   <a href="https://github.com/hswong3i" class="uri" class="uri">https://github.com/hswong3i</a>
+    -   <https://twitter.com/hswong3i>
+    -   <https://github.com/hswong3i>
 

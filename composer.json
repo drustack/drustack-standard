@@ -42,6 +42,9 @@
             "drupal/advagg": {
                 "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch"
             },
+            "drupal/bootstrap": {
+                "https://drupal.org/node/2848248": "https://drupal.org/files/issues/bootstrap-improve_sidebar_responsiveness-2848248-1.patch"
+            },
             "drupal/core": {
                 "https://drupal.org/node/2479377": "https://drupal.org/files/issues/2479377-8.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",

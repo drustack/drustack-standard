@@ -229,21 +229,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.11.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.6.2.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.5.11"
+                "version": "4.6.2"
             },
             "type": "package"
         }
     ],
     "require": {
         "ckeditor/ckeditor": "~4.6",
-        "ckeditor/codesnippet": "~4.5",
+        "ckeditor/codesnippet": "~4.6",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",

@@ -106,6 +106,7 @@
         "preserve-paths": [
             "web/.htaccess",
             "web/profiles",
+            "web/robots.txt",
             "web/sites",
             "web/web.config"
         ]

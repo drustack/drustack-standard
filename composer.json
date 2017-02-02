@@ -220,6 +220,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip"
+                },
+                "name": "gjunge/jquery.rateit",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.1.1"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.3.zip"
                 },
                 "name": "robinherbots/jquery.inputmask",
@@ -373,6 +388,7 @@
         "drupal/xmlsitemap": "1.x-dev",
         "drush/drush": "~8.0",
         "drustack/composer-preserve-paths": "~1.0",
+        "gjunge/jquery.rateit": "~1.1",
         "gjunge/rateit": "~1.1",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",

@@ -64,7 +64,14 @@
             "drupal/xmlrpc": {
                 "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"
             }
-        }
+        },
+        "preserve-paths": [
+            "web/.htaccess",
+            "web/profiles",
+            "web/robots.txt",
+            "web/sites",
+            "web/web.config"
+        ]
     },
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
@@ -366,6 +373,7 @@
         "drupal/xmlrpc": "1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
         "drush/drush": "~8.0",
+        "drustack/composer-preserve-paths": "~1.0",
         "gjunge/rateit": "~1.1",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",

@@ -39,7 +39,11 @@
             ]
         },
         "patches": {
+            "drupal/advagg": {
+                "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch"
+            },
             "drupal/core": {
+                "https://drupal.org/node/2479377": "https://drupal.org/files/issues/2479377-8.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-implements_title_callback-2716019-23-D8.patch"
             },
@@ -59,7 +63,14 @@
             "drupal/xmlrpc": {
                 "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"
             }
-        }
+        },
+        "preserve-paths": [
+            "web/.htaccess",
+            "web/profiles",
+            "web/robots.txt",
+            "web/sites",
+            "web/web.config"
+        ]
     },
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
@@ -209,6 +220,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip"
+                },
+                "name": "gjunge/jquery.rateit",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.1.1"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.3.zip"
                 },
                 "name": "robinherbots/jquery.inputmask",
@@ -224,14 +250,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.5.11/ckeditor_4.5.11_standard.zip"
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.6.2/ckeditor_4.6.2_standard.zip"
                 },
                 "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.5.11"
+                "version": "4.6.2"
             },
             "type": "package"
         },
@@ -239,30 +265,33 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.5.11.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.6.2.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.5.11"
+                "version": "4.6.2"
             },
             "type": "package"
         }
     ],
     "require": {
-        "ckeditor/ckeditor": "~4.5",
-        "ckeditor/codesnippet": "~4.5",
+        "ckeditor/ckeditor": "~4.6",
+        "ckeditor/codesnippet": "~4.6",
         "components/codemirror": "~5.21",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
+        "drupal/advagg": "2.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "1.x-dev",
         "drupal/block_class": "1.x-dev",
+        "drupal/block_styles": "1.x-dev",
         "drupal/bootstrap": "3.x-dev",
+        "drupal/bootstrap_barrio": "4.x-dev",
         "drupal/bootstrap_layouts": "~4.0",
         "drupal/bootstrap_library": "1.x-dev",
         "drupal/calendar": "1.x-dev",
@@ -304,6 +333,7 @@
         "drupal/git_deploy": "2.x-dev",
         "drupal/google_analytics": "2.x-dev",
         "drupal/image_effects": "1.x-dev",
+        "drupal/imageapi_optimize": "2.x-dev",
         "drupal/imce": "~1.0",
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/key_value": "1.x-dev",
@@ -321,6 +351,7 @@
         "drupal/pathauto": "1.x-dev",
         "drupal/pathologic": "1.x-dev",
         "drupal/php": "1.x-dev",
+        "drupal/piwik": "1.x-dev",
         "drupal/plupload": "1.x-dev",
         "drupal/poll": "~1.0",
         "drupal/profile": "1.x-dev",
@@ -340,6 +371,7 @@
         "drupal/simplenews_scheduler": "1.x-dev",
         "drupal/sitemap": "1.x-dev",
         "drupal/state_machine": "1.x-dev",
+        "drupal/styles_api": "1.x-dev",
         "drupal/system_stream_wrapper": "1.x-dev",
         "drupal/tmgmt": "1.x-dev",
         "drupal/tmgmt_google": "1.x-dev",
@@ -348,6 +380,7 @@
         "drupal/unlimited_number": "1.x-dev",
         "drupal/varnish": "1.x-dev",
         "drupal/views_bootstrap": "3.x-dev",
+        "drupal/views_data_export": "1.x-dev",
         "drupal/views_php": "1.x-dev",
         "drupal/views_templates": "1.x-dev",
         "drupal/webform": "5.x-dev",
@@ -357,6 +390,8 @@
         "drupal/xmlrpc": "1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
         "drush/drush": "~8.0",
+        "drustack/composer-preserve-paths": "~1.0",
+        "gjunge/jquery.rateit": "~1.1",
         "gjunge/rateit": "~1.1",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",

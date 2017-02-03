@@ -282,7 +282,7 @@
         "drupal/devel_themer": "1.x-dev",
         "drupal/diff": "~3.0",
         "drupal/drupal": "~7.0",
-        "drupal/drustack": "53.x-dev",
+        "drupal/drustack": "54.x-dev",
         "drupal/ds": "~2.0",
         "drupal/ds_bootstrap_layouts": "~3.0",
         "drupal/easy_breadcrumb": "~2.0",

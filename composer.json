@@ -57,6 +57,9 @@
                 "https://drupal.org/node/2462305": "https://drupal.org/files/issues/views_bootstrap-port_grid_plugin_to_d8-2462305-25.patch",
                 "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
             },
+            "drupal/views_php": {
+                "https://drupal.org/node/2829204": "https://drupal.org/files/issues/views_php-2829204.patch"
+            },
             "drupal/views_templates": {
                 "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
             },

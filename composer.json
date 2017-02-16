@@ -22,19 +22,22 @@
             "dev-master": "8.2.x-dev"
         },
         "installer-paths": {
-            "web/core": [
+            "web/core/": [
                 "type:drupal-core"
             ],
-            "web/libraries/{$name}": [
+            "web/drush/{$name}/": [
+                "type:drupal-drush"
+            ],
+            "web/libraries/{$name}/": [
                 "type:drupal-library"
             ],
-            "web/modules/contrib/{$name}": [
+            "web/modules/contrib/{$name}/": [
                 "type:drupal-module"
             ],
-            "web/profiles/{$name}": [
+            "web/profiles/{$name}/": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{$name}": [
+            "web/themes/contrib/{$name}/": [
                 "type:drupal-theme"
             ]
         },

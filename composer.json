@@ -409,6 +409,7 @@
         "drupal/yellowed": "~1.0",
         "drupal/zeropoint": "~4.0",
         "drush/drush": "~8.0",
+        "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
         "htmlpurifier/htmlpurifier": "~4.8",
         "jashkenas/backbone": "~1.3",
@@ -436,12 +437,10 @@
             "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-package-install": [
-            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
-            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup"
         ],
         "post-package-update": [
-            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
-            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup"
         ],
         "post-update-cmd": [
             "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"

@@ -57,7 +57,6 @@
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
             },
             "drupal/views_bootstrap": {
-                "https://drupal.org/node/2462305": "https://drupal.org/files/issues/views_bootstrap-port_grid_plugin_to_d8-2462305-25.patch",
                 "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
             },
             "drupal/views_php": {

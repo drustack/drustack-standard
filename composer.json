@@ -34,11 +34,17 @@
             "web/modules/contrib/{$name}/": [
                 "type:drupal-module"
             ],
+            "web/modules/custom/{$name}/": [
+                "type:drupal-custom-module"
+            ],
             "web/profiles/{$name}/": [
                 "type:drupal-profile"
             ],
             "web/themes/contrib/{$name}/": [
                 "type:drupal-theme"
+            ],
+            "web/themes/custom/{$name}/": [
+                "type:drupal-custom-theme"
             ]
         },
         "patches": {

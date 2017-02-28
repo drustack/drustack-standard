@@ -355,6 +355,7 @@
         "drupal/memcache": "2.x-dev",
         "drupal/metatag": "1.x-dev",
         "drupal/mimemail": "1.x-dev",
+        "drupal/module_filter": "3.x-dev",
         "drupal/oauth2_server": "1.x-dev",
         "drupal/page_manager": "~1.0",
         "drupal/panels": "3.x-dev",
@@ -401,6 +402,7 @@
         "drupal/xmlrpc": "1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
         "drush/drush": "~8.0",
+        "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
         "gjunge/jquery.rateit": "~1.1",
         "gjunge/rateit": "~1.1",
@@ -433,12 +435,10 @@
             "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-package-install": [
-            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
-            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup"
         ],
         "post-package-update": [
-            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup",
-            "DruStack\\Standard\\Composer\\ScriptHandler::generateInfoMetadata"
+            "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup"
         ],
         "post-update-cmd": [
             "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"

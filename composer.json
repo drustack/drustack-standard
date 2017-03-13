@@ -133,14 +133,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.8.0.zip"
+                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.9.1.zip"
                 },
                 "name": "htmlpurifier/htmlpurifier",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.8.0"
+                "version": "4.9.1"
             },
             "type": "package"
         },
@@ -411,7 +411,7 @@
         "drush/drush": "~8.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
-        "htmlpurifier/htmlpurifier": "~4.8",
+        "htmlpurifier/htmlpurifier": "~4.9",
         "jashkenas/backbone": "~1.3",
         "jashkenas/underscore": "~1.8",
         "modernizr/modernizr": "~2.8",

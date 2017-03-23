@@ -133,14 +133,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.9.1.zip"
+                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.9.2.zip"
                 },
                 "name": "htmlpurifier/htmlpurifier",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.9.1"
+                "version": "4.9.2"
             },
             "type": "package"
         },

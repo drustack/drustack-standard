@@ -128,7 +128,7 @@
                     "type": "zip",
                     "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.3.5.zip"
                 },
-                "name": "qwertypants/word-and-character-counter",
+                "name": "qwertypants/jquery.word-and-character-counter",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -141,14 +141,29 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.8.zip"
+                    "url": "https://github.com/rvera/image-picker/archive/0.3.0.zip"
+                },
+                "name": "rvera/jquery.image-picker",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "0.3.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.10.zip"
                 },
                 "name": "jonthornton/jquery.timepicker",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.11.8"
+                "version": "1.11.10"
             },
             "type": "package"
         },
@@ -261,9 +276,54 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v11.0.0.zip"
+                },
+                "name": "jackocnr/jquery.intl-tel-input",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "11.0.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/fronteed/icheck/archive/1.0.2.zip"
+                },
+                "name": "fronteed/jquery.icheck",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.0.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.6.2/ckeditor_4.6.2_standard.zip"
                 },
                 "name": "ckeditor/ckeditor",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.6.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.6.2.zip"
+                },
+                "name": "ckeditor/ckeditor_autogrow",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -290,6 +350,7 @@
     ],
     "require": {
         "ckeditor/ckeditor": "~4.6",
+        "ckeditor/ckeditor_autogrow": "~4.6",
         "ckeditor/codesnippet": "~4.6",
         "components/codemirror": "~5.21",
         "composer/installers": "~1.0",
@@ -404,12 +465,15 @@
         "drush/drush": "~8.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
+        "fronteed/jquery.icheck": "~1.0",
         "gjunge/jquery.rateit": "~1.1",
         "gjunge/rateit": "~1.1",
+        "jackocnr/jquery.intl-tel-input": "~11.0",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
-        "qwertypants/word-and-character-counter": "~2.3",
+        "qwertypants/jquery.word-and-character-counter": "~2.3",
         "robinherbots/jquery.inputmask": "~3.3",
+        "rvera/jquery.image-picker": "~0.3",
         "select2/select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
         "symfony/filesystem": "~2.7",

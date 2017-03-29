@@ -19,7 +19,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.2.x-dev"
+            "dev-master": "8.3.x-dev"
         },
         "installer-paths": {
             "web/core/": [
@@ -49,10 +49,10 @@
         },
         "patches": {
             "drupal/advagg": {
-                "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch"
+                "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch",
+                "https://drupal.org/node/2850263": "https://drupal.org/files/issues/2850263-drupal-8.3compatibility-11.patch"
             },
             "drupal/core": {
-                "https://drupal.org/node/2479377": "https://drupal.org/files/issues/2479377-8.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-implements_title_callback-2716019-23-D8.patch"
             },
@@ -61,9 +61,6 @@
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
-            },
-            "drupal/views_bootstrap": {
-                "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
             },
             "drupal/views_php": {
                 "https://drupal.org/node/2829204": "https://drupal.org/files/issues/views_php-2829204.patch"
@@ -364,7 +361,7 @@
         "drupal/block_styles": "1.x-dev",
         "drupal/bootstrap": "3.x-dev",
         "drupal/bootstrap_barrio": "4.x-dev",
-        "drupal/bootstrap_layouts": "~4.0",
+        "drupal/bootstrap_layouts": "~5.0",
         "drupal/bootstrap_library": "1.x-dev",
         "drupal/calendar": "1.x-dev",
         "drupal/captcha": "1.x-dev",
@@ -377,7 +374,7 @@
         "drupal/config_update": "~1.0",
         "drupal/console": "~1.0",
         "drupal/content_access": "1.x-dev",
-        "drupal/core": "~8.2.0",
+        "drupal/core": "~8.3.0",
         "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",
@@ -386,8 +383,8 @@
         "drupal/diff": "1.x-dev",
         "drupal/disqus": "1.x-dev",
         "drupal/drupalmoduleupgrader": "1.x-dev",
-        "drupal/drustack": "2.x-dev",
-        "drupal/ds": "~2.0",
+        "drupal/drustack": "3.x-dev",
+        "drupal/ds": "~3.0",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/eform": "1.x-dev",
         "drupal/email_registration": "1.x-dev",

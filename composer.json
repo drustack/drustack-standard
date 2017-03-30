@@ -407,7 +407,6 @@
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/key_value": "1.x-dev",
         "drupal/l10n_client": "1.x-dev",
-        "drupal/layout_plugin": "1.x-dev",
         "drupal/libraries": "3.x-dev",
         "drupal/mailsystem": "4.x-dev",
         "drupal/memcache": "2.x-dev",

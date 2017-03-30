@@ -32,3 +32,8 @@
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
+
+# Ignore site-specific configuration files.
+/web/.htaccess
+/web/robot.txt
+/web/web.config

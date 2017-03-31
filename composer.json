@@ -52,6 +52,7 @@
                 "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch"
             },
             "drupal/core": {
+                "https://drupal.org/node/2409129": "https://drupal.org/files/issues/2409129-45.patch",
                 "https://drupal.org/node/2479377": "https://drupal.org/files/issues/2479377-8.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-implements_title_callback-2716019-23-D8.patch"
@@ -61,9 +62,6 @@
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
-            },
-            "drupal/views_bootstrap": {
-                "https://drupal.org/node/2730725": "https://drupal.org/files/issues/port_list_group_plugin_to-D8.patch"
             },
             "drupal/views_php": {
                 "https://drupal.org/node/2829204": "https://drupal.org/files/issues/views_php-2829204.patch"

@@ -60,6 +60,9 @@
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
+            "drupal/recaptcha": {
+                "https://drupal.org/node/2852269": "https://www.drupal.org/files/issues/invisible_option_8_x_2_x_dev-2852269-15_0.patch"
+            },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
             },

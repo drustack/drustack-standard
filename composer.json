@@ -113,14 +113,44 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/components/codemirror/archive/5.21.0.zip"
+                    "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
+                },
+                "name": "ubilabs/jquery.geocomplete",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.7.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/components/codemirror/archive/5.24.0.zip"
                 },
                 "name": "components/codemirror",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "5.21.0"
+                "version": "5.24.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.7.0/chosen_v1.7.0.zip"
+                },
+                "name": "harvesthq/jquery.chosen",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.7.0"
             },
             "type": "package"
         },
@@ -248,6 +278,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/select2/select2/archive/4.0.3.zip"
+                },
+                "name": "select2/jquery.select2",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.0.3"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip"
                 },
                 "name": "gjunge/jquery.rateit",
@@ -354,7 +399,7 @@
         "ckeditor/ckeditor": "~4.6",
         "ckeditor/ckeditor_autogrow": "~4.6",
         "ckeditor/codesnippet": "~4.6",
-        "components/codemirror": "~5.21",
+        "components/codemirror": "~5.24",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
@@ -468,20 +513,20 @@
         "drustack/composer-preserve-paths": "~1.0",
         "fronteed/jquery.icheck": "~1.0",
         "gjunge/jquery.rateit": "~1.1",
-        "gjunge/rateit": "~1.1",
+        "harvesthq/jquery.chosen": "~1.7",
         "jackocnr/jquery.intl-tel-input": "~11.0",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
         "qwertypants/jquery.word-and-character-counter": "~2.3",
         "robinherbots/jquery.inputmask": "~3.3",
         "rvera/jquery.image-picker": "~0.3",
-        "select2/select2": "~4.0",
+        "select2/jquery.select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
         "szimek/signature_pad": "~1.5",
         "twbs/bootstrap": "~3.3",
-        "ubilabs/geocomplete": "~1.7"
+        "ubilabs/jquery.geocomplete": "~1.7"
     },
     "require-dev": {
         "behat/mink": "~1.7",

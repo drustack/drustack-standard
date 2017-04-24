@@ -49,8 +49,7 @@
         },
         "patches": {
             "drupal/advagg": {
-                "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch",
-                "https://drupal.org/node/2850263": "https://drupal.org/files/issues/2850263-drupal-8.3compatibility-11.patch"
+                "https://drupal.org/node/2840701": "https://drupal.org/files/issues/incompatibility_with_CDN_module-2840701-2.patch"
             },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",

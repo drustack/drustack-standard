@@ -463,6 +463,7 @@
         "drupal/metatag": "1.x-dev",
         "drupal/mimemail": "1.x-dev",
         "drupal/module_filter": "3.x-dev",
+        "drupal/oauth2": "1.x-dev",
         "drupal/oauth2_server": "1.x-dev",
         "drupal/page_manager": "~1.0",
         "drupal/panels": "3.x-dev",

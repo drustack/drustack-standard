@@ -50,7 +50,7 @@
         "patches": {
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
-                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-implements_title_callback-2716019-23-D8.patch"
+                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-28-D8.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
@@ -462,8 +462,8 @@
         "drupal/module_filter": "3.x-dev",
         "drupal/oauth2": "1.x-dev",
         "drupal/oauth2_server": "1.x-dev",
-        "drupal/page_manager": "~1.0",
-        "drupal/panels": "3.x-dev",
+        "drupal/page_manager": "4.x-dev",
+        "drupal/panels": "4.x-dev",
         "drupal/panels_bootstrap_layouts": "3.x-dev",
         "drupal/pathauto": "1.x-dev",
         "drupal/pathologic": "1.x-dev",

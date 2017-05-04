@@ -16,6 +16,7 @@ before_install:
 
 install:
   - composer update
+  - npm update
   - cd $TRAVIS_BUILD_DIR/web
   - ../vendor/bin/drupal site:install drustack --yes --no-interaction --db-type="sqlite" --db-file="sites/default/files/.ht.sqlite"
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &

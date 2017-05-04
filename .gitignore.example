@@ -12,7 +12,6 @@
 /web/core/
 
 # Core's dependencies are managed with Composer.
-/Gemfile.lock
 /composer.lock
 /node_modules/
 /vendor/

@@ -367,7 +367,52 @@
                     "type": "zip",
                     "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.6.2.zip"
                 },
-                "name": "ckeditor/ckeditor_autogrow",
+                "name": "ckeditor/ckeditor.autogrow",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.6.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.6.2.zip"
+                },
+                "name": "ckeditor/ckeditor.fakeobjects",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.6.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/link/releases/link_4.6.2.zip"
+                },
+                "name": "ckeditor/ckeditor.link",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.6.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/image/releases/image_4.6.2.zip"
+                },
+                "name": "ckeditor/ckeditor.image",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -394,7 +439,10 @@
     ],
     "require": {
         "ckeditor/ckeditor": "~4.6",
-        "ckeditor/ckeditor_autogrow": "~4.6",
+        "ckeditor/ckeditor.autogrow": "~4.6",
+        "ckeditor/ckeditor.fakeobjects": "~4.6",
+        "ckeditor/ckeditor.image": "~4.6",
+        "ckeditor/ckeditor.link": "~4.6",
         "ckeditor/codesnippet": "~4.6",
         "components/codemirror": "~5.24",
         "composer/installers": "~1.0",

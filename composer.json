@@ -553,7 +553,7 @@
         "drupal/workbench_moderation": "1.x-dev",
         "drupal/xmlrpc": "1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
-        "drush/drush": "~9.0",
+        "drush/drush": "~8.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
         "fronteed/jquery.icheck": "~1.0",

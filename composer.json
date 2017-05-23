@@ -19,7 +19,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.2.x-dev"
+            "dev-master": "8.3.x-dev"
         },
         "installer-paths": {
             "web/core/": [
@@ -52,10 +52,13 @@
                 "https://drupal.org/node/2409129": "https://drupal.org/files/issues/2409129-45.patch",
                 "https://drupal.org/node/2479377": "https://drupal.org/files/issues/2479377-8.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
-                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-implements_title_callback-2716019-23-D8.patch"
+                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-28-D8.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
+            },
+            "drupal/recaptcha": {
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/invisible_option-2852269-36.patch"
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
@@ -68,6 +71,9 @@
             },
             "drupal/xmlrpc": {
                 "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"
+            },
+            "drupal/xmlsitemap": {
+                "https://drupal.org/node/2815631": "https://drupal.org/files/issues/incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-4.patch"
             }
         },
         "preserve-paths": [
@@ -106,14 +112,44 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/components/codemirror/archive/5.21.0.zip"
+                    "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
+                },
+                "name": "ubilabs/jquery.geocomplete",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.7.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/components/codemirror/archive/5.24.0.zip"
                 },
                 "name": "components/codemirror",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "5.21.0"
+                "version": "5.24.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.7.0/chosen_v1.7.0.zip"
+                },
+                "name": "harvesthq/jquery.chosen",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.7.0"
             },
             "type": "package"
         },
@@ -241,6 +277,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/select2/select2/archive/4.0.3.zip"
+                },
+                "name": "select2/jquery.select2",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.0.3"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip"
                 },
                 "name": "gjunge/jquery.rateit",
@@ -318,7 +369,52 @@
                     "type": "zip",
                     "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.6.2.zip"
                 },
-                "name": "ckeditor/ckeditor_autogrow",
+                "name": "ckeditor/ckeditor.autogrow",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.6.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.6.2.zip"
+                },
+                "name": "ckeditor/ckeditor.fakeobjects",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.6.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/link/releases/link_4.6.2.zip"
+                },
+                "name": "ckeditor/ckeditor.link",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.6.2"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/image/releases/image_4.6.2.zip"
+                },
+                "name": "ckeditor/ckeditor.image",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -345,9 +441,12 @@
     ],
     "require": {
         "ckeditor/ckeditor": "~4.6",
-        "ckeditor/ckeditor_autogrow": "~4.6",
+        "ckeditor/ckeditor.autogrow": "~4.6",
+        "ckeditor/ckeditor.fakeobjects": "~4.6",
+        "ckeditor/ckeditor.image": "~4.6",
+        "ckeditor/ckeditor.link": "~4.6",
         "ckeditor/codesnippet": "~4.6",
-        "components/codemirror": "~5.21",
+        "components/codemirror": "~5.24",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
@@ -367,7 +466,6 @@
         "drupal/checklistapi": "1.x-dev",
         "drupal/codesnippet": "1.x-dev",
         "drupal/config_update": "~1.0",
-        "drupal/console": "~1.0",
         "drupal/content_access": "1.x-dev",
         "drupal/core": "~8.2.0",
         "drupal/csv_serialization": "1.x-dev",
@@ -458,20 +556,20 @@
         "drustack/composer-preserve-paths": "~1.0",
         "fronteed/jquery.icheck": "~1.0",
         "gjunge/jquery.rateit": "~1.1",
-        "gjunge/rateit": "~1.1",
+        "harvesthq/jquery.chosen": "~1.7",
         "jackocnr/jquery.intl-tel-input": "~11.0",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
         "qwertypants/jquery.word-and-character-counter": "~2.3",
         "robinherbots/jquery.inputmask": "~3.3",
         "rvera/jquery.image-picker": "~0.3",
-        "select2/select2": "~4.0",
+        "select2/jquery.select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
         "szimek/signature_pad": "~1.5",
         "twbs/bootstrap": "~3.3",
-        "ubilabs/geocomplete": "~1.7"
+        "ubilabs/jquery.geocomplete": "~1.7"
     },
     "require-dev": {
         "behat/mink": "~1.7",

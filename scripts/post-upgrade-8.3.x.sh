@@ -8,4 +8,4 @@ cd web
 drush -y updatedb
 drush -y core-cron
 drush -y cache-rebuild
-drush -y pm-enable bootstrap_layouts content_moderation
+drush -y pm-enable bootstrap_layouts content_moderation field_layout layout_discovery

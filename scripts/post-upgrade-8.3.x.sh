@@ -8,6 +8,16 @@ cd web
 drush -y updatedb
 drush -y core-cron
 drush -y cache-rebuild
+
+drush -y pm-uninstall \
+    tmgmt \
+    tmgmt_config \
+    tmgmt_content \
+    tmgmt_file \
+    tmgmt_language_combination \
+    tmgmt_local \
+    tmgmt_locale
+
 drush -y pm-enable \
     bootstrap_layouts \
     content_moderation \

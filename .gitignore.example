@@ -13,6 +13,7 @@
 
 # Core's dependencies are managed with Composer.
 /composer.lock
+/node_modules/
 /vendor/
 /web/libraries/*/
 /web/modules/contrib/

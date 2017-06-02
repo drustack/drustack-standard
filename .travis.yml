@@ -10,13 +10,13 @@ before_install:
   - sh -c "if [ $TRAVIS_PHP_VERSION != 'hhvm' ]; then phpenv config-rm xdebug.ini; fi"
   - sh -c "if [ $TRAVIS_PHP_VERSION != 'hhvm' ]; then echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi"
   - sh -c "if [ $TRAVIS_PHP_VERSION = '5.6' ]; then echo 'always_populate_raw_post_data = -1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini; fi"
-  - composer self-update
-  - composer global require --no-update hirak/prestissimo:@stable
-  - composer global update
+  - travis_retry composer self-update
+  - travis_retry composer global require --no-update hirak/prestissimo:@stable
+  - travis_retry composer global update
 
 install:
-  - composer update
-  - npm update
+  - travis_retry composer update
+  - travis_retry npm update
   - cd $TRAVIS_BUILD_DIR/web
   - ../vendor/bin/drush site-install drustack --yes --db-url=sqlite://sites/default/files/.ht.sqlite
   - php -S 127.0.0.1:8080 -t . >/dev/null 2>&1 &

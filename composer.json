@@ -566,8 +566,7 @@
         "rvera/jquery.image-picker": "~0.3",
         "select2/jquery.select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
-        "symfony/filesystem": "~2.7",
-        "symfony/finder": "~2.7",
+        "symfony/symfony": "2.8.*",
         "szimek/signature_pad": "~1.5",
         "twbs/bootstrap": "~3.3",
         "ubilabs/jquery.geocomplete": "~1.7"

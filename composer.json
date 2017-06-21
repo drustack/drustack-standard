@@ -50,7 +50,7 @@
         "patches": {
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
-                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-28-D8.patch"
+                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-40.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
@@ -466,6 +466,7 @@
         "drupal/commerce": "~2.0",
         "drupal/commerce_migrate": "2.x-dev",
         "drupal/commerce_shipping": "2.x-dev",
+        "drupal/config_inspector": "1.x-dev",
         "drupal/config_update": "~1.0",
         "drupal/content_access": "1.x-dev",
         "drupal/core": "~8.3.0",
@@ -552,7 +553,6 @@
         "drupal/workbench_moderation": "1.x-dev",
         "drupal/xmlrpc": "1.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
-        "drush/drush": "~8.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
         "fronteed/jquery.icheck": "~1.0",
@@ -577,7 +577,6 @@
         "jcalderonzumba/gastonjs": "~1.1",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": "~4.8",
         "symfony/phpunit-bridge": "2.8.*"
     },
     "scripts": {

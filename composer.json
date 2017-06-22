@@ -50,7 +50,7 @@
         "patches": {
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
-                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-40.patch"
+                "https://drupal.org/node/2795317": "https://drupal.org/files/issues/drupal_core-8.3.x-phpunit_5.7-2795317-9.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
@@ -477,7 +477,6 @@
         "drupal/devel": "1.x-dev",
         "drupal/diff": "1.x-dev",
         "drupal/disqus": "1.x-dev",
-        "drupal/drupalmoduleupgrader": "1.x-dev",
         "drupal/drustack": "3.x-dev",
         "drupal/ds": "~3.0",
         "drupal/easy_breadcrumb": "1.x-dev",
@@ -489,7 +488,6 @@
         "drupal/examples": "1.x-dev",
         "drupal/externalauth": "1.x-dev",
         "drupal/features": "3.x-dev",
-        "drupal/feeds": "3.x-dev",
         "drupal/field_collection": "~1.0",
         "drupal/field_group": "1.x-dev",
         "drupal/file_entity": "~2.0",

@@ -58,7 +58,7 @@
                 "https://drupal.org/node/1815086": "https://drupal.org/files/pdo_oci-d7_22_core_patch-1815086-2.patch",
                 "https://drupal.org/node/1815096": "https://drupal.org/files/pdo_oci-d7_driver_patch-1815096-2.patch",
                 "https://drupal.org/node/2038567": "https://drupal.org/files/issues/drustack-gitignore-2038567-2.patch",
-                "https://drupal.org/node/2106057": "https://drupal.org/files/issues/drupal-7.x-symlinksifownermatch-2106057-5.patch",
+                "https://drupal.org/node/2106057": "https://drupal.org/files/issues/drupal-7.x-symlinksifownermatch-2106057-7.patch",
                 "https://drupal.org/node/2165339": "https://drupal.org/files/issues/twbs_jquery-overlay-parent.js-2165339-1.patch",
                 "https://drupal.org/node/728702": "https://drupal.org/files/issues/install-redirect-on-empty-database-728702-36.patch",
                 "https://drupal.org/node/737816": "https://drupal.org/files/drupal-7.x-fix_pdoexception_grant_permissions-737816-26-do-not-test.patch",
@@ -133,14 +133,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.9.2.zip"
+                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.9.3.zip"
                 },
                 "name": "htmlpurifier/htmlpurifier",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.9.2"
+                "version": "4.9.3"
             },
             "type": "package"
         },

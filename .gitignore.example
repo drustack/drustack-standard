@@ -40,6 +40,7 @@
 
 # Core's dependencies are managed with Composer.
 /composer.lock
+/node_modules/
 /vendor/
 /web/profiles/*/
 /web/sites/all/libraries/*/
@@ -58,3 +59,8 @@
 
 # Ignore SimpleTest multi-site environment.
 /web/sites/simpletest
+
+# Ignore site-specific configuration files.
+/web/.htaccess
+/web/robot.txt
+/web/web.config

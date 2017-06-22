@@ -374,6 +374,7 @@
         "drupal/simplenews": "1.x-dev",
         "drupal/site_map": "~1.0",
         "drupal/site_verify": "~1.0",
+        "drupal/smtp": "1.x-dev",
         "drupal/strongarm": "2.x-dev",
         "drupal/styleguide": "1.x-dev",
         "drupal/system_stream_wrapper": "1.x-dev",

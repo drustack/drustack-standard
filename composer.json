@@ -534,6 +534,7 @@
         "drupal/simplenews": "1.x-dev",
         "drupal/simplenews_scheduler": "1.x-dev",
         "drupal/sitemap": "1.x-dev",
+        "drupal/smtp": "1.x-dev",
         "drupal/state_machine": "1.x-dev",
         "drupal/styles_api": "1.x-dev",
         "drupal/system_stream_wrapper": "1.x-dev",

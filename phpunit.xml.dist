@@ -29,6 +29,7 @@
       <env name="SIMPLETEST_DB" value="sqlite://sites/default/files/.ht.sqlite"/>
       <!-- Example BROWSERTEST_OUTPUT_DIRECTORY value: /path/to/webroot/sites/simpletest/browser_output -->
       <env name="BROWSERTEST_OUTPUT_DIRECTORY" value="./tmp"/>
+      <env name="SYMFONY_DEPRECATIONS_HELPER" value="weak"/>
   </php>
   <testsuites>
       <testsuite name="unit">

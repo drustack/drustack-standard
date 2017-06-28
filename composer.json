@@ -573,7 +573,7 @@
         "drupal/styles_api": "1.x-dev",
         "drupal/swiftmailer": "1.x-dev",
         "drupal/system_stream_wrapper": "1.x-dev",
-        "drupal/taxonomy_menu": "1.x-dev",
+        "drupal/taxonomy_menu": "3.x-dev",
         "drupal/tmgmt": "1.x-dev",
         "drupal/tmgmt_google": "1.x-dev",
         "drupal/tmgmt_microsoft": "1.x-dev",

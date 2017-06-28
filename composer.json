@@ -458,7 +458,7 @@
         "drupal/advagg": "2.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "1.x-dev",
-        "drupal/better_exposed_filters": "1.x-dev",
+        "drupal/better_exposed_filters": "3.x-dev",
         "drupal/blazy": "1.x-dev",
         "drupal/block_class": "1.x-dev",
         "drupal/block_styles": "1.x-dev",

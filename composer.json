@@ -235,7 +235,7 @@
                     "type": "zip",
                     "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip"
                 },
-                "name": "gjunge/rateit",
+                "name": "gjunge/jquery.rateit",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -265,7 +265,7 @@
                     "type": "zip",
                     "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
                 },
-                "name": "ubilabs/geocomplete",
+                "name": "ubilabs/jquery.geocomplete",
                 "require": {
                     "composer/installers": "~1.0"
                 },

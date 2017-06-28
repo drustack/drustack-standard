@@ -48,6 +48,9 @@
             ]
         },
         "patches": {
+            "drupal/blazy": {
+                "https://drupal.org/node/2890216": "https://drupal.org/files/issues/blazy-remove_version_from_info_yml-2890216-2.patch"
+            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2795317": "https://drupal.org/files/issues/drupal_core-8.3.x-phpunit_5.7-2795317-14.patch"

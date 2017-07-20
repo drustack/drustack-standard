@@ -521,6 +521,7 @@
         "drupal/inline_entity_form": "1.x-dev",
         "drupal/key_value": "1.x-dev",
         "drupal/l10n_client": "1.x-dev",
+        "drupal/ldap": "3.x-dev",
         "drupal/libraries": "3.x-dev",
         "drupal/linkit": "5.x-dev",
         "drupal/mailsystem": "4.x-dev",

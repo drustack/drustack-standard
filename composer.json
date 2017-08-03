@@ -143,14 +143,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/components/codemirror/archive/5.27.2.zip"
+                    "url": "https://github.com/components/codemirror/archive/5.27.4.zip"
                 },
                 "name": "components/codemirror",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "5.27.2"
+                "version": "5.27.4"
             },
             "type": "package"
         },
@@ -248,14 +248,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/szimek/signature_pad/archive/v2.2.0.zip"
+                    "url": "https://github.com/szimek/signature_pad/archive/v2.2.1.zip"
                 },
                 "name": "szimek/signature_pad",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "2.2.0"
+                "version": "2.2.1"
             },
             "type": "package"
         },
@@ -323,14 +323,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v11.0.15.zip"
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v12.0.0.zip"
                 },
                 "name": "jackocnr/jquery.intl-tel-input",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "11.0.15"
+                "version": "12.0.0"
             },
             "type": "package"
         },
@@ -353,14 +353,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.7.0/ckeditor_4.7.0_standard.zip"
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.7.1/ckeditor_4.7.1_standard.zip"
                 },
                 "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.0"
+                "version": "4.7.1"
             },
             "type": "package"
         },
@@ -368,14 +368,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.7.0.zip"
+                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.7.1.zip"
                 },
                 "name": "ckeditor/ckeditor.autogrow",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.0"
+                "version": "4.7.1"
             },
             "type": "package"
         },
@@ -383,14 +383,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.7.0.zip"
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.7.1.zip"
                 },
                 "name": "ckeditor/ckeditor.fakeobjects",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.0"
+                "version": "4.7.1"
             },
             "type": "package"
         },
@@ -398,14 +398,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/link/releases/link_4.7.0.zip"
+                    "url": "http://download.ckeditor.com/link/releases/link_4.7.1.zip"
                 },
                 "name": "ckeditor/ckeditor.link",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.0"
+                "version": "4.7.1"
             },
             "type": "package"
         },
@@ -413,14 +413,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/image/releases/image_4.7.0.zip"
+                    "url": "http://download.ckeditor.com/image/releases/image_4.7.1.zip"
                 },
                 "name": "ckeditor/ckeditor.image",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.0"
+                "version": "4.7.1"
             },
             "type": "package"
         },
@@ -428,14 +428,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.7.0.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.7.1.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.0"
+                "version": "4.7.1"
             },
             "type": "package"
         }
@@ -595,7 +595,7 @@
         "fronteed/jquery.icheck": "~1.0",
         "gjunge/jquery.rateit": "~1.1",
         "harvesthq/jquery.chosen": "~1.7",
-        "jackocnr/jquery.intl-tel-input": "~11.0",
+        "jackocnr/jquery.intl-tel-input": "~12.0",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
         "qwertypants/jquery.word-and-character-counter": "~2.5",

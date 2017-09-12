@@ -53,6 +53,7 @@
             },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
+                "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-20.patch",
                 "https://drupal.org/node/2795317": "https://drupal.org/files/issues/drupal_core-8.3.x-phpunit_5.7-2795317-21.patch"
             },
             "drupal/eform": {
@@ -74,7 +75,7 @@
                 "https://drupal.org/node/2749767": "https://drupal.org/files/issues/xmlrpc-remove_version_from_info_yml-2749767-2.patch"
             },
             "drupal/xmlsitemap": {
-                "https://drupal.org/node/2815631": "https://drupal.org/files/issues/incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-4.patch"
+                "https://drupal.org/node/2815631": "https://drupal.org/files/issues/xmlsitemap-incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-8.patch"
             }
         },
         "preserve-paths": [
@@ -469,6 +470,7 @@
         "drupal/bootstrap_barrio": "4.x-dev",
         "drupal/bootstrap_layouts": "~5.0",
         "drupal/bootstrap_library": "1.x-dev",
+        "drupal/bootstrap_paragraphs": "2.x-dev",
         "drupal/calendar": "1.x-dev",
         "drupal/captcha": "1.x-dev",
         "drupal/cdn": "3.x-dev",
@@ -541,6 +543,7 @@
         "drupal/page_manager": "4.x-dev",
         "drupal/panels": "4.x-dev",
         "drupal/panels_bootstrap_layouts": "3.x-dev",
+        "drupal/paragraphs": "1.x-dev",
         "drupal/pathauto": "1.x-dev",
         "drupal/pathologic": "1.x-dev",
         "drupal/php": "1.x-dev",

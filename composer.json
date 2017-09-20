@@ -497,7 +497,7 @@
         "drupal/diff": "1.x-dev",
         "drupal/disqus": "1.x-dev",
         "drupal/dropzonejs": "1.x-dev",
-        "drupal/drustack": "3.x-dev",
+        "drupal/drustack": "4.x-dev",
         "drupal/ds": "~3.0",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/editor_advanced_link": "~1.0",

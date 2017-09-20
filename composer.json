@@ -19,7 +19,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.3.x-dev"
+            "dev-master": "8.4.x-dev"
         },
         "installer-paths": {
             "web/core/": [
@@ -54,7 +54,7 @@
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-20.patch",
-                "https://drupal.org/node/2795317": "https://drupal.org/files/issues/drupal_core-8.3.x-phpunit_5.7-2795317-21.patch"
+                "https://drupal.org/node/2795317": "https://drupal.org/files/issues/2795317-43.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
@@ -484,7 +484,7 @@
         "drupal/config_inspector": "1.x-dev",
         "drupal/config_update": "~1.0",
         "drupal/content_access": "1.x-dev",
-        "drupal/core": "~8.3.0",
+        "drupal/core": "~8.4.0-rc1",
         "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",
@@ -606,7 +606,7 @@
         "rvera/jquery.image-picker": "~0.3",
         "select2/jquery.select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
-        "symfony/symfony": "2.8.*",
+        "symfony/symfony": "3.2.*",
         "szimek/signature_pad": "~2.2",
         "twbs/bootstrap": "~3.3",
         "ubilabs/jquery.geocomplete": "~1.7"
@@ -618,7 +618,7 @@
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
         "phpunit/phpunit": ">=5.7.21 <6",
-        "symfony/phpunit-bridge": "2.8.*"
+        "symfony/phpunit-bridge": "3.2.*"
     },
     "scripts": {
         "post-autoload-dump": [

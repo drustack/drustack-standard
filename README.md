@@ -17,7 +17,7 @@ First you need to [install composer](https://getcomposer.org/doc/00-intro.md#ins
 
 After that you can create the project:
 
-    composer create-project drustack/framework-standard-edition:^8.3.0 MYPROJECT --no-interaction
+    composer create-project drustack/framework-standard-edition:^8.4.0 MYPROJECT --no-interaction
 
 With `composer require ...` you can download new dependencies to your installation.
 

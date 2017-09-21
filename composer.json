@@ -488,7 +488,7 @@
         "drupal/config_inspector": "1.x-dev",
         "drupal/config_update": "~1.0",
         "drupal/content_access": "1.x-dev",
-        "drupal/core": "~8.4.0-rc1",
+        "drupal/core": "~8.4.0-rc2",
         "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",

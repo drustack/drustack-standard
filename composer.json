@@ -54,7 +54,7 @@
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-20.patch",
-                "https://drupal.org/node/2795317": "https://drupal.org/files/issues/2795317-43.patch"
+                "https://drupal.org/node/2795317": "https://drupal.org/files/issues/drupal-8.4.x-phpunit_5.7-2795317-57.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
@@ -488,7 +488,7 @@
         "drupal/config_inspector": "1.x-dev",
         "drupal/config_update": "~1.0",
         "drupal/content_access": "1.x-dev",
-        "drupal/core": "~8.4.0-rc2",
+        "drupal/core": "~8.4.0",
         "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",

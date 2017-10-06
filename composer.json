@@ -455,7 +455,7 @@
         "dinbror/blazy": "~1.8",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
-        "drupal/admin_toolbar": "~1.0",
+        "drupal/admin_toolbar": "1.x-dev",
         "drupal/adminimal_admin_toolbar": "~1.0",
         "drupal/adminimal_theme": "~1.0",
         "drupal/advagg": "3.x-dev",

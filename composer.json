@@ -60,7 +60,6 @@
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
             "drupal/module_filter": {
-                "https://drupal.org/node/2857431": "https://drupal.org/files/issues/module_filter-undefined_index_recent_modules_submit-2857431-16.patch",
                 "https://drupal.org/node/2902019": "https://drupal.org/files/issues/filtering-tabs-doesnt-work-2902019-4.patch"
             },
             "drupal/recaptcha": {

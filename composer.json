@@ -59,9 +59,6 @@
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
-            "drupal/module_filter": {
-                "https://drupal.org/node/2902019": "https://drupal.org/files/issues/filtering-tabs-doesnt-work-2902019-4.patch"
-            },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/invisible_option-2852269-36.patch"
             },

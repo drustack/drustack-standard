@@ -19,7 +19,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.3.x-dev"
+            "dev-master": "8.4.x-dev"
         },
         "installer-paths": {
             "web/": [

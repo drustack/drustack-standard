@@ -46,7 +46,7 @@
 /web/sites/all/libraries/*/
 /web/sites/all/modules/contrib/
 /web/sites/all/themes/contrib/
-/web/sites/all/translations/*/
+/web/sites/all/translations/*
 
 # Ignore configuration files that may contain sensitive information.
 /web/sites/*/settings*.php

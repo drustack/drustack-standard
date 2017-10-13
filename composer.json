@@ -247,6 +247,21 @@
                 "version": "4.6.2"
             },
             "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/archive/v4.1.0.zip"
+                },
+                "name": "tubalmartin/YUI-CSS-compressor-PHP-port",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.1.0"
+            },
+            "type": "package"
         }
     ],
     "require": {
@@ -417,6 +432,7 @@
         "moxiecode/plupload": "~1.5",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
+        "tubalmartin/YUI-CSS-compressor-PHP-port": "~4.1",
         "twbs/bootstrap": "~3.3"
     },
     "require-dev": {

@@ -355,14 +355,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.7.3/ckeditor_4.7.3_standard.zip"
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.7.2/ckeditor_4.7.2_standard.zip"
                 },
                 "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.3"
+                "version": "4.7.2"
             },
             "type": "package"
         },
@@ -370,14 +370,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.7.3.zip"
+                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.7.2.zip"
                 },
                 "name": "ckeditor/ckeditor.autogrow",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.3"
+                "version": "4.7.2"
             },
             "type": "package"
         },
@@ -385,14 +385,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.7.3.zip"
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.7.2.zip"
                 },
                 "name": "ckeditor/ckeditor.fakeobjects",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.3"
+                "version": "4.7.2"
             },
             "type": "package"
         },
@@ -400,14 +400,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/link/releases/link_4.7.3.zip"
+                    "url": "http://download.ckeditor.com/link/releases/link_4.7.2.zip"
                 },
                 "name": "ckeditor/ckeditor.link",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.3"
+                "version": "4.7.2"
             },
             "type": "package"
         },
@@ -415,14 +415,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/image/releases/image_4.7.3.zip"
+                    "url": "http://download.ckeditor.com/image/releases/image_4.7.2.zip"
                 },
                 "name": "ckeditor/ckeditor.image",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.3"
+                "version": "4.7.2"
             },
             "type": "package"
         },
@@ -430,14 +430,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.7.3.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.7.2.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.7.3"
+                "version": "4.7.2"
             },
             "type": "package"
         }

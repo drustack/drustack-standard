@@ -53,6 +53,7 @@
             },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
+                "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2664016-41.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-20.patch",
                 "https://drupal.org/node/2795317": "https://drupal.org/files/issues/drupal_core-8.3.x-phpunit_5.7-2795317-21.patch"
             },

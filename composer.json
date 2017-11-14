@@ -61,7 +61,7 @@
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
             "drupal/recaptcha": {
-                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/invisible_option-2852269-36.patch"
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/recaptcha-invisible-option-2852269-56.patch"
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"

@@ -90,7 +90,7 @@
                 "https://drupal.org/node/867578": "https://drupal.org/files/pathauto-add-drush-support-867578-42.patch"
             },
             "drupal/title": {
-                "https://drupal.org/node/2098097": "https://drupal.org/files/issues/title-title_entity_presave-2098097-43.patch"
+                "https://drupal.org/node/2098097": "https://drupal.org/files/issues/title-title_entity_presave-2098097-46.patch"
             },
             "drupal/uuid": {
                 "https://drupal.org/node/2074621": "https://drupal.org/files/uuid_services_field_collection_revisions.patch",

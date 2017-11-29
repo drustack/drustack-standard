@@ -99,7 +99,7 @@
             },
             "drupal/views": {
                 "https://drupal.org/node/1863358": "https://drupal.org/files/1863358-grid-format-striping-8.patch",
-                "https://drupal.org/node/2037469": "https://drupal.org/files/views-exposed-sorts-2037469-1.patch"
+                "https://drupal.org/node/2037469": "https://drupal.org/files/issues/views-exposed-sorts-2037469-26.patch"
             },
             "drupal/workbench": {
                 "https://drupal.org/node/2075467": "https://drupal.org/files/issues/workbench_uuid-2075467-01.patch"

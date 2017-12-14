@@ -145,6 +145,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.3/CKEditor-CodeMirror-Plugin.zip"
+                },
+                "name": "w8tcha/ckeditor.codemirror",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.17.3"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "https://github.com/components/codemirror/archive/5.27.4.zip"
                 },
                 "name": "components/codemirror",
@@ -160,14 +175,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.7.0/chosen_v1.7.0.zip"
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip"
                 },
                 "name": "harvesthq/jquery.chosen",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.7.0"
+                "version": "1.8.2"
             },
             "type": "package"
         },
@@ -205,14 +220,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.11.zip"
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.12.zip"
                 },
                 "name": "jonthornton/jquery.timepicker",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.11.11"
+                "version": "1.11.12"
             },
             "type": "package"
         },
@@ -250,14 +265,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/szimek/signature_pad/archive/v2.2.1.zip"
+                    "url": "https://github.com/szimek/signature_pad/archive/v2.3.0.zip"
                 },
                 "name": "szimek/signature_pad",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "2.2.1"
+                "version": "2.3.0"
             },
             "type": "package"
         },
@@ -295,14 +310,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/select2/select2/archive/4.0.3.zip"
+                    "url": "https://github.com/select2/select2/archive/4.0.5.zip"
                 },
                 "name": "select2/jquery.select2",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.0.3"
+                "version": "4.0.5"
             },
             "type": "package"
         },
@@ -310,14 +325,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.7.zip"
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.10.zip"
                 },
                 "name": "robinherbots/jquery.inputmask",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "3.3.7"
+                "version": "3.3.10"
             },
             "type": "package"
         },
@@ -325,14 +340,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v12.0.0.zip"
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v12.1.0.zip"
                 },
                 "name": "jackocnr/jquery.intl-tel-input",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "12.0.0"
+                "version": "12.1.0"
             },
             "type": "package"
         },
@@ -598,8 +613,8 @@
         "enyo/dropzone": "~5.1",
         "fronteed/jquery.icheck": "~1.0",
         "gjunge/jquery.rateit": "~1.1",
-        "harvesthq/jquery.chosen": "~1.7",
-        "jackocnr/jquery.intl-tel-input": "~12.0",
+        "harvesthq/jquery.chosen": "~1.8",
+        "jackocnr/jquery.intl-tel-input": "~12.1",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
         "qwertypants/jquery.word-and-character-counter": "~2.5",
@@ -608,9 +623,10 @@
         "select2/jquery.select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
         "symfony/symfony": "3.2.*",
-        "szimek/signature_pad": "~2.2",
+        "szimek/signature_pad": "~2.3",
         "twbs/bootstrap": "~3.3",
-        "ubilabs/jquery.geocomplete": "~1.7"
+        "ubilabs/jquery.geocomplete": "~1.7",
+        "w8tcha/ckeditor.codemirror": "~1.17"
     },
     "require-dev": {
         "behat/mink": "~1.7",

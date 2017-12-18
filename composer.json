@@ -53,7 +53,8 @@
             },
             "drupal/captcha": {
                 "https://drupal.org/node/2608540": "https://drupal.org/files/issues/image_captcha_refresh-2608540-37.patch",
-                "https://drupal.org/node/2910900": "https://drupal.org/files/issues/captcha_monolog_support.patch"
+                "https://drupal.org/node/2910900": "https://drupal.org/files/issues/captcha_monolog_support.patch",
+                "https://drupal.org/node/2913295": "https://drupal.org/files/issues/bypass_captcha_validation_access_false_1.patch"
             },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",

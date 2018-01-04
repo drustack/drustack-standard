@@ -14,7 +14,7 @@ before_install:
   - travis_retry composer -n global require --no-update hirak/prestissimo:@stable
   - travis_retry composer -n global update
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
-  - travis_retry cgr -n drupal/console ~1.0 --stability RC
+  - travis_retry cgr -n drupal/console ~1.0
   - travis_retry cgr -n drush/drush ~8.0
   - travis_retry cgr -n phpunit/phpunit ~5.7
 

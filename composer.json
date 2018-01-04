@@ -51,20 +51,30 @@
             "drupal/blazy": {
                 "https://drupal.org/node/2890216": "https://drupal.org/files/issues/blazy-remove_version_from_info_yml-2890216-2.patch"
             },
+            "drupal/captcha": {
+                "https://drupal.org/node/2855165": "https://drupal.org/files/issues/2855165-14-D8-deprecated_methods_and_function__replaced_REQUEST_TIME.patch",
+                "https://drupal.org/node/2899256": "https://drupal.org/files/issues/cannot_login_to_site-2899256-3_0.patch",
+                "https://drupal.org/node/2904994": "https://drupal.org/files/issues/drupal_add_http_header_is_deprecated-2904994-3.patch",
+                "https://drupal.org/node/2910900": "https://drupal.org/files/issues/captcha_monolog_support.patch",
+                "https://drupal.org/node/2912341": "https://drupal.org/files/issues/captcha-form_id_length_64_characters_too_small-2912341-3.patch",
+                "https://drupal.org/node/2913295": "https://drupal.org/files/issues/bypass_captcha_validation_access_false_1.patch",
+                "https://drupal.org/node/2931385": "https://drupal.org/files/issues/captcha-Url_fromRoute-2931385-2.patch"
+            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2664016-41.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-20.patch",
-                "https://drupal.org/node/2795317": "https://drupal.org/files/issues/drupal-8.4.x-phpunit_5.7-2795317-59.patch"
+                "https://drupal.org/node/2928249": "https://drupal.org/files/issues/drupal-8.4.x-phpunit6_compatibility_layer-2928249-38.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
             "drupal/recaptcha": {
-                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/recaptcha-invisible-option-2852269-56.patch"
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/recaptcha-invisible-option-2852269-56.patch",
+                "https://drupal.org/node/2893656": "https://drupal.org/files/issues/recaptcha_caching-2893656-3.patch"
             },
             "drupal/token": {
-                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-2.patch"
+                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/token-term_vocabulary_source-2816693-11.patch"
             },
             "drupal/views_php": {
                 "https://drupal.org/node/2829204": "https://drupal.org/files/issues/views_php-2829204.patch"
@@ -145,6 +155,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.3/CKEditor-CodeMirror-Plugin.zip"
+                },
+                "name": "w8tcha/ckeditor.codemirror",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.17.3"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "https://github.com/components/codemirror/archive/5.27.4.zip"
                 },
                 "name": "components/codemirror",
@@ -160,14 +185,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.7.0/chosen_v1.7.0.zip"
+                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.2/chosen_v1.8.2.zip"
                 },
                 "name": "harvesthq/jquery.chosen",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.7.0"
+                "version": "1.8.2"
             },
             "type": "package"
         },
@@ -205,14 +230,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.11.zip"
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.12.zip"
                 },
                 "name": "jonthornton/jquery.timepicker",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.11.11"
+                "version": "1.11.12"
             },
             "type": "package"
         },
@@ -250,14 +275,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/szimek/signature_pad/archive/v2.2.1.zip"
+                    "url": "https://github.com/szimek/signature_pad/archive/v2.3.0.zip"
                 },
                 "name": "szimek/signature_pad",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "2.2.1"
+                "version": "2.3.0"
             },
             "type": "package"
         },
@@ -295,14 +320,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/select2/select2/archive/4.0.3.zip"
+                    "url": "https://github.com/select2/select2/archive/4.0.5.zip"
                 },
                 "name": "select2/jquery.select2",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.0.3"
+                "version": "4.0.5"
             },
             "type": "package"
         },
@@ -310,14 +335,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.7.zip"
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/3.3.10.zip"
                 },
                 "name": "robinherbots/jquery.inputmask",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "3.3.7"
+                "version": "3.3.10"
             },
             "type": "package"
         },
@@ -325,14 +350,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v12.0.0.zip"
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v12.1.0.zip"
                 },
                 "name": "jackocnr/jquery.intl-tel-input",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "12.0.0"
+                "version": "12.1.0"
             },
             "type": "package"
         },
@@ -598,8 +623,8 @@
         "enyo/dropzone": "~5.1",
         "fronteed/jquery.icheck": "~1.0",
         "gjunge/jquery.rateit": "~1.1",
-        "harvesthq/jquery.chosen": "~1.7",
-        "jackocnr/jquery.intl-tel-input": "~12.0",
+        "harvesthq/jquery.chosen": "~1.8",
+        "jackocnr/jquery.intl-tel-input": "~12.1",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
         "qwertypants/jquery.word-and-character-counter": "~2.5",
@@ -608,9 +633,10 @@
         "select2/jquery.select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
         "symfony/symfony": "3.2.*",
-        "szimek/signature_pad": "~2.2",
+        "szimek/signature_pad": "~2.3",
         "twbs/bootstrap": "~3.3",
-        "ubilabs/jquery.geocomplete": "~1.7"
+        "ubilabs/jquery.geocomplete": "~1.7",
+        "w8tcha/ckeditor.codemirror": "~1.17"
     },
     "require-dev": {
         "behat/mink": "~1.7",

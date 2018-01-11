@@ -75,6 +75,9 @@
             "drupal/git_deploy": {
                 "https://drupal.org/node/1511112": "https://drupal.org/files/git_deploy-1511112_5.patch"
             },
+            "drupal/i18n": {
+                "https://drupal.org/node/2935866": "https://drupal.org/files/issues/i18n-i18n_string_objectindex_schema_mismatch-2935866-2.patch"
+            },
             "drupal/menu_block": {
                 "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch"
             },
@@ -329,7 +332,7 @@
         "drupal/git_deploy": "2.x-dev",
         "drupal/google_analytics": "~2.0",
         "drupal/htmlpurifier": "2.x-dev",
-        "drupal/i18n": "~1.0",
+        "drupal/i18n": "1.x-dev",
         "drupal/image_resize_filter": "~1.0",
         "drupal/imageapi_optimize": "~1.0",
         "drupal/imagecache_token": "1.x-dev",

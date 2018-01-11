@@ -524,7 +524,7 @@
         "drupal/drustack": "4.x-dev",
         "drupal/ds": "~3.0",
         "drupal/easy_breadcrumb": "1.x-dev",
-        "drupal/editor_advanced_link": "~1.0",
+        "drupal/editor_advanced_link": "~1.4",
         "drupal/editor_file": "1.x-dev",
         "drupal/eform": "1.x-dev",
         "drupal/email_registration": "1.x-dev",

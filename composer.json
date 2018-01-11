@@ -361,7 +361,7 @@
         "drupal/migrate_d2d": "~2.0",
         "drupal/migrate_extras": "2.x-dev",
         "drupal/mimemail": "1.x-dev",
-        "drupal/module_filter": "2.x-dev",
+        "drupal/module_filter": "~2.1",
         "drupal/multiform": "~1.0",
         "drupal/multipurpose": "~1.0",
         "drupal/navbar": "~1.0",

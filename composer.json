@@ -501,7 +501,7 @@
         "drupal/bootstrap_paragraphs": "2.x-dev",
         "drupal/calendar": "1.x-dev",
         "drupal/captcha": "1.x-dev",
-        "drupal/cdn": "3.x-dev",
+        "drupal/cdn": "~3.2",
         "drupal/checklistapi": "1.x-dev",
         "drupal/ckeditor_media_embed": "~1.0",
         "drupal/codesnippet": "1.x-dev",

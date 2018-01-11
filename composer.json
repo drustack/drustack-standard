@@ -583,7 +583,7 @@
         "drupal/recaptcha": "2.x-dev",
         "drupal/redirect": "~1.0",
         "drupal/restui": "~1.0",
-        "drupal/robotstxt": "1.x-dev",
+        "drupal/robotstxt": "~1.1",
         "drupal/rules": "3.x-dev",
         "drupal/scheduler": "1.x-dev",
         "drupal/search404": "1.x-dev",

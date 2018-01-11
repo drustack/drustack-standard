@@ -413,7 +413,7 @@
         "drupal/views": "3.x-dev",
         "drupal/views_bootstrap": "3.x-dev",
         "drupal/views_bulk_operations": "~3.0",
-        "drupal/views_data_export": "3.x-dev",
+        "drupal/views_data_export": "~3.2",
         "drupal/views_php": "1.x-dev",
         "drupal/webform": "~4.0",
         "drupal/webform_protected_downloads": "~1.0",

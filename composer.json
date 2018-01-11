@@ -581,7 +581,7 @@
         "drupal/profile": "1.x-dev",
         "drupal/rdfui": "1.x-dev",
         "drupal/recaptcha": "2.x-dev",
-        "drupal/redirect": "1.x-dev",
+        "drupal/redirect": "~1.0",
         "drupal/restui": "~1.0",
         "drupal/robotstxt": "1.x-dev",
         "drupal/rules": "3.x-dev",

@@ -510,7 +510,7 @@
         "drupal/commerce_migrate": "2.x-dev",
         "drupal/commerce_shipping": "2.x-dev",
         "drupal/config_inspector": "1.x-dev",
-        "drupal/config_update": "~1.0",
+        "drupal/config_update": "~1.5",
         "drupal/content_access": "1.x-dev",
         "drupal/core": "~8.4.0",
         "drupal/csv_serialization": "1.x-dev",

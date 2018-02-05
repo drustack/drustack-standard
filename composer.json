@@ -59,7 +59,6 @@
                 "https://drupal.org/node/2910900": "https://drupal.org/files/issues/captcha_monolog_support.patch",
                 "https://drupal.org/node/2912341": "https://drupal.org/files/issues/captcha-form_id_length_64_characters_too_small-2912341-3.patch",
                 "https://drupal.org/node/2913295": "https://drupal.org/files/issues/bypass_captcha_validation_access_false_1.patch",
-                "https://drupal.org/node/2929153": "https://drupal.org/files/issues/2929153-4.patch",
                 "https://drupal.org/node/2931385": "https://drupal.org/files/issues/captcha-Url_fromRoute-2931385-2.patch"
             },
             "drupal/core": {

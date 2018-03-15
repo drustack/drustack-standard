@@ -64,8 +64,7 @@
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2664016-41.patch",
-                "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-20.patch",
-                "https://drupal.org/node/2928249": "https://drupal.org/files/issues/drupal-8.4.x-phpunit6_compatibility_layer-2928249-38.patch"
+                "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-28.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
@@ -511,7 +510,7 @@
         "drupal/config_inspector": "1.x-dev",
         "drupal/config_update": "~1.5",
         "drupal/content_access": "1.x-dev",
-        "drupal/core": "~8.4.0",
+        "drupal/core": "~8.5.0",
         "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",
@@ -520,7 +519,7 @@
         "drupal/diff": "1.x-dev",
         "drupal/disqus": "1.x-dev",
         "drupal/dropzonejs": "1.x-dev",
-        "drupal/drustack": "4.x-dev",
+        "drupal/drustack": "5.x-dev",
         "drupal/ds": "~3.1",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/editor_advanced_link": "~1.4",
@@ -633,7 +632,7 @@
         "rvera/jquery.image-picker": "~0.3",
         "select2/jquery.select2": "~4.0",
         "simontabor/jquery.toggles": "~4.0",
-        "symfony/symfony": "3.2.*",
+        "symfony/symfony": "~3.4",
         "szimek/signature_pad": "~2.3",
         "twbs/bootstrap": "~3.3",
         "ubilabs/jquery.geocomplete": "~1.7",
@@ -645,8 +644,8 @@
         "jcalderonzumba/gastonjs": "~1.1",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": ">=5.7.21 <6",
-        "symfony/phpunit-bridge": "3.2.*"
+        "phpunit/phpunit": "~6.5",
+        "symfony/phpunit-bridge": "~3.4"
     },
     "scripts": {
         "post-autoload-dump": [

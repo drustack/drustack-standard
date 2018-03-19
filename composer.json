@@ -106,7 +106,7 @@
             },
             "drupal/workbench_moderation": {
                 "https://drupal.org/node/1836680": "https://drupal.org/files/workbench-moderation-solr-index-1836680-1.patch"
-            },
+            }
         },
         "preserve-paths": [
             "web/.htaccess",

@@ -107,9 +107,6 @@
             "drupal/workbench_moderation": {
                 "https://drupal.org/node/1836680": "https://drupal.org/files/workbench-moderation-solr-index-1836680-1.patch"
             },
-            "moxiecode/plupload": {
-                "https://drupal.org/node/1903850": "https://drupal.org/files/issues/plupload-1_5_8-rm_examples-1903850-16.patch"
-            }
         },
         "preserve-paths": [
             "web/.htaccess",

@@ -78,9 +78,6 @@
             "drupal/menu_block": {
                 "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch"
             },
-            "drupal/oauth2_server": {
-                "https://drupal.org/node/2167733": "https://drupal.org/files/issues/oauth2_server-drush_make_master-2167733-6.patch"
-            },
             "drupal/panels": {
                 "https://drupal.org/node/1402860": "https://drupal.org/files/issues/panelizer_is-1402860-82-fix-ipe-end-js-alert.patch",
                 "https://drupal.org/node/2192355": "https://drupal.org/files/issues/i18n_panels_uuid_undefined-2192355-01.patch"

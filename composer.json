@@ -372,6 +372,7 @@
         "drupal/robotstxt": "1.x-dev",
         "drupal/rules": "2.x-dev",
         "drupal/schema": "~1.0",
+        "drupal/schema_metatag": "~1.0",
         "drupal/search404": "~1.0",
         "drupal/seckit": "1.x-dev",
         "drupal/securelogin": "1.x-dev",

@@ -579,6 +579,7 @@
         "drupal/robotstxt": "~1.1",
         "drupal/rules": "3.x-dev",
         "drupal/scheduler": "1.x-dev",
+        "drupal/schema_metatag": "1.x-dev",
         "drupal/search404": "1.x-dev",
         "drupal/search_api": "1.x-dev",
         "drupal/search_api_solr": "1.x-dev",

@@ -49,7 +49,8 @@ $APT_GET install \
     nodejs
 
 npm install --unsafe-perm -g -S -C /root \
-    node-sass
+    node-sass \
+    sass-lint
 
 
 # Install PHP

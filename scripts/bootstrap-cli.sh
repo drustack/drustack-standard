@@ -48,7 +48,11 @@ $APT_GET update
 $APT_GET install \
     nodejs
 
+npm install --unsafe-perm -g -S \
+    npm
+
 npm install --unsafe-perm -g -S -C /root \
+    eslint \
     node-sass \
     sass-lint
 

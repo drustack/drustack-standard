@@ -548,6 +548,7 @@
         "drupal/libraries": "3.x-dev",
         "drupal/linkit": "5.x-dev",
         "drupal/mailsystem": "4.x-dev",
+        "drupal/matomo": "1.x-dev",
         "drupal/media_entity": "1.x-dev",
         "drupal/media_entity_audio": "1.x-dev",
         "drupal/media_entity_document": "1.x-dev",

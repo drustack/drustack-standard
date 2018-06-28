@@ -458,6 +458,36 @@
                 "version": "4.7.2"
             },
             "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
+                },
+                "name": "d3/d3",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "3.5.17"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
+                },
+                "name": "components/highlightjs",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "9.7.0"
+            },
+            "type": "package"
         }
     ],
     "require": {
@@ -469,8 +499,10 @@
         "ckeditor/ckeditor.link": "~4.7",
         "ckeditor/codesnippet": "~4.7",
         "components/codemirror": "~5.27",
+        "components/highlightjs": "~9.7",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
+        "d3/d3": "~3.5",
         "dinbror/blazy": "~1.8",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",

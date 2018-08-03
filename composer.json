@@ -72,9 +72,6 @@
             "drupal/git_deploy": {
                 "https://drupal.org/node/1511112": "https://drupal.org/files/git_deploy-1511112_5.patch"
             },
-            "drupal/i18n": {
-                "https://drupal.org/node/2935866": "https://drupal.org/files/issues/i18n-i18n_string_objectindex_schema_mismatch-2935866-2.patch"
-            },
             "drupal/menu_block": {
                 "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch"
             },

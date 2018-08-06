@@ -63,7 +63,8 @@
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
             "drupal/recaptcha": {
-                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-04-06/recaptcha-8.x-2.x-invisible-option-2852269-97.patch",
+                "https://drupal.org/node/2493183": "https://drupal.org/files/issues/2018-08-06/recaptcha-ajax-2493183-114.patch",
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-08-06/recaptcha-ajax-2493183-114%2Bnocaptcha-2852269-122.patch",
                 "https://drupal.org/node/2893656": "https://drupal.org/files/issues/2018-03-20/2893656-8.patch"
             },
             "drupal/token": {

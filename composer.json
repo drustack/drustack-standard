@@ -327,6 +327,21 @@
         {
             "package": {
                 "dist": {
+                    "type": "tar",
+                    "url": "https://registry.npmjs.org/places.js/-/places.js-1.9.0.tgz"
+                },
+                "name": "algolia/algolia.places",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.9.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
                     "type": "zip",
                     "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
                 },
@@ -477,6 +492,7 @@
     ],
     "require": {
         "NigelOToole/progress-tracker": "~1.4",
+        "algolia/algolia.places": "~1.9",
         "ckeditor/ckeditor": "~4.8",
         "ckeditor/ckeditor.autogrow": "~4.8",
         "ckeditor/ckeditor.fakeobjects": "~4.8",

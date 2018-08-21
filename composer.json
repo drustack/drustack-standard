@@ -343,21 +343,6 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/ubilabs/geocomplete/archive/1.7.0.zip"
-                },
-                "name": "ubilabs/jquery.geocomplete",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.7.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
                     "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.0.zip"
                 },
                 "name": "robinherbots/jquery.inputmask",
@@ -666,7 +651,6 @@
         "symfony/symfony": "~3.4",
         "szimek/signature_pad": "~2.3",
         "twbs/bootstrap": "~4.1",
-        "ubilabs/jquery.geocomplete": "~1.7",
         "w8tcha/ckeditor.codemirror": "~1.17"
     },
     "require-dev": {

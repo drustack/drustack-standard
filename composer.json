@@ -64,7 +64,7 @@
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2493183": "https://drupal.org/files/issues/2018-08-18/recaptcha-ajax-2493183-115.patch",
-                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-08-06/recaptcha-ajax-2493183-114%2Bnocaptcha-2852269-122.patch"
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-08-21/recaptcha-ajax-2493183-115%2Bnocaptcha-2852269-126.patch"
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2018-05-27/token-term_vocabulary_source-2816693-12.patch"

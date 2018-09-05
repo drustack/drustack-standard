@@ -165,14 +165,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.9.2_edit.zip"
+                    "url": "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.8.0_edit.zip"
                 },
                 "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.9.2"
+                "version": "4.8.0"
             },
             "type": "package"
         },
@@ -225,14 +225,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.9.2.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.8.0.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.9.2"
+                "version": "4.8.0"
             },
             "type": "package"
         },
@@ -253,8 +253,8 @@
         }
     ],
     "require": {
-        "ckeditor/ckeditor": "~4.9",
-        "ckeditor/codesnippet": "~4.9",
+        "ckeditor/ckeditor": "~4.8",
+        "ckeditor/codesnippet": "~4.8",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",

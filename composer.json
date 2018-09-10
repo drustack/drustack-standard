@@ -177,14 +177,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.8.0.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.10.0.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.8.0"
+                "version": "4.10.0"
             },
             "type": "package"
         },
@@ -222,14 +222,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.8.0/ckeditor_4.8.0_standard.zip"
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.10.0/ckeditor_4.10.0_standard.zip"
                 },
                 "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.8.0"
+                "version": "4.10.0"
             },
             "type": "package"
         },
@@ -237,14 +237,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.8.0.zip"
+                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.10.0.zip"
                 },
                 "name": "ckeditor/ckeditor.autogrow",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.8.0"
+                "version": "4.10.0"
             },
             "type": "package"
         },
@@ -252,14 +252,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.8.0.zip"
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.10.0.zip"
                 },
                 "name": "ckeditor/ckeditor.fakeobjects",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.8.0"
+                "version": "4.10.0"
             },
             "type": "package"
         },
@@ -267,14 +267,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/image/releases/image_4.8.0.zip"
+                    "url": "http://download.ckeditor.com/image/releases/image_4.10.0.zip"
                 },
                 "name": "ckeditor/ckeditor.image",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.8.0"
+                "version": "4.10.0"
             },
             "type": "package"
         },
@@ -282,14 +282,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/link/releases/link_4.8.0.zip"
+                    "url": "http://download.ckeditor.com/link/releases/link_4.10.0.zip"
                 },
                 "name": "ckeditor/ckeditor.link",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.8.0"
+                "version": "4.10.0"
             },
             "type": "package"
         },
@@ -477,12 +477,12 @@
     "require": {
         "NigelOToole/progress-tracker": "~1.4",
         "algolia/algolia.places": "~1.9",
-        "ckeditor/ckeditor": "~4.8",
-        "ckeditor/ckeditor.autogrow": "~4.8",
-        "ckeditor/ckeditor.fakeobjects": "~4.8",
-        "ckeditor/ckeditor.image": "~4.8",
-        "ckeditor/ckeditor.link": "~4.8",
-        "ckeditor/codesnippet": "~4.8",
+        "ckeditor/ckeditor": "~4.10",
+        "ckeditor/ckeditor.autogrow": "~4.10",
+        "ckeditor/ckeditor.fakeobjects": "~4.10",
+        "ckeditor/ckeditor.image": "~4.10",
+        "ckeditor/ckeditor.link": "~4.10",
+        "ckeditor/codesnippet": "~4.10",
         "components/codemirror": "~5.39",
         "components/highlightjs": "~9.7",
         "composer/installers": "~1.0",
@@ -655,10 +655,14 @@
     "require-dev": {
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
-        "jcalderonzumba/gastonjs": "~1.1",
+        "behat/mink-selenium2-driver": "1.3.x-dev",
+        "jcalderonzumba/gastonjs": "~1.0",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
         "mikey179/vfsStream": "~1.2",
+        "phpspec/prophecy": "~1.4",
         "phpunit/phpunit": "~6.5",
+        "symfony/css-selector": "~3.4",
+        "symfony/debug": "~3.4",
         "symfony/phpunit-bridge": "~3.4"
     },
     "scripts": {

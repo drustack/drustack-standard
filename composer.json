@@ -79,6 +79,7 @@
                 "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
             },
             "drupal/xmlsitemap": {
+                "https://drupal.org/node/2548647": "https://drupal.org/files/issues/Fatal_error-2548647-4.patch",
                 "https://drupal.org/node/2815631": "https://drupal.org/files/issues/xmlsitemap-incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-8.patch"
             }
         },

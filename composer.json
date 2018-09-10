@@ -19,7 +19,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.5.x-dev"
+            "dev-master": "8.6.x-dev"
         },
         "installer-paths": {
             "web/core/": [
@@ -522,7 +522,7 @@
         "drupal/config_update": "~1.5",
         "drupal/content_access": "1.x-dev",
         "drupal/contribute": "1.x-dev",
-        "drupal/core": "~8.5.0",
+        "drupal/core": "~8.6.0",
         "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",
@@ -531,7 +531,7 @@
         "drupal/diff": "1.x-dev",
         "drupal/disqus": "1.x-dev",
         "drupal/dropzonejs": "1.x-dev",
-        "drupal/drustack": "5.x-dev",
+        "drupal/drustack": "6.x-dev",
         "drupal/ds": "3.x-dev",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/editor_advanced_link": "~1.4",

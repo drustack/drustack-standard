@@ -48,6 +48,9 @@
             ]
         },
         "patches": {
+            "drupal/advagg": {
+                "https://drupal.org/node/2998702": "https://drupal.org/files/issues/2018-09-11/advagg-8.x-3.x-remove_redundant_performance_tab-2998702-2.patch"
+            },
             "drupal/blazy": {
                 "https://drupal.org/node/2890216": "https://drupal.org/files/issues/blazy-remove_version_from_info_yml-2890216-2.patch"
             },
@@ -55,15 +58,17 @@
                 "https://drupal.org/node/2912341": "https://drupal.org/files/issues/captcha-form_id_length_64_characters_too_small-2912341-3.patch"
             },
             "drupal/core": {
-                "https://drupal.org/node/2557299": "https://www.drupal.org/files/issues/2018-06-07/2557299-71.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-28.patch",
-                "https://drupal.org/node/2954776": "https://drupal.org/files/issues/2018-08-14/2954776-27.patch",
-                "https://drupal.org/node/2959869": "https://www.drupal.org/files/issues/2018-04-16/create-media-error-2959869-5.patch"
+                "https://drupal.org/node/2954776": "https://drupal.org/files/issues/2018-06-14/2954776-layout_install-19.patch",
+                "https://drupal.org/node/2959869": "https://drupal.org/files/issues/2018-04-16/create-media-error-2959869-5.patch"
             },
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
+            },
+            "drupal/rdfui": {
+                "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },
             "drupal/recaptcha": {
                 "https://drupal.org/node/2493183": "https://drupal.org/files/issues/2018-08-18/recaptcha-ajax-2493183-115.patch",
@@ -79,6 +84,7 @@
                 "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
             },
             "drupal/xmlsitemap": {
+                "https://drupal.org/node/2548647": "https://drupal.org/files/issues/Fatal_error-2548647-4.patch",
                 "https://drupal.org/node/2815631": "https://drupal.org/files/issues/xmlsitemap-incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-8.patch"
             }
         },

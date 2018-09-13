@@ -61,6 +61,7 @@
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/2018-04-20/2673980-36.patch",
+                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-40.patch",
                 "https://drupal.org/node/2954776": "https://drupal.org/files/issues/2018-06-14/2954776-layout_install-19.patch",
                 "https://drupal.org/node/2959869": "https://drupal.org/files/issues/2018-04-16/create-media-error-2959869-5.patch",
                 "https://drupal.org/node/2992817": "https://drupal.org/files/issues/2018-08-15/2992817-7.patch"

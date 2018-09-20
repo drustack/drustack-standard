@@ -535,6 +535,7 @@
         "drupal/config_update": "~1.5",
         "drupal/content_access": "~1.0",
         "drupal/contribute": "1.x-dev",
+        "drupal/core": "~8.5.0",
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",

@@ -70,6 +70,9 @@
             "drupal/eform": {
                 "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
             },
+            "drupal/field_group": {
+                "https://drupal.org/node/3001079": "https://drupal.org/files/issues/2018-09-20/field_group-remove_version_from_info_yml-3001079-2.patch"
+            },
             "drupal/rdfui": {
                 "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },

@@ -380,6 +380,7 @@
         "drupal/smtp": "1.x-dev",
         "drupal/strongarm": "2.x-dev",
         "drupal/styleguide": "1.x-dev",
+        "drupal/swiftmailer": "~1.7",
         "drupal/system_stream_wrapper": "1.x-dev",
         "drupal/telephone": "1.x-dev",
         "drupal/themekey": "~3.0",

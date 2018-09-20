@@ -86,7 +86,8 @@
             },
             "drupal/xmlsitemap": {
                 "https://drupal.org/node/2548647": "https://drupal.org/files/issues/Fatal_error-2548647-4.patch",
-                "https://drupal.org/node/2815631": "https://drupal.org/files/issues/xmlsitemap-incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-8.patch"
+                "https://drupal.org/node/2815631": "https://drupal.org/files/issues/xmlsitemap-incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-8.patch",
+                "https://drupal.org/node/3001071": "https://drupal.org/files/issues/2018-09-20/xmlsitemap-enddocument_undefined_variable_file-3001071-2.patch"
             }
         },
         "preserve-paths": [

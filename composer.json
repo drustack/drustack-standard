@@ -89,8 +89,7 @@
                 "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
             },
             "drupal/xmlsitemap": {
-                "https://drupal.org/node/2968172": "https://drupal.org/files/issues/2018-09-12/xmlsitemap--2968172-drush-9-support--10.patch",
-                "https://drupal.org/node/3001071": "https://drupal.org/files/issues/2018-09-20/xmlsitemap-enddocument_undefined_variable_file-3001071-2.patch"
+                "https://drupal.org/node/2968172": "https://drupal.org/files/issues/2018-09-12/xmlsitemap--2968172-drush-9-support--10.patch"
             }
         },
         "preserve-paths": [

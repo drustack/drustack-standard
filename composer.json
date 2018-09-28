@@ -250,6 +250,21 @@
                 "version": "4.1.1"
             },
             "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/swiftmailer/swiftmailer/archive/v5.4.12.zip"
+                },
+                "name": "swiftmailer/swiftmailer",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "5.4.12"
+            },
+            "type": "package"
         }
     ],
     "require": {
@@ -420,6 +435,7 @@
         "jashkenas/underscore": "~1.8",
         "modernizr/modernizr": "~2.8",
         "moxiecode/plupload": "~1.5",
+        "swiftmailer/swiftmailer": "~5.4",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
         "tubalmartin/YUI-CSS-compressor-PHP-port": "~4.1",

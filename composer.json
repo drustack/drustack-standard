@@ -60,9 +60,10 @@
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",
-                "https://drupal.org/node/2673980": "https://drupal.org/files/issues/rss_view_with_fields-2673980-28.patch",
+                "https://drupal.org/node/2673980": "https://drupal.org/files/issues/2018-04-20/2673980-36.patch",
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-40.patch",
                 "https://drupal.org/node/2954776": "https://drupal.org/files/issues/2018-06-14/2954776-layout_install-19.patch",
+                "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch",
                 "https://drupal.org/node/2959869": "https://drupal.org/files/issues/2018-04-16/create-media-error-2959869-5.patch"
             },
             "drupal/eform": {
@@ -75,8 +76,7 @@
                 "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },
             "drupal/recaptcha": {
-                "https://drupal.org/node/2493183": "https://drupal.org/files/issues/2018-08-18/recaptcha-ajax-2493183-115.patch",
-                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-08-21/recaptcha-ajax-2493183-115%2Bnocaptcha-2852269-126.patch"
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-09-26/recaptcha-nocaptcha-2852269-141.patch"
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2018-05-27/token-term_vocabulary_source-2816693-12.patch"
@@ -86,13 +86,6 @@
             },
             "drupal/views_templates": {
                 "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
-            },
-            "drupal/xmlsitemap": {
-                "https://drupal.org/node/2548647": "https://drupal.org/files/issues/Fatal_error-2548647-4.patch",
-                "https://drupal.org/node/2815631": "https://drupal.org/files/issues/xmlsitemap-incorrect-sitemap-content-urls-with-languages-settings-set-to-domains-2815631-8.patch",
-                "https://drupal.org/node/2968172": "https://drupal.org/files/issues/2018-09-12/xmlsitemap--2968172-drush-9-support--10.patch",
-                "https://drupal.org/node/2986892": "https://drupal.org/files/issues/2018-07-19/xmlsitemap-2986892-2-type-issue-when-creating-multipage-xmlsitemap.patch",
-                "https://drupal.org/node/3001071": "https://drupal.org/files/issues/2018-09-20/xmlsitemap-enddocument_undefined_variable_file-3001071-2.patch"
             }
         },
         "preserve-paths": [
@@ -528,7 +521,7 @@
         "drupal/ckeditor_media_embed": "~1.0",
         "drupal/codesnippet": "1.x-dev",
         "drupal/coffee": "1.x-dev",
-        "drupal/commerce": "~2.0",
+        "drupal/commerce": "2.9",
         "drupal/commerce_migrate": "2.x-dev",
         "drupal/commerce_shipping": "~2.0",
         "drupal/config_inspector": "1.x-dev",
@@ -550,7 +543,7 @@
         "drupal/editor_file": "1.x-dev",
         "drupal/eform": "1.x-dev",
         "drupal/email_registration": "1.x-dev",
-        "drupal/entity": "1.x-dev",
+        "drupal/entity": "1.0-beta4",
         "drupal/entity_browser": "~2.0",
         "drupal/entity_clone": "1.x-dev",
         "drupal/entity_embed": "1.x-dev",

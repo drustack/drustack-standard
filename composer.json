@@ -564,6 +564,7 @@
         "drupal/google_analytics": "~3.0",
         "drupal/image_effects": "~2.1",
         "drupal/imageapi_optimize": "2.x-dev",
+        "drupal/imageapi_optimize_binaries": "1.x-dev",
         "drupal/imagemagick": "~2.3",
         "drupal/imce": "1.x-dev",
         "drupal/inline_entity_form": "~1.0",

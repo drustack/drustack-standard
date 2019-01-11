@@ -506,7 +506,7 @@
         "drupal/block_class": "~1.0",
         "drupal/block_styles": "~1.2",
         "drupal/block_visibility_groups": "~1.0",
-        "drupal/bootstrap": "3.x-dev",
+        "drupal/bootstrap": "~3.16",
         "drupal/bootstrap_barrio": "4.x-dev",
         "drupal/bootstrap_layouts": "~5.0",
         "drupal/bootstrap_library": "~1.11",

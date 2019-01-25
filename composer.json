@@ -70,7 +70,7 @@
                 "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },
             "drupal/recaptcha": {
-                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-11-23/recaptcha-nocaptcha-2852269-151.patch"
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2018-11-12/recaptcha-nocaptcha-2852269-149.patch"
             },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2018-05-27/token-term_vocabulary_source-2816693-12.patch"

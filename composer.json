@@ -48,9 +48,6 @@
             ]
         },
         "patches": {
-            "drupal/advagg": {
-                "https://drupal.org/node/2998702": "https://drupal.org/files/issues/2018-09-11/advagg-8.x-3.x-remove_redundant_performance_tab-2998702-2.patch"
-            },
             "drupal/captcha": {
                 "https://drupal.org/node/2912341": "https://drupal.org/files/issues/captcha-form_id_length_64_characters_too_small-2912341-3.patch"
             },

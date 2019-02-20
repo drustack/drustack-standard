@@ -13,7 +13,8 @@
     "config": {
         "discard-changes": true,
         "process-timeout": 3600,
-        "secure-http": false
+        "secure-http": false,
+        "vendor-dir": "vendor"
     },
     "description": "The \"DruStack Standard Edition\" distribution",
     "extra": {

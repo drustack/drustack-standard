@@ -239,7 +239,7 @@
                     "type": "zip",
                     "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port/archive/v4.1.1.zip"
                 },
-                "name": "tubalmartin/YUI-CSS-compressor-PHP-port",
+                "name": "tubalmartin/yui-css-compressor-php-port",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -269,7 +269,7 @@
                     "type": "zip",
                     "url": "https://github.com/filamentgroup/loadCSS/archive/v2.1.0.zip"
                 },
-                "name": "filamentgroup/loadCSS",
+                "name": "filamentgroup/loadcss",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -442,7 +442,7 @@
         "drupal/zeropoint": "~4.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
-        "filamentgroup/loadCSS": "~2.1",
+        "filamentgroup/loadcss": "~2.1",
         "htmlpurifier/htmlpurifier": "~4.10",
         "jashkenas/backbone": "~1.3",
         "jashkenas/underscore": "~1.8",
@@ -451,7 +451,7 @@
         "swiftmailer/swiftmailer": "~5.4",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
-        "tubalmartin/YUI-CSS-compressor-PHP-port": "~4.1",
+        "tubalmartin/yui-css-compressor-php-port": "~4.1",
         "twbs/bootstrap": "~3.3"
     },
     "require-dev": {
@@ -460,7 +460,7 @@
         "behat/mink-selenium2-driver": "1.3.x-dev",
         "jcalderonzumba/gastonjs": "~1.0",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
-        "mikey179/vfsStream": "~1.2",
+        "mikey179/vfsstream": "~1.2",
         "phpspec/prophecy": "~1.4",
         "phpunit/phpunit": "~5.6",
         "symfony/css-selector": "~3.4",

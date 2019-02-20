@@ -450,7 +450,7 @@
                     "type": "zip",
                     "url": "https://github.com/NigelOToole/progress-tracker/archive/v1.4.0.zip"
                 },
-                "name": "NigelOToole/progress-tracker",
+                "name": "nigelotoole/progress-tracker",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -476,7 +476,6 @@
         }
     ],
     "require": {
-        "NigelOToole/progress-tracker": "~1.4",
         "algolia/algolia.places": "~1.9",
         "ckeditor/ckeditor": "~4.10",
         "ckeditor/ckeditor.autogrow": "~4.10",
@@ -639,6 +638,7 @@
         "jackocnr/jquery.intl-tel-input": "~13.0",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
+        "nigelotoole/progress-tracker": "~1.4",
         "qwertypants/jquery.word-and-character-counter": "~2.5",
         "ractoon/jquery.textcounter": "~0.8",
         "robinherbots/jquery.inputmask": "~4.0",
@@ -656,7 +656,7 @@
         "behat/mink-selenium2-driver": "1.3.x-dev",
         "jcalderonzumba/gastonjs": "~1.0",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
-        "mikey179/vfsStream": "~1.2",
+        "mikey179/vfsstream": "~1.2",
         "phpspec/prophecy": "~1.4",
         "phpunit/phpunit": "~6.5",
         "symfony/css-selector": "~3.4",

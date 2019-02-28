@@ -295,6 +295,7 @@
         "drupal/block_class": "2.x-dev",
         "drupal/bootstrap": "3.x-dev",
         "drupal/bootstrap_library": "1.x-dev",
+        "drupal/boxes": "~1.0",
         "drupal/breakpoints": "~1.0",
         "drupal/business": "~1.0",
         "drupal/business_responsive_theme": "~2.0",

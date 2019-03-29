@@ -67,9 +67,6 @@
             "drupal/field_group": {
                 "https://drupal.org/node/3001079": "https://drupal.org/files/issues/2018-09-20/field_group-remove_version_from_info_yml-3001079-2.patch"
             },
-            "drupal/paragraphs": {
-                "https://drupal.org/node/3041868": "https://drupal.org/files/issues/2019-03-21/paragraphs-update-endless-loop-3041868-23.patch"
-            },
             "drupal/rdfui": {
                 "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },

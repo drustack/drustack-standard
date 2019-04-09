@@ -179,14 +179,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.10.0.zip"
+                    "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.10.1.zip"
                 },
                 "name": "ckeditor/codesnippet",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.10.0"
+                "version": "4.10.1"
             },
             "type": "package"
         },
@@ -224,14 +224,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.10.0/ckeditor_4.10.0_standard.zip"
+                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.10.1/ckeditor_4.10.1_standard.zip"
                 },
                 "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.10.0"
+                "version": "4.10.1"
             },
             "type": "package"
         },
@@ -239,14 +239,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.10.0.zip"
+                    "url": "http://download.ckeditor.com/autogrow/releases/autogrow_4.10.1.zip"
                 },
                 "name": "ckeditor/ckeditor.autogrow",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.10.0"
+                "version": "4.10.1"
             },
             "type": "package"
         },
@@ -254,14 +254,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.10.0.zip"
+                    "url": "http://download.ckeditor.com/fakeobjects/releases/fakeobjects_4.10.1.zip"
                 },
                 "name": "ckeditor/ckeditor.fakeobjects",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.10.0"
+                "version": "4.10.1"
             },
             "type": "package"
         },
@@ -269,14 +269,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/image/releases/image_4.10.0.zip"
+                    "url": "http://download.ckeditor.com/image/releases/image_4.10.1.zip"
                 },
                 "name": "ckeditor/ckeditor.image",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.10.0"
+                "version": "4.10.1"
             },
             "type": "package"
         },
@@ -284,14 +284,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://download.ckeditor.com/link/releases/link_4.10.0.zip"
+                    "url": "http://download.ckeditor.com/link/releases/link_4.10.1.zip"
                 },
                 "name": "ckeditor/ckeditor.link",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.10.0"
+                "version": "4.10.1"
             },
             "type": "package"
         },
@@ -299,14 +299,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.5/CKEditor-CodeMirror-Plugin.zip"
+                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.7/CKEditor-CodeMirror-Plugin.zip"
                 },
                 "name": "w8tcha/ckeditor.codemirror",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.17.5"
+                "version": "1.17.7"
             },
             "type": "package"
         },
@@ -314,14 +314,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/components/codemirror/archive/5.39.2.zip"
+                    "url": "https://github.com/components/codemirror/archive/5.44.0.zip"
                 },
                 "name": "components/codemirror",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "5.39.2"
+                "version": "5.44.0"
             },
             "type": "package"
         },
@@ -329,14 +329,14 @@
             "package": {
                 "dist": {
                     "type": "tar",
-                    "url": "https://registry.npmjs.org/places.js/-/places.js-1.9.0.tgz"
+                    "url": "https://registry.npmjs.org/places.js/-/places.js-1.16.1.tgz"
                 },
                 "name": "algolia/algolia.places",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.9.0"
+                "version": "1.16.1"
             },
             "type": "package"
         },
@@ -344,14 +344,29 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.0.zip"
+                    "url": "https://github.com/jshjohnson/Choices/archive/v7.0.0.zip"
+                },
+                "name": "choices/choices",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "7.0.0"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.6.zip"
                 },
                 "name": "robinherbots/jquery.inputmask",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.0.0"
+                "version": "4.0.6"
             },
             "type": "package"
         },
@@ -359,14 +374,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v13.0.0.zip"
+                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v15.0.1.zip"
                 },
                 "name": "jackocnr/jquery.intl-tel-input",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "13.0.0"
+                "version": "15.0.1"
             },
             "type": "package"
         },
@@ -434,14 +449,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.13.zip"
+                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.14.zip"
                 },
                 "name": "jonthornton/jquery.timepicker",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "1.11.13"
+                "version": "1.11.14"
             },
             "type": "package"
         },
@@ -477,14 +492,15 @@
         }
     ],
     "require": {
-        "algolia/algolia.places": "~1.9",
+        "algolia/algolia.places": "~1.16",
+        "choices/choices": "~7.0",
         "ckeditor/ckeditor": "~4.10",
         "ckeditor/ckeditor.autogrow": "~4.10",
         "ckeditor/ckeditor.fakeobjects": "~4.10",
         "ckeditor/ckeditor.image": "~4.10",
         "ckeditor/ckeditor.link": "~4.10",
         "ckeditor/codesnippet": "~4.10",
-        "components/codemirror": "~5.39",
+        "components/codemirror": "~5.44",
         "components/highlightjs": "~9.7",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
@@ -636,7 +652,7 @@
         "gjunge/jquery.rateit": "~1.1",
         "harvesthq/jquery.chosen": "~1.8",
         "html2text/html2text": "~4.0",
-        "jackocnr/jquery.intl-tel-input": "~13.0",
+        "jackocnr/jquery.intl-tel-input": "~15.0",
         "jonthornton/jquery.timepicker": "~1.11",
         "leafo/scssphp": "~0.6",
         "nigelotoole/progress-tracker": "~1.4",

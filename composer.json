@@ -52,9 +52,6 @@
             ]
         },
         "patches": {
-            "drupal/captcha": {
-                "https://drupal.org/node/2912341": "https://drupal.org/files/issues/captcha-form_id_length_64_characters_too_small-2912341-3.patch"
-            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",

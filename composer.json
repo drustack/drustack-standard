@@ -17,8 +17,7 @@
         "vendor-dir": "vendor"
     },
     "conflict": {
-        "drupal/drupal": "*",
-        "twig/twig": "~1.40.0"
+        "drupal/drupal": "*"
     },
     "description": "The \"DruStack Standard Edition\" distribution",
     "extra": {

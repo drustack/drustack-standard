@@ -59,9 +59,6 @@
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/core_views-view_route_translation_and_test-2716019-40.patch",
                 "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch"
             },
-            "drupal/eform": {
-                "https://drupal.org/node/2749623": "https://drupal.org/files/issues/eform-remove_version_from_info_yml-2749623-2.patch"
-            },
             "drupal/field_group": {
                 "https://drupal.org/node/3001079": "https://drupal.org/files/issues/2018-09-20/field_group-remove_version_from_info_yml-3001079-2.patch"
             },
@@ -549,7 +546,6 @@
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/editor_advanced_link": "~1.4",
         "drupal/editor_file": "1.x-dev",
-        "drupal/eform": "1.x-dev",
         "drupal/email_registration": "1.x-dev",
         "drupal/entity": "1.x-dev",
         "drupal/entity_browser": "~2.0",

@@ -66,7 +66,7 @@
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2019-04-29/recaptcha-nocaptcha-2852269-180.patch"
             },
             "drupal/token": {
-                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2018-05-27/token-term_vocabulary_source-2816693-12.patch"
+                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2018-09-28/token-term_vocabulary_source-2816693-16.patch"
             },
             "drupal/views_php": {
                 "https://drupal.org/node/2829204": "https://drupal.org/files/issues/views_php-2829204.patch"

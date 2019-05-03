@@ -23,7 +23,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.6.x-dev"
+            "dev-master": "8.7.x-dev"
         },
         "installer-paths": {
             "web/core/": [
@@ -530,7 +530,7 @@
         "drupal/config_update": "~1.5",
         "drupal/content_access": "~1.0",
         "drupal/contribute": "1.x-dev",
-        "drupal/core": "~8.6.0",
+        "drupal/core": "~8.7.0",
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",

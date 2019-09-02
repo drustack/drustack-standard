@@ -503,7 +503,7 @@
         "drupal/admin_toolbar": "1.x-dev",
         "drupal/adminimal_admin_toolbar": "~1.0",
         "drupal/adminimal_theme": "~1.0",
-        "drupal/advagg": "3.x-dev",
+        "drupal/advagg": "4.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "~1.0",
         "drupal/better_exposed_filters": "3.x-dev",

@@ -481,6 +481,21 @@
                 "version": "2.3.0"
             },
             "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
+                    "url": "http://download.ckeditor.com/templates/releases/templates_4.11.3.zip"
+                },
+                "name": "ckeditor/templates",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "4.11.3"
+            },
+            "type": "package"
         }
     ],
     "require": {
@@ -492,6 +507,7 @@
         "ckeditor/ckeditor.image": "~4.11",
         "ckeditor/ckeditor.link": "~4.11",
         "ckeditor/codesnippet": "~4.11",
+        "ckeditor/templates": "~4.11",
         "components/codemirror": "~5.44",
         "components/highlightjs": "~9.7",
         "composer/installers": "~1.0",
@@ -521,6 +537,8 @@
         "drupal/cdn": "~3.2",
         "drupal/checklistapi": "1.x-dev",
         "drupal/ckeditor_media_embed": "~1.0",
+        "drupal/ckeditor_templates": "~1.2",
+        "drupal/ckeditor_templates_ui": "~1.2",
         "drupal/codesnippet": "1.x-dev",
         "drupal/coffee": "1.x-dev",
         "drupal/commerce": "~2.0",

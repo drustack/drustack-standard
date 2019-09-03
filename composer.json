@@ -59,6 +59,9 @@
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2019-04-30/2716019_62.patch",
                 "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch"
             },
+            "drupal/features": {
+                "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"
+            },
             "drupal/rdfui": {
                 "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },

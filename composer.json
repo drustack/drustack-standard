@@ -649,6 +649,7 @@
         "drupal/varnish": "1.x-dev",
         "drupal/views_bootstrap": "4.x-dev",
         "drupal/views_data_export": "1.x-dev",
+        "drupal/views_googlenews": "1.x-dev",
         "drupal/views_infinite_scroll": "~1.0",
         "drupal/views_php": "1.x-dev",
         "drupal/views_templates": "1.x-dev",

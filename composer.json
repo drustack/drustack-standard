@@ -582,6 +582,7 @@
         "drupal/geolocation": "~2.0",
         "drupal/git_deploy": "2.x-dev",
         "drupal/google_analytics": "~3.0",
+        "drupal/group": "1.x-dev",
         "drupal/image_effects": "~2.1",
         "drupal/imageapi_optimize": "2.x-dev",
         "drupal/imageapi_optimize_binaries": "1.x-dev",

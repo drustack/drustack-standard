@@ -597,6 +597,7 @@
         "drupal/matomo": "1.x-dev",
         "drupal/media_entity_browser": "2.x-dev",
         "drupal/memcache": "~2.0",
+        "drupal/menu_block": "1.x-dev",
         "drupal/menu_link_attributes": "~1.0",
         "drupal/metatag": "1.x-dev",
         "drupal/migrate_plus": "~4.0",

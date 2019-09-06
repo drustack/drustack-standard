@@ -591,6 +591,7 @@
         "drupal/inline_entity_form": "~1.0",
         "drupal/key_value": "1.x-dev",
         "drupal/l10n_client": "1.x-dev",
+        "drupal/layout_builder_st": "1.x-dev",
         "drupal/ldap": "3.x-dev",
         "drupal/libraries": "3.x-dev",
         "drupal/linkit": "~5.0",

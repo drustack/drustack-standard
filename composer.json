@@ -71,6 +71,9 @@
             "drupal/recaptcha": {
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2019-04-29/recaptcha-nocaptcha-2852269-180.patch"
             },
+            "drupal/slick": {
+                "https://drupal.org/node/3079811": "https://drupal.org/files/issues/2019-09-07/slick-remove_version_from_info_yml-3079811-2.patch"
+            },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2018-09-28/token-term_vocabulary_source-2816693-16.patch"
             },

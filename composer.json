@@ -138,6 +138,21 @@
             "package": {
                 "dist": {
                     "type": "zip",
+                    "url": "https://github.com/kenwheeler/slick/archive/v1.8.1.zip"
+                },
+                "name": "kenwheeler/slick",
+                "require": {
+                    "composer/installers": "~1.0"
+                },
+                "type": "drupal-library",
+                "version": "1.8.1"
+            },
+            "type": "package"
+        },
+        {
+            "package": {
+                "dist": {
+                    "type": "zip",
                     "url": "https://github.com/twbs/bootstrap/archive/v4.3.1.zip"
                 },
                 "name": "twbs/bootstrap",
@@ -681,6 +696,7 @@
         "html2text/html2text": "~4.0",
         "jackocnr/jquery.intl-tel-input": "~15.0",
         "jonthornton/jquery.timepicker": "~1.11",
+        "kenwheeler/slick": "~1.8",
         "leafo/scssphp": "~0.6",
         "nigelotoole/progress-tracker": "~1.4",
         "qwertypants/jquery.word-and-character-counter": "~2.5",

@@ -65,6 +65,9 @@
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"
             },
+            "drupal/group": {
+                "https://drupal.org/node/3079812": "https://drupal.org/files/issues/2019-09-07/group-remove_version_from_info_yml-3079812-2.patch"
+            },
             "drupal/rdfui": {
                 "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },

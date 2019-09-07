@@ -52,6 +52,9 @@
             ]
         },
         "patches": {
+            "drupal/blazy": {
+                "https://drupal.org/node/2890216": "https://drupal.org/files/issues/2019-09-07/blazy-remove_version_from_info_yml-2890216-5.patch"
+            },
             "drupal/core": {
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",
@@ -129,14 +132,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/twbs/bootstrap/releases/download/v4.1.1/bootstrap-4.1.1-dist.zip"
+                    "url": "https://github.com/twbs/bootstrap/archive/v4.3.1.zip"
                 },
                 "name": "twbs/bootstrap",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.1.1"
+                "version": "4.3.1"
             },
             "type": "package"
         },
@@ -533,7 +536,6 @@
         "drupal/bootstrap": "~3.16",
         "drupal/bootstrap_barrio": "4.x-dev",
         "drupal/bootstrap_layouts": "5.x-dev",
-        "drupal/bootstrap_library": "~1.11",
         "drupal/bootstrap_paragraphs": "~2.0",
         "drupal/calendar": "1.x-dev",
         "drupal/captcha": "1.x-dev",
@@ -683,7 +685,7 @@
         "swiftmailer/swiftmailer": "~5.4",
         "symfony/symfony": "~3.4",
         "szimek/signature_pad": "~2.3",
-        "twbs/bootstrap": "~4.1",
+        "twbs/bootstrap": "~4.3",
         "w8tcha/ckeditor.codemirror": "~1.17"
     },
     "require-dev": {

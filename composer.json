@@ -558,6 +558,7 @@
         "drupal/bootstrap_barrio": "4.x-dev",
         "drupal/bootstrap_layouts": "5.x-dev",
         "drupal/bootstrap_paragraphs": "~2.0",
+        "drupal/bootstrap_sass": "1.x-dev",
         "drupal/calendar": "1.x-dev",
         "drupal/captcha": "1.x-dev",
         "drupal/cdn": "~3.2",

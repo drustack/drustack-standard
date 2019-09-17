@@ -26,41 +26,48 @@
             "dev-master": "8.7.x-dev"
         },
         "installer-paths": {
-            "web/core/": [
-                "type:drupal-core"
-            ],
-            "web/drush/{$name}/": [
+            "drush/contrib/{$name}": [
                 "type:drupal-drush"
             ],
-            "web/libraries/{$name}/": [
-                "type:drupal-library"
+            "web/core": [
+                "type:drupal-core"
             ],
-            "web/modules/contrib/{$name}/": [
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "web/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/modules/custom/{$name}/": [
-                "type:drupal-custom-module"
-            ],
-            "web/profiles/{$name}/": [
+            "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/themes/contrib/{$name}/": [
+            "web/themes/contrib/{$name}": [
                 "type:drupal-theme"
-            ],
-            "web/themes/custom/{$name}/": [
-                "type:drupal-custom-theme"
             ]
         },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
         "patches": {
             "drupal/blazy": {
                 "https://drupal.org/node/2890216": "https://drupal.org/files/issues/2019-09-07/blazy-remove_version_from_info_yml-2890216-5.patch"
             },
             "drupal/core": {
+                "https://drupal.org/node/1356276": "https://drupal.org/files/issues/2018-10-12/1356276-531.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/2019-04-05/rss_view_with_fields-2673980-99.patch",
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2019-04-30/2716019_62.patch",
+                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2019-03-05/2815221-116.patch",
+                "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2869592-remove-update-warning-7.patch",
+                "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
                 "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch"
+            },
+            "drupal/entity_browser": {
+                "https://drupal.org/node/2877751": "https://drupal.org/files/issues/2018-06-28/2877751-39-8.x-2.x.patch"
             },
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"
@@ -105,94 +112,8 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/enyo/dropzone/archive/v5.1.1.zip"
-                },
-                "name": "enyo/dropzone",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "5.1.1"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/dinbror/blazy/archive/1.8.2.zip"
-                },
-                "name": "dinbror/blazy",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.8.2"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/kenwheeler/slick/archive/v1.8.1.zip"
-                },
-                "name": "kenwheeler/slick",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.8.1"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/twbs/bootstrap/archive/v4.3.1.zip"
-                },
-                "name": "twbs/bootstrap",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "4.3.1"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/qwertypants/jQuery-Word-and-Character-Counter-Plugin/archive/2.5.1.zip"
-                },
-                "name": "qwertypants/jquery.word-and-character-counter",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "2.5.1"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/rvera/image-picker/archive/0.3.0.zip"
-                },
-                "name": "rvera/jquery.image-picker",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "0.3.0"
-            },
-            "type": "package"
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         },
         {
             "package": {
@@ -201,51 +122,6 @@
                     "url": "http://download.ckeditor.com/codesnippet/releases/codesnippet_4.11.3.zip"
                 },
                 "name": "ckeditor/codesnippet",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "4.11.3"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/d3/d3/archive/v3.5.17.zip"
-                },
-                "name": "d3/d3",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "3.5.17"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/components/highlightjs/archive/9.7.0.zip"
-                },
-                "name": "components/highlightjs",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "9.7.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor/CKEditor/CKEditor%204.11.3/ckeditor_4.11.3_standard.zip"
-                },
-                "name": "ckeditor/ckeditor",
                 "require": {
                     "composer/installers": "~1.0"
                 },
@@ -318,201 +194,6 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/w8tcha/CKEditor-CodeMirror-Plugin/releases/download/v1.17.7/CKEditor-CodeMirror-Plugin.zip"
-                },
-                "name": "w8tcha/ckeditor.codemirror",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.17.7"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/components/codemirror/archive/5.44.0.zip"
-                },
-                "name": "components/codemirror",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "5.44.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "tar",
-                    "url": "https://registry.npmjs.org/places.js/-/places.js-1.16.1.tgz"
-                },
-                "name": "algolia/algolia.places",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.16.1"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/jshjohnson/Choices/archive/v7.0.0.zip"
-                },
-                "name": "choices/choices",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "7.0.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/RobinHerbots/jquery.inputmask/archive/4.0.6.zip"
-                },
-                "name": "robinherbots/jquery.inputmask",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "4.0.6"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/jackocnr/intl-tel-input/archive/v15.0.1.zip"
-                },
-                "name": "jackocnr/jquery.intl-tel-input",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "15.0.1"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/gjunge/rateit.js/archive/1.1.1.zip"
-                },
-                "name": "gjunge/jquery.rateit",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.1.1"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/select2/select2/archive/4.0.5.zip"
-                },
-                "name": "select2/jquery.select2",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "4.0.5"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip"
-                },
-                "name": "harvesthq/jquery.chosen",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.8.7"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/ractoon/jQuery-Text-Counter/archive/0.8.0.zip"
-                },
-                "name": "ractoon/jquery.textcounter",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "0.8.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/jonthornton/jquery-timepicker/archive/1.11.14.zip"
-                },
-                "name": "jonthornton/jquery.timepicker",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.11.14"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/NigelOToole/progress-tracker/archive/v1.4.0.zip"
-                },
-                "name": "nigelotoole/progress-tracker",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.4.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/szimek/signature_pad/archive/v2.3.0.zip"
-                },
-                "name": "szimek/signature_pad",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "2.3.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
                     "url": "http://download.ckeditor.com/templates/releases/templates_4.11.3.zip"
                 },
                 "name": "ckeditor/templates",
@@ -526,21 +207,15 @@
         }
     ],
     "require": {
-        "algolia/algolia.places": "~1.16",
-        "choices/choices": "~7.0",
-        "ckeditor/ckeditor": "~4.11",
-        "ckeditor/ckeditor.autogrow": "~4.11",
-        "ckeditor/ckeditor.fakeobjects": "~4.11",
-        "ckeditor/ckeditor.image": "~4.11",
-        "ckeditor/ckeditor.link": "~4.11",
-        "ckeditor/codesnippet": "~4.11",
-        "ckeditor/templates": "~4.11",
-        "components/codemirror": "~5.44",
-        "components/highlightjs": "~9.7",
+        "ckeditor/ckeditor.autogrow": "4.11.3",
+        "ckeditor/ckeditor.fakeobjects": "4.11.3",
+        "ckeditor/ckeditor.image": "4.11.3",
+        "ckeditor/ckeditor.link": "4.11.3",
+        "ckeditor/codesnippet": "4.11.3",
+        "ckeditor/templates": "4.11.3",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
-        "d3/d3": "~3.5",
-        "dinbror/blazy": "~1.8",
+        "drupal-composer/drupal-scaffold": "~2.0",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
         "drupal/admin_toolbar": "1.x-dev",
@@ -590,7 +265,7 @@
         "drupal/editor_file": "1.x-dev",
         "drupal/email_registration": "1.x-dev",
         "drupal/entity": "1.x-dev",
-        "drupal/entity_browser": "~2.0",
+        "drupal/entity_browser": "2.x-dev",
         "drupal/entity_clone": "1.x-dev",
         "drupal/entity_embed": "1.x-dev",
         "drupal/entityqueue": "1.x-dev",
@@ -692,25 +367,31 @@
         "drupal/xmlsitemap": "1.x-dev",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
-        "enyo/dropzone": "~5.1",
-        "gjunge/jquery.rateit": "~1.1",
-        "harvesthq/jquery.chosen": "~1.8",
         "html2text/html2text": "~4.0",
-        "jackocnr/jquery.intl-tel-input": "~15.0",
-        "jonthornton/jquery.timepicker": "~1.11",
-        "kenwheeler/slick": "~1.8",
-        "leafo/scssphp": "~0.6",
-        "nigelotoole/progress-tracker": "~1.4",
-        "qwertypants/jquery.word-and-character-counter": "~2.5",
-        "ractoon/jquery.textcounter": "~0.8",
-        "robinherbots/jquery.inputmask": "~4.0",
-        "rvera/jquery.image-picker": "~0.3",
-        "select2/jquery.select2": "~4.0",
+        "npm-asset/blazy": "~1.8",
+        "npm-asset/bootstrap": "~4.3",
+        "npm-asset/choices.js": "~7.0",
+        "npm-asset/chosen-js": "~1.8",
+        "npm-asset/ckeditor": "4.11.3",
+        "npm-asset/ckeditor-codemirror-plugin": "~1.17",
+        "npm-asset/codemirror": "~5.48",
+        "npm-asset/d3": "~3.5",
+        "npm-asset/dropzone": "~5.1",
+        "npm-asset/highlightjs": "~9.12",
+        "npm-asset/image-picker": "~0.3",
+        "npm-asset/inputmask": "~4.0",
+        "npm-asset/intl-tel-input": "~16.0",
+        "npm-asset/jquery-text-counter": "~0.8",
+        "npm-asset/jquery-word-and-character-counter-plugin": "~2.5",
+        "npm-asset/jquery.rateit": "~1.1",
+        "npm-asset/progress-tracker": "~1.4",
+        "npm-asset/select2": "~4.0",
+        "npm-asset/signature_pad": "~2.3",
+        "npm-asset/slick-carousel": "~1.8",
+        "npm-asset/timepicker": "~1.11",
+        "oomphinc/composer-installers-extender": "~1.1",
         "swiftmailer/swiftmailer": "~5.4",
-        "symfony/symfony": "~3.4",
-        "szimek/signature_pad": "~2.3",
-        "twbs/bootstrap": "~4.3",
-        "w8tcha/ckeditor.codemirror": "~1.17"
+        "symfony/symfony": "~3.4"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -733,6 +414,7 @@
             "DruStack\\Standard\\Composer\\ScriptHandler::ensureHtaccess"
         ],
         "post-install-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
             "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "post-package-install": [
@@ -742,6 +424,7 @@
             "DruStack\\Standard\\Composer\\ScriptHandler::vendorTestCodeCleanup"
         ],
         "post-update-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
             "DruStack\\Standard\\Composer\\ScriptHandler::installRequirementsFile"
         ],
         "pre-autoload-dump": [

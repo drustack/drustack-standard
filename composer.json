@@ -20,34 +20,32 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.6.x-dev"
+            "dev-master": "8.7.x-dev"
         },
         "installer-paths": {
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
             "web/": [
                 "type:drupal-core"
             ],
-            "web/profiles/{$name}/": [
+            "web/profiles/contrib/{$name}": [
                 "type:drupal-profile"
             ],
-            "web/sites/all/drush/{$name}/": [
-                "type:drupal-drush"
-            ],
-            "web/sites/all/libraries/{$name}/": [
+            "web/sites/all/libraries/{$name}": [
                 "type:drupal-library"
             ],
-            "web/sites/all/modules/contrib/{$name}/": [
+            "web/sites/all/modules/contrib/{$name}": [
                 "type:drupal-module"
             ],
-            "web/sites/all/modules/custom/{$name}/": [
-                "type:drupal-custom-module"
-            ],
-            "web/sites/all/themes/contrib/{$name}/": [
+            "web/sites/all/themes/contrib/{$name}": [
                 "type:drupal-theme"
-            ],
-            "web/sites/all/themes/custom/{$name}/": [
-                "type:drupal-custom-theme"
             ]
         },
+        "installer-types": [
+            "bower-asset",
+            "npm-asset"
+        ],
         "patches": {
             "drupal/drupal": {
                 "https://drupal.org/node/1275902": "https://drupal.org/files/1275902-15-entity_uri_callback-D7.patch",
@@ -115,6 +113,10 @@
             "url": "https://packages.drupal.org/7"
         },
         {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
             "package": {
                 "dist": {
                     "type": "zip",
@@ -126,96 +128,6 @@
                 },
                 "type": "drupal-library",
                 "version": "4.10.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/jashkenas/backbone/archive/1.3.3.zip"
-                },
-                "name": "jashkenas/backbone",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.3.3"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/moxiecode/plupload/archive/v1.5.8.zip"
-                },
-                "name": "moxiecode/plupload",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.5.8"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "http://download.cksource.com/CKEditor%20for%20Drupal/edit/ckeditor_4.10.0_edit.zip"
-                },
-                "name": "ckeditor/ckeditor",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "4.10.0"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/jashkenas/underscore/archive/1.8.3.zip"
-                },
-                "name": "jashkenas/underscore",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "1.8.3"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/Modernizr/Modernizr/archive/v2.8.3.zip"
-                },
-                "name": "modernizr/modernizr",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "2.8.3"
-            },
-            "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/twbs/bootstrap/releases/download/v3.3.7/bootstrap-3.3.7-dist.zip"
-                },
-                "name": "twbs/bootstrap",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "3.3.7"
             },
             "type": "package"
         },
@@ -263,26 +175,10 @@
                 "version": "5.4.12"
             },
             "type": "package"
-        },
-        {
-            "package": {
-                "dist": {
-                    "type": "zip",
-                    "url": "https://github.com/filamentgroup/loadCSS/archive/v2.1.0.zip"
-                },
-                "name": "filamentgroup/loadcss",
-                "require": {
-                    "composer/installers": "~1.0"
-                },
-                "type": "drupal-library",
-                "version": "2.1.0"
-            },
-            "type": "package"
         }
     ],
     "require": {
-        "ckeditor/ckeditor": "~4.10",
-        "ckeditor/codesnippet": "~4.10",
+        "ckeditor/codesnippet": "4.10.0",
         "composer/installers": "~1.0",
         "cweagans/composer-patches": "~1.0",
         "drupal/acl": "1.x-dev",
@@ -444,27 +340,31 @@
         "drupal/zeropoint": "~4.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
-        "filamentgroup/loadcss": "~2.1",
         "htmlpurifier/htmlpurifier": "~4.10",
-        "jashkenas/backbone": "~1.3",
-        "jashkenas/underscore": "~1.8",
-        "modernizr/modernizr": "~2.8",
-        "moxiecode/plupload": "~1.5",
+        "npm-asset/backbone": "~1.3",
+        "npm-asset/bootstrap": "~3.3",
+        "npm-asset/ckeditor": "4.10.0",
+        "npm-asset/fg-loadcss": "~2.1",
+        "npm-asset/modernizr": "~2.8",
+        "npm-asset/plupload": "~1.5",
+        "npm-asset/underscore": "~1.8",
+        "oomphinc/composer-installers-extender": "~1.1",
         "swiftmailer/swiftmailer": "~5.4",
         "symfony/filesystem": "~2.7",
         "symfony/finder": "~2.7",
-        "tubalmartin/yui-css-compressor-php-port": "~4.1",
-        "twbs/bootstrap": "~3.3"
+        "tubalmartin/yui-css-compressor-php-port": "~4.1"
     },
     "require-dev": {
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
         "behat/mink-selenium2-driver": "1.3.x-dev",
+        "drupal/coder": "~8.3",
         "drush/drush": "~8.3",
         "jcalderonzumba/gastonjs": "~1.0",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3",
+        "justinrainbow/json-schema": "~5.2",
         "mikey179/vfsstream": "~1.2",
-        "phpspec/prophecy": "~1.4",
+        "phpspec/prophecy": "~1.7",
         "phpunit/phpunit": "~5.6",
         "symfony/css-selector": "~3.4",
         "symfony/debug": "~3.4",

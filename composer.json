@@ -340,6 +340,7 @@
         "drupal/slick": "2.x-dev",
         "drupal/slick_entityreference": "2.x-dev",
         "drupal/slick_extras": "1.x-dev",
+        "drupal/slick_media": "2.x-dev",
         "drupal/slick_views": "2.x-dev",
         "drupal/smtp": "1.x-dev",
         "drupal/state_machine": "1.x-dev",

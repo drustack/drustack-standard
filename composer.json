@@ -66,9 +66,6 @@
                 "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
                 "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch"
             },
-            "drupal/entity_browser": {
-                "https://drupal.org/node/2877751": "https://drupal.org/files/issues/2018-06-28/2877751-39-8.x-2.x.patch"
-            },
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"
             },
@@ -257,7 +254,7 @@
         "drupal/devel": "2.x-dev",
         "drupal/diff": "~1.0",
         "drupal/disqus": "1.x-dev",
-        "drupal/dropzonejs": "1.x-dev",
+        "drupal/dropzonejs": "2.x-dev",
         "drupal/drustack": "7.x-dev",
         "drupal/ds": "3.x-dev",
         "drupal/easy_breadcrumb": "1.x-dev",

@@ -33,7 +33,9 @@
                 "type:drupal-profile"
             ],
             "web/sites/all/libraries/{$name}": [
-                "type:drupal-library"
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
             ],
             "web/sites/all/modules/contrib/{$name}": [
                 "type:drupal-module"

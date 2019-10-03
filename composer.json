@@ -72,6 +72,9 @@
             "drupal/group": {
                 "https://drupal.org/node/3079812": "https://drupal.org/files/issues/2019-09-07/group-remove_version_from_info_yml-3079812-2.patch"
             },
+            "drupal/menu_block": {
+                "https://drupal.org/node/2809699": "https://drupal.org/files/issues/2019-07-09/2809699-85.menu_block-label_configuration.patch"
+            },
             "drupal/rdfui": {
                 "https://drupal.org/node/2893779": "https://drupal.org/files/issues/rdfui-indentation-correct.patch"
             },
@@ -299,7 +302,6 @@
         "drupal/media_entity_browser": "2.x-dev",
         "drupal/memcache": "~2.0",
         "drupal/menu_block": "1.x-dev",
-        "drupal/menu_block_title": "~1.1",
         "drupal/menu_link_attributes": "~1.0",
         "drupal/metatag": "1.x-dev",
         "drupal/migrate_plus": "~4.0",

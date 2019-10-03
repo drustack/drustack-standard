@@ -289,6 +289,7 @@
         "drupal/l10n_client": "1.x-dev",
         "drupal/layout_builder_restrictions": "~2.2",
         "drupal/layout_builder_st": "1.x-dev",
+        "drupal/layout_builder_styles": "1.x-dev",
         "drupal/layout_library": "1.x-dev",
         "drupal/ldap": "3.x-dev",
         "drupal/libraries": "3.x-dev",

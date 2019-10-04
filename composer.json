@@ -55,6 +55,9 @@
             "drupal/blazy": {
                 "https://drupal.org/node/2890216": "https://drupal.org/files/issues/2019-09-07/blazy-remove_version_from_info_yml-2890216-5.patch"
             },
+            "drupal/bootstrap_barrio": {
+                "https://drupal.org/node/2976934": "https://drupal.org/files/issues/2019-10-04/bootstrap_barrio-disable_default_layouts-2976934-38.patch"
+            },
             "drupal/core": {
                 "https://drupal.org/node/1356276": "https://drupal.org/files/issues/2018-10-12/1356276-531.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",

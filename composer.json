@@ -235,7 +235,7 @@
         "drupal/avatars": "~1.0",
         "drupal/better_exposed_filters": "3.x-dev",
         "drupal/blazy": "2.x-dev",
-        "drupal/block_class": "~1.0",
+        "drupal/block_class": "1.x-dev",
         "drupal/block_styles": "~1.2",
         "drupal/block_visibility_groups": "~1.0",
         "drupal/bootstrap": "~3.16",

@@ -55,6 +55,9 @@
             "drupal/blazy": {
                 "https://drupal.org/node/2890216": "https://drupal.org/files/issues/2019-09-07/blazy-remove_version_from_info_yml-2890216-5.patch"
             },
+            "drupal/block_class": {
+                "https://drupal.org/node/2998114": "https://drupal.org/files/issues/2019-06-28/block_class-support-layout-builder-2998114-45.patch"
+            },
             "drupal/bootstrap_barrio": {
                 "https://drupal.org/node/2976934": "https://drupal.org/files/issues/2019-10-04/bootstrap_barrio-disable_default_layouts-2976934-38.patch"
             },
@@ -67,7 +70,9 @@
                 "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2019-03-05/2815221-116.patch",
                 "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                 "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
-                "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch"
+                "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch",
+                "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2019-06-20/3008924-5.patch",
+                "https://drupal.org/node/3015152": "https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch"
             },
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"
@@ -279,6 +284,7 @@
         "drupal/externalauth": "1.x-dev",
         "drupal/features": "3.x-dev",
         "drupal/field_collection": "~1.0",
+        "drupal/field_formatter_class": "1.x-dev",
         "drupal/field_group": "1.x-dev",
         "drupal/file_browser": "1.x-dev",
         "drupal/file_entity": "~2.0",

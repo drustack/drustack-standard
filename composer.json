@@ -72,7 +72,7 @@
                 "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
                 "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch",
                 "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2019-06-20/3008924-5.patch",
-                "https://drupal.org/node/3015152": "https://www.drupal.org/files/issues/2019-02-26/3015152-tps-5.patch"
+                "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2019-02-26/3015152-tps-5.patch"
             },
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"

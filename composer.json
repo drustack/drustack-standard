@@ -392,6 +392,7 @@
         "npm-asset/codemirror": "~5.48",
         "npm-asset/d3": "~3.5",
         "npm-asset/dropzone": "~5.1",
+        "npm-asset/fortawesome--fontawesome-free": "~5.11",
         "npm-asset/highlightjs": "~9.12",
         "npm-asset/image-picker": "~0.3",
         "npm-asset/inputmask": "~4.0",

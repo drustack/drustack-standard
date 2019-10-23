@@ -366,6 +366,7 @@
         "drupal/tmgmt_google": "1.x-dev",
         "drupal/tmgmt_microsoft": "1.x-dev",
         "drupal/token": "1.x-dev",
+        "drupal/twig_tweak": "~2.4",
         "drupal/unlimited_number": "~1.0",
         "drupal/varnish": "1.x-dev",
         "drupal/views_bootstrap": "4.x-dev",

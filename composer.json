@@ -227,7 +227,7 @@
         "drupal-composer/drupal-scaffold": "~2.0",
         "drupal/acl": "1.x-dev",
         "drupal/address": "1.x-dev",
-        "drupal/admin_toolbar": "1.x-dev",
+        "drupal/admin_toolbar": "2.x-dev",
         "drupal/adminimal_admin_toolbar": "~1.0",
         "drupal/adminimal_theme": "~1.0",
         "drupal/advagg": "4.x-dev",

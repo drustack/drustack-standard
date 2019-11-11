@@ -233,7 +233,7 @@
         "drupal/advagg": "4.x-dev",
         "drupal/authorization": "1.x-dev",
         "drupal/avatars": "~1.0",
-        "drupal/better_exposed_filters": "3.x-dev",
+        "drupal/better_exposed_filters": "4.x-dev",
         "drupal/blazy": "2.x-dev",
         "drupal/block_class": "1.x-dev",
         "drupal/block_styles": "~1.2",

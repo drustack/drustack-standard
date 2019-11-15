@@ -236,6 +236,7 @@
         "drupal/better_exposed_filters": "4.x-dev",
         "drupal/blazy": "2.x-dev",
         "drupal/block_class": "1.x-dev",
+        "drupal/block_content_permissions": "~1.7",
         "drupal/block_styles": "~1.2",
         "drupal/block_visibility_groups": "~1.0",
         "drupal/bootstrap": "~3.16",

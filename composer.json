@@ -401,6 +401,7 @@
         "npm-asset/image-picker": "~0.3",
         "npm-asset/inputmask": "~4.0",
         "npm-asset/intl-tel-input": "~16.0",
+        "npm-asset/jquery-mousewheel": "~3.1",
         "npm-asset/jquery-text-counter": "~0.8",
         "npm-asset/jquery-word-and-character-counter-plugin": "~2.5",
         "npm-asset/jquery.rateit": "~1.1",

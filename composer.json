@@ -333,6 +333,8 @@
         "drupal/plupload": "1.x-dev",
         "drupal/poll": "~1.0",
         "drupal/profile": "1.x-dev",
+        "drupal/purge": "3.x-dev",
+        "drupal/purge_purger_http": "1.x-dev",
         "drupal/rdfui": "1.x-dev",
         "drupal/recaptcha": "2.x-dev",
         "drupal/redirect": "~1.0",

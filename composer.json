@@ -63,6 +63,7 @@
             },
             "drupal/core": {
                 "https://drupal.org/node/1356276": "https://drupal.org/files/issues/2018-10-12/1356276-531.patch",
+                "https://drupal.org/node/2362643": "https://drupal.org/files/issues/2019-08-29/2362643-63.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
                 "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",
                 "https://drupal.org/node/2673980": "https://drupal.org/files/issues/2019-04-05/rss_view_with_fields-2673980-99.patch",

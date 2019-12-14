@@ -59,7 +59,7 @@
                 "https://drupal.org/node/2165339": "https://drupal.org/files/issues/twbs_jquery-overlay-parent.js-2165339-1.patch",
                 "https://drupal.org/node/728702": "https://drupal.org/files/issues/install-redirect-on-empty-database-728702-36.patch",
                 "https://drupal.org/node/737816": "https://drupal.org/files/drupal-7.x-fix_pdoexception_grant_permissions-737816-26-do-not-test.patch",
-                "https://drupal.org/node/865536": "https://drupal.org/files/drupal-865536-204.patch",
+                "https://drupal.org/node/865536": "https://drupal.org/files/issues/2018-10-18/Drupal-core--865536-262--brower-key-for-js.patch",
                 "https://drupal.org/node/992540": "https://drupal.org/files/issues/992540-3-reset_flood_limit_on_password_reset-drush.patch",
                 "https://drupal.org/node/995156": "https://drupal.org/files/issues/995156-5_portable_taxonomy_permissions.patch"
             },

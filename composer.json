@@ -59,7 +59,6 @@
                 "https://drupal.org/node/2165339": "https://drupal.org/files/issues/twbs_jquery-overlay-parent.js-2165339-1.patch",
                 "https://drupal.org/node/728702": "https://drupal.org/files/issues/install-redirect-on-empty-database-728702-36.patch",
                 "https://drupal.org/node/737816": "https://drupal.org/files/drupal-7.x-fix_pdoexception_grant_permissions-737816-26-do-not-test.patch",
-                "https://drupal.org/node/865536": "https://drupal.org/files/issues/2018-10-18/Drupal-core--865536-262--brower-key-for-js.patch",
                 "https://drupal.org/node/992540": "https://drupal.org/files/issues/992540-3-reset_flood_limit_on_password_reset-drush.patch",
                 "https://drupal.org/node/995156": "https://drupal.org/files/issues/995156-5_portable_taxonomy_permissions.patch"
             },
@@ -122,14 +121,14 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.10.0.zip"
+                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.12.0.zip"
                 },
                 "name": "htmlpurifier/htmlpurifier",
                 "require": {
                     "composer/installers": "~1.0"
                 },
                 "type": "drupal-library",
-                "version": "4.10.0"
+                "version": "4.12.0"
             },
             "type": "package"
         },
@@ -344,7 +343,7 @@
         "drupal/zeropoint": "~4.0",
         "drustack/composer-generate-metadata": "~1.0",
         "drustack/composer-preserve-paths": "~1.0",
-        "htmlpurifier/htmlpurifier": "~4.10",
+        "htmlpurifier/htmlpurifier": "~4.12",
         "npm-asset/backbone": "~1.3",
         "npm-asset/bootstrap": "~3.3",
         "npm-asset/ckeditor": "4.10.0",

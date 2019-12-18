@@ -23,7 +23,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.7.x-dev"
+            "dev-master": "8.8.x-dev"
         },
         "installer-paths": {
             "drush/contrib/{$name}": [
@@ -62,16 +62,13 @@
                 "https://drupal.org/node/2976934": "https://drupal.org/files/issues/2019-10-04/bootstrap_barrio-disable_default_layouts-2976934-38.patch"
             },
             "drupal/core": {
-                "https://drupal.org/node/1356276": "https://drupal.org/files/issues/2018-10-12/1356276-531.patch",
+                "https://drupal.org/node/1356276": "https://drupal.org/files/issues/2019-12-02/core-1356276-598-89x.patch",
                 "https://drupal.org/node/2362643": "https://drupal.org/files/issues/2019-08-29/2362643-63.patch",
-                "https://drupal.org/node/2619250": "https://drupal.org/files/issues/drupal-do_not_disable_MultiViews_htaccess-2619250-24.patch",
-                "https://drupal.org/node/2664016": "https://drupal.org/files/issues/2018-06-06/2664016-58.patch",
-                "https://drupal.org/node/2673980": "https://drupal.org/files/issues/2019-04-05/rss_view_with_fields-2673980-99.patch",
+                "https://drupal.org/node/2619250": "https://drupal.org/files/issues/2019-12-18/drupal-8.8.x-do_not_disable_MultiViews_htaccess-2619250-35.patch",
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2019-04-30/2716019_62.patch",
-                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2019-03-05/2815221-116.patch",
+                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2019-11-27/2815221-125.patch",
                 "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2869592-remove-update-warning-7.patch",
-                "https://drupal.org/node/2877994": "https://drupal.org/files/issues/2019-05-29/2877994-140.patch",
-                "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch",
+                "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2019-10-22/2914389-14-do-not-test.patch",
                 "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch",
                 "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2019-06-20/3008924-5.patch",
                 "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2019-02-26/3015152-tps-5.patch"
@@ -262,7 +259,7 @@
         "drupal/config_update": "~1.5",
         "drupal/content_access": "~1.0",
         "drupal/contribute": "1.x-dev",
-        "drupal/core": "~8.7.0",
+        "drupal/core": "~8.8.0",
         "drupal/csv_serialization": "2.x-dev",
         "drupal/ctools": "~3.0",
         "drupal/default_content": "1.x-dev",
@@ -270,7 +267,7 @@
         "drupal/diff": "~1.0",
         "drupal/disqus": "1.x-dev",
         "drupal/dropzonejs": "2.x-dev",
-        "drupal/drustack": "7.x-dev",
+        "drupal/drustack": "8.x-dev",
         "drupal/ds": "3.x-dev",
         "drupal/easy_breadcrumb": "1.x-dev",
         "drupal/editor_advanced_link": "~1.4",

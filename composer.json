@@ -115,9 +115,11 @@
         },
         "preserve-paths": [
             "web/.htaccess",
-            "web/profiles",
+            "web/modules/custom",
+            "web/profiles/custom",
             "web/robots.txt",
             "web/sites",
+            "web/themes/custom",
             "web/web.config"
         ]
     },

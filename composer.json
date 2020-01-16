@@ -384,6 +384,7 @@
         "drupal/twig_tweak": "~2.4",
         "drupal/unlimited_number": "~1.0",
         "drupal/varnish": "1.x-dev",
+        "drupal/view_unpublished": "1.x-dev",
         "drupal/views_block_filter_block": "1.x-dev",
         "drupal/views_bootstrap": "4.x-dev",
         "drupal/views_data_export": "1.x-dev",

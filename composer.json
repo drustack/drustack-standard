@@ -62,19 +62,19 @@
                 "https://drupal.org/node/2976934": "https://drupal.org/files/issues/2019-10-04/bootstrap_barrio-disable_default_layouts-2976934-38.patch"
             },
             "drupal/core": {
-                "https://drupal.org/node/1356276": "https://drupal.org/files/issues/2019-12-02/core-1356276-598-89x.patch",
+                "https://drupal.org/node/1356276": "https://drupal.org/files/issues/2019-12-27/1356276-88x-603.patch",
                 "https://drupal.org/node/2362643": "https://drupal.org/files/issues/2019-08-29/2362643-63.patch",
                 "https://drupal.org/node/2619250": "https://drupal.org/files/issues/2019-12-18/drupal-8.8.x-do_not_disable_MultiViews_htaccess-2619250-35.patch",
-                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2019-04-30/2716019_62.patch",
+                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2019-07-17/drupal-n2716019-67.patch",
                 "https://drupal.org/node/2766509": "https://drupal.org/files/issues/2019-09-18/2766509-69.patch",
                 "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2019-11-27/2815221-125.patch",
                 "https://drupal.org/node/2862702": "https://drupal.org/files/issues/2862702-3.patch",
                 "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                 "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2019-10-22/2914389-14-do-not-test.patch",
-                "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2018-05-01/toolbar_hieght_2958478_8.patch",
+                "https://drupal.org/node/2958478": "https://drupal.org/files/issues/2019-11-28/toolbar-fix_height_calculation-295847-25--complete.patch",
                 "https://drupal.org/node/2985882": "https://drupal.org/files/issues/2018-07-16/2985882-entityfield-2.patch",
                 "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2019-06-20/3008924-5.patch",
-                "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2019-02-26/3015152-tps-5.patch"
+                "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2019-12-05/3015152-tps-26.patch"
             },
             "drupal/ctools": {
                 "https://drupal.org/node/2475595": "https://drupal.org/files/issues/2475595-ctools-autocomplete-fix-47.patch"

@@ -52,9 +52,6 @@
             "npm-asset"
         ],
         "patches": {
-            "drupal/blazy": {
-                "https://drupal.org/node/2890216": "https://drupal.org/files/issues/2019-09-07/blazy-remove_version_from_info_yml-2890216-5.patch"
-            },
             "drupal/block_class": {
                 "https://drupal.org/node/2998114": "https://drupal.org/files/issues/2019-06-28/block_class-support-layout-builder-2998114-45.patch"
             },
@@ -86,9 +83,6 @@
             "drupal/features": {
                 "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"
             },
-            "drupal/group": {
-                "https://drupal.org/node/3079812": "https://drupal.org/files/issues/2019-09-07/group-remove_version_from_info_yml-3079812-2.patch"
-            },
             "drupal/menu_block": {
                 "https://drupal.org/node/2809699": "https://drupal.org/files/issues/2019-07-09/2809699-85.menu_block-label_configuration.patch",
                 "https://drupal.org/node/2847328": "https://drupal.org/files/issues/2847328-respect-custom-active-trails.patch",
@@ -100,17 +94,11 @@
             "drupal/recaptcha": {
                 "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2019-04-29/recaptcha-nocaptcha-2852269-180.patch"
             },
-            "drupal/slick": {
-                "https://drupal.org/node/3079811": "https://drupal.org/files/issues/2019-09-07/slick-remove_version_from_info_yml-3079811-2.patch"
-            },
             "drupal/token": {
                 "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2018-09-28/token-term_vocabulary_source-2816693-16.patch"
             },
             "drupal/views_php": {
                 "https://drupal.org/node/2829204": "https://drupal.org/files/issues/views_php-2829204.patch"
-            },
-            "drupal/views_templates": {
-                "https://drupal.org/node/2749745": "https://drupal.org/files/issues/views_templates-remove_version_from_info_yml-2749745-2.patch"
             }
         },
         "preserve-paths": [

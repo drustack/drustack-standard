@@ -65,6 +65,7 @@
                 "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2019-07-17/drupal-n2716019-67.patch",
                 "https://drupal.org/node/2766509": "https://drupal.org/files/issues/2019-09-18/2766509-69.patch",
                 "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2019-11-27/2815221-125.patch",
+                "https://drupal.org/node/2825860": "https://drupal.org/files/issues/2020-01-08/exposed-filter-notice-2825860-33.patch",
                 "https://drupal.org/node/2862702": "https://drupal.org/files/issues/2862702-3.patch",
                 "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2869592-remove-update-warning-7.patch",
                 "https://drupal.org/node/2914389": "https://drupal.org/files/issues/2019-10-22/2914389-14-do-not-test.patch",

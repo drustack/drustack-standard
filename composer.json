@@ -20,7 +20,7 @@
     "extra": {
         "branch-alias": {
             "dev-develop": "8.x-dev",
-            "dev-master": "8.7.x-dev"
+            "dev-master": "8.8.x-dev"
         },
         "installer-paths": {
             "drush/contrib/{$name}": [

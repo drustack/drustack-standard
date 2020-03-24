@@ -65,9 +65,6 @@
             "drupal/entity": {
                 "https://drupal.org/node/2020325": "https://drupal.org/files/issues/entity-ctools-content-type-from-context-2020325-31.patch"
             },
-            "drupal/git_deploy": {
-                "https://drupal.org/node/1511112": "https://drupal.org/files/git_deploy-1511112_5.patch"
-            },
             "drupal/menu_block": {
                 "https://drupal.org/node/2282933": "https://drupal.org/files/issues/menu_block-uuid-2282933-23.patch"
             },

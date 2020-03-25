@@ -89,7 +89,7 @@
                 "https://drupal.org/node/2075467": "https://drupal.org/files/issues/workbench_uuid-2075467-01.patch"
             },
             "drupal/views_php": {
-                "https://drupal.org/node/3026201": "https://drupal.org/files/issues/2019-01-16/create_function_depreciate-3026201-3.patch"
+                "https://drupal.org/node/2274543": "https://drupal.org/files/issues/2018-12-14/views_php-create_function-update-2274543-18.patch"
             },
             "drupal/workbench_moderation": {
                 "https://drupal.org/node/1836680": "https://drupal.org/files/workbench-moderation-solr-index-1836680-1.patch"

@@ -118,7 +118,7 @@
             "package": {
                 "dist": {
                     "type": "zip",
-                    "url": "http://htmlpurifier.org/releases/htmlpurifier-4.12.0.zip"
+                    "url": "https://github.com/ezyang/htmlpurifier/archive/v4.12.0.zip"
                 },
                 "name": "htmlpurifier/htmlpurifier",
                 "require": {

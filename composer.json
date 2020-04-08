@@ -262,7 +262,7 @@
         "drupal/content_access": "~1.0",
         "drupal/contribute": "1.x-dev",
         "drupal/core": "~8.8.0",
-        "drupal/csv_serialization": "2.x-dev",
+        "drupal/csv_serialization": "1.x-dev",
         "drupal/ctools": "3.x-dev",
         "drupal/default_content": "1.x-dev",
         "drupal/devel": "2.x-dev",

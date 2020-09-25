@@ -1,5 +1,3 @@
-/.editorconfig
-/.gitattributes
 bin/
 vendor/
 web/

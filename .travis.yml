@@ -1,0 +1,16 @@
+---
+
+os: linux
+
+dist: focal
+
+language: shell
+
+services:
+  - docker
+
+script:
+  - |
+    docker run -it --rm -v $PWD:/var/www/html -w /var/www/html alvistack/php:7.4 composer install -n
+    docker run -it --rm -v $PWD:/var/www/html -w /var/www/html alvistack/php:7.4 composer update -n
+    docker run -it --rm -v $PWD:/var/www/html -w /var/www/html alvistack/php:7.4 drush si --yes --db-url=sqlite://sites/default/files/.ht.sqlite

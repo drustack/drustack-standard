@@ -7,6 +7,7 @@
     ],
     "config": {
         "discard-changes": true,
+        "prefer-source": true,
         "process-timeout": 3600,
         "secure-http": false,
         "vendor-dir": "vendor"

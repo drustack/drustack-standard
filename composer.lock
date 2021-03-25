@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03d3a31f10d3dce13eaaa842515de8d2",
+    "content-hash": "eb1791dd6a83e545a3294a15b87d42f1",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -10644,6 +10644,63 @@
                 }
             ],
             "time": "2020-11-11T04:36:51+00:00"
+        },
+        {
+            "name": "drustack/composer-generate-metadata",
+            "version": "2.0.0-alpha2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drustack/composer-generate-metadata.git",
+                "reference": "f6b1fd513076dedbbb48f41f7469546e661fdf0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drustack/composer-generate-metadata/zipball/f6b1fd513076dedbbb48f41f7469546e661fdf0f",
+                "reference": "f6b1fd513076dedbbb48f41f7469546e661fdf0f",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~2.0"
+            },
+            "require-dev": {
+                "composer/composer": "~2.0",
+                "phpunit/phpunit": "~9.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "2.x-dev",
+                    "dev-master": "2.0.x-dev"
+                },
+                "class": "DruStack\\Composer\\GenerateMetadata\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "DruStack\\Composer\\GenerateMetadata\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Wong Hoi Sing Edison",
+                    "email": "hswong3i@pantarei-design.com",
+                    "homepage": "http://hswong3i.net"
+                }
+            ],
+            "description": "Composer plugin for generate Drupal packages metadata into info files",
+            "keywords": [
+                "composer-plugin",
+                "drupal",
+                "installer"
+            ],
+            "support": {
+                "issues": "https://github.com/drustack/composer-generate-metadata/issues",
+                "source": "https://github.com/drustack/composer-generate-metadata/tree/2.0.0-alpha2"
+            },
+            "time": "2021-03-25T06:30:01+00:00"
         },
         {
             "name": "egulias/email-validator",

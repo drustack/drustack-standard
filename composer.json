@@ -232,6 +232,7 @@
         "drupal/viewsreference": "2.x-dev",
         "drupal/webform": "6.x-dev",
         "drupal/xmlsitemap": "1.x-dev",
+        "drustack/composer-generate-metadata": "~2.0",
         "npm-asset/blazy": "~1.8",
         "npm-asset/bootstrap": "~4.3",
         "npm-asset/fortawesome--fontawesome-free": "~5.15",

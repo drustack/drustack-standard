@@ -1,0 +1,44 @@
+{
+    "authors": [
+        {
+            "email": "hswong3i@pantarei-design.com",
+            "name": "Wong Hoi Sing Edison"
+        }
+    ],
+    "description": "The \"DruStack Standard Edition\" distribution",
+    "extra": {
+        "branch-alias": {
+            "dev-develop": "9.x-dev",
+            "dev-master": "9.1.x-dev"
+        }
+    },
+    "homepage": "https://drupal.org/project/drustack",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "name": "drustack/framework-standard-edition",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.9",
+        "drupal/core-composer-scaffold": "~9.1",
+        "drupal/core-project-message": "~9.1",
+        "drupal/core-recommended": "~9.1",
+        "drupal/core-vendor-hardening": "~9.1"
+    },
+    "require-dev": {
+        "composer/composer": "~2.0.2",
+        "drupal/coder": "~8.3.7",
+        "symfony/browser-kit": "~4.4",
+        "symfony/css-selector": "~4.4"
+    },
+    "type": "project"
+}

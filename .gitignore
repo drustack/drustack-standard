@@ -18,4 +18,5 @@
 /sites
 /themes
 /update.php
+/vendor/*
 /web.config

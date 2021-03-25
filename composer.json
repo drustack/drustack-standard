@@ -7,7 +7,9 @@
     ],
     "config": {
         "discard-changes": true,
-        "prefer-source": true,
+        "preferred-install": {
+            "*": "source"
+        },
         "process-timeout": 3600,
         "secure-http": false,
         "vendor-dir": "vendor"

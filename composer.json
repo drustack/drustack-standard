@@ -56,7 +56,46 @@
         "installer-types": [
             "bower-asset",
             "npm-asset"
-        ]
+        ],
+        "patches": {
+            "drupal/block_class": {
+                "https://drupal.org/node/2998114": "https://drupal.org/files/issues/2019-11-30/2998114-67.patch"
+            },
+            "drupal/core": {
+                "https://drupal.org/node/2362643": "https://drupal.org/files/issues/2021-01-21/2362643-76.patch",
+                "https://drupal.org/node/2429321": "https://drupal.org/files/issues/2020-05-04/2429321-9.1-75.patch",
+                "https://drupal.org/node/2716019": "https://drupal.org/files/issues/2021-01-25/2716019-153.patch",
+                "https://drupal.org/node/2815221": "https://drupal.org/files/issues/2020-10-29/2815221-135.patch",
+                "https://drupal.org/node/2825860": "https://drupal.org/files/issues/2020-10-21/2825860-48.patch",
+                "https://drupal.org/node/2862702": "https://drupal.org/files/issues/2862702-3.patch",
+                "https://drupal.org/node/2869592": "https://drupal.org/files/issues/2020-02-07/2869592-remove-update-warning-34.patch",
+                "https://drupal.org/node/2985882": "https://drupal.org/files/issues/2020-04-08/2985882-field-85.patch",
+                "https://drupal.org/node/3008924": "https://drupal.org/files/issues/2020-08-27/3008924-rerolled-17.patch",
+                "https://drupal.org/node/3015152": "https://drupal.org/files/issues/2021-01-29/3015152-tps-114.patch"
+            },
+            "drupal/ctools": {
+                "https://drupal.org/node/2475595": "https://drupal.org/files/issues/2475595-ctools-autocomplete-fix-47.patch"
+            },
+            "drupal/entity_embed": {
+                "https://drupal.org/node/3067452": "https://drupal.org/files/issues/2021-03-18/entity_embed-recursion_context-3067452-15.patch",
+                "https://drupal.org/node/3069448": "https://drupal.org/files/issues/2019-10-18/entity-embed-array-to-string--3069448-19.patch"
+            },
+            "drupal/features": {
+                "https://drupal.org/node/3034826": "https://drupal.org/files/issues/2019-02-28/3034826-3-call-to-member-function-on-null.patch"
+            },
+            "drupal/hcaptcha": {
+                "https://drupal.org/node/3170140": "https://drupal.org/files/issues/2020-10-03/3170140-3.patch"
+            },
+            "drupal/menu_block": {
+                "https://drupal.org/node/2847328": "https://drupal.org/files/issues/2020-12-07/2847328-5.patch"
+            },
+            "drupal/recaptcha": {
+                "https://drupal.org/node/2852269": "https://drupal.org/files/issues/2019-04-29/recaptcha-nocaptcha-2852269-180.patch"
+            },
+            "drupal/token": {
+                "https://drupal.org/node/2816693": "https://drupal.org/files/issues/2020-10-15/token-term_vocabulary_source-2816693-19.patch"
+            }
+        }
     },
     "homepage": "https://drupal.org/project/drustack",
     "license": "GPL-2.0+",
@@ -76,10 +115,18 @@
     "require": {
         "composer/installers": "~1.9",
         "cweagans/composer-patches": "~1.7",
+        "drupal/block_class": "1.x-dev",
         "drupal/core-composer-scaffold": "~9.1",
         "drupal/core-project-message": "~9.1",
         "drupal/core-recommended": "~9.1",
         "drupal/core-vendor-hardening": "~9.1",
+        "drupal/ctools": "3.x-dev",
+        "drupal/entity_embed": "1.x-dev",
+        "drupal/features": "3.x-dev",
+        "drupal/hcaptcha": "1.x-dev",
+        "drupal/menu_block": "1.x-dev",
+        "drupal/recaptcha": "3.x-dev",
+        "drupal/token": "1.x-dev",
         "npm-asset/blazy": "~1.8",
         "npm-asset/bootstrap": "~4.3",
         "npm-asset/fortawesome--fontawesome-free": "~5.15",
@@ -88,11 +135,10 @@
     },
     "require-dev": {
         "composer/composer": "~2.0.2",
-        "drupal/coder": "~8.3.7",
         "drupal/core-dev": "~9.1",
         "drush/drush": "~10.3",
-        "symfony/browser-kit": "~4.4",
-        "symfony/css-selector": "~4.4"
+        "oomphinc/composer-installers-extender": "~2.0",
+        "zaporylie/composer-drupal-optimizations": "~1.2"
     },
     "type": "project"
 }
